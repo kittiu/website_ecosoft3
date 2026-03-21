@@ -1,0 +1,280 @@
+---
+import BaseLayout from "@layouts/BaseLayout.astro";
+---
+
+<BaseLayout
+  title="ERP Readiness Assessment | Ecosoft"
+  description="A free 5-minute self-assessment to evaluate whether your business is ready for ERP implementation — covering process maturity, data quality, and organisational readiness."
+>
+
+  <!-- HERO -->
+  <section class="hero" style="padding-bottom:2rem;">
+    <div class="container" style="text-align:center;">
+      <p class="eyebrow">Free Tool</p>
+      <h1>Is your business ready for ERP?</h1>
+      <p class="hero-lead" style="max-width:640px; margin:1rem auto 0;">
+        5 minutes. 15 questions. A clear assessment of where you are and what needs to happen before an implementation starts.
+      </p>
+    </div>
+  </section>
+
+  <!-- ASSESSMENT FORM -->
+  <section class="section" style="padding-top:0;">
+    <div class="container">
+      <div style="max-width:720px; margin:0 auto;">
+
+        <!-- PROGRESS -->
+        <div class="step-form-progress" id="progress-bar" style="margin-bottom:2.5rem;">
+          <div class="step-dot step-dot--active" data-step="1">1</div>
+          <div class="step-dot" data-step="2">2</div>
+          <div class="step-dot" data-step="3">3</div>
+          <div class="step-dot" data-step="4">4</div>
+          <div class="step-dot" data-step="5">5</div>
+        </div>
+
+        <form id="readiness-form">
+
+          <!-- STEP 1: Business context -->
+          <div class="step-panel step-panel--active" id="step-1">
+            <h2>About your business</h2>
+
+            <div style="margin-bottom:1.5rem;">
+              <label style="display:block; font-weight:600; margin-bottom:0.5rem;">Company size</label>
+              <select name="size" class="form-input" required>
+                <option value="">Select…</option>
+                <option>Under 20 employees</option>
+                <option>20–50 employees</option>
+                <option>50–100 employees</option>
+                <option>100–500 employees</option>
+                <option>500+ employees</option>
+              </select>
+            </div>
+
+            <div style="margin-bottom:1.5rem;">
+              <label style="display:block; font-weight:600; margin-bottom:0.5rem;">Industry</label>
+              <select name="industry" class="form-input" required>
+                <option value="">Select…</option>
+                <option>Manufacturing</option>
+                <option>Trading / Distribution</option>
+                <option>Professional Services</option>
+                <option>Technology</option>
+                <option>Government / Public sector</option>
+                <option>Healthcare</option>
+                <option>Other</option>
+              </select>
+            </div>
+
+            <div style="margin-bottom:1.5rem;">
+              <label style="display:block; font-weight:600; margin-bottom:0.5rem;">What system do you currently use for accounting / operations?</label>
+              <select name="current_system" class="form-input" required>
+                <option value="">Select…</option>
+                <option>Spreadsheets (Excel / Google Sheets)</option>
+                <option>Basic accounting software (QuickBooks, Xero, PEAK)</option>
+                <option>Thai accounting software (Express, FlowAccount)</option>
+                <option>Older ERP (SAP, Oracle, Microsoft Dynamics)</option>
+                <option>Odoo (current version — need upgrade)</option>
+                <option>ERPNext (current version — need upgrade)</option>
+                <option>No formal system</option>
+              </select>
+            </div>
+
+            <button type="button" class="btn btn-primary next-step" data-next="2">Continue →</button>
+          </div>
+
+          <!-- STEP 2: Process maturity -->
+          <div class="step-panel" id="step-2">
+            <h2>Process maturity</h2>
+            <p style="color:var(--text-muted); margin-bottom:1.5rem;">Rate your agreement with each statement (1 = strongly disagree, 5 = strongly agree)</p>
+
+            {[
+              { name: "q_process_1", text: "Our core business processes (order management, procurement, production) are clearly documented and followed consistently." },
+              { name: "q_process_2", text: "We have clear owners for each major business process — someone responsible for how it works and whether it's followed." },
+              { name: "q_process_3", text: "When something goes wrong operationally, we have a standard way to identify the root cause rather than just fixing the symptom." },
+            ].map((q) => (
+              <div style="margin-bottom:1.5rem; padding:1.25rem; background:var(--surface); border-radius:0.75rem; border:1px solid var(--border);">
+                <label style="display:block; font-weight:600; margin-bottom:1rem;">{q.text}</label>
+                <div style="display:flex; gap:0.75rem; flex-wrap:wrap;">
+                  {[1,2,3,4,5].map((v) => (
+                    <label style="display:flex; align-items:center; gap:0.4rem; cursor:pointer;">
+                      <input type="radio" name={q.name} value={v} required style="accent-color:var(--accent);" />
+                      <span style="font-size:0.875rem;">{v}</span>
+                    </label>
+                  ))}
+                </div>
+              </div>
+            ))}
+
+            <div style="display:flex; gap:1rem;">
+              <button type="button" class="btn btn-outline prev-step" data-prev="1">← Back</button>
+              <button type="button" class="btn btn-primary next-step" data-next="3">Continue →</button>
+            </div>
+          </div>
+
+          <!-- STEP 3: Data readiness -->
+          <div class="step-panel" id="step-3">
+            <h2>Data readiness</h2>
+            <p style="color:var(--text-muted); margin-bottom:1.5rem;">Rate your agreement with each statement</p>
+
+            {[
+              { name: "q_data_1", text: "We have a reasonably accurate and complete list of all products / services we sell, with pricing and cost information." },
+              { name: "q_data_2", text: "Our supplier and customer records are organised and relatively up-to-date — not scattered across multiple spreadsheets or people's contacts." },
+              { name: "q_data_3", text: "We could produce a reasonably accurate inventory count if asked to today." },
+            ].map((q) => (
+              <div style="margin-bottom:1.5rem; padding:1.25rem; background:var(--surface); border-radius:0.75rem; border:1px solid var(--border);">
+                <label style="display:block; font-weight:600; margin-bottom:1rem;">{q.text}</label>
+                <div style="display:flex; gap:0.75rem; flex-wrap:wrap;">
+                  {[1,2,3,4,5].map((v) => (
+                    <label style="display:flex; align-items:center; gap:0.4rem; cursor:pointer;">
+                      <input type="radio" name={q.name} value={v} required style="accent-color:var(--accent);" />
+                      <span style="font-size:0.875rem;">{v}</span>
+                    </label>
+                  ))}
+                </div>
+              </div>
+            ))}
+
+            <div style="display:flex; gap:1rem;">
+              <button type="button" class="btn btn-outline prev-step" data-prev="2">← Back</button>
+              <button type="button" class="btn btn-primary next-step" data-next="4">Continue →</button>
+            </div>
+          </div>
+
+          <!-- STEP 4: Organisational readiness -->
+          <div class="step-panel" id="step-4">
+            <h2>Organisational readiness</h2>
+            <p style="color:var(--text-muted); margin-bottom:1.5rem;">Rate your agreement with each statement</p>
+
+            {[
+              { name: "q_org_1", text: "Senior management is actively supportive of this ERP project — not just tolerating it." },
+              { name: "q_org_2", text: "We have identified a capable internal project owner who will have time dedicated to this project during implementation." },
+              { name: "q_org_3", text: "The business can tolerate a period of learning curve and reduced speed during system transition — we have a realistic view of what implementation involves." },
+              { name: "q_org_4", text: "We have a realistic budget for implementation services — not just the software licence cost." },
+            ].map((q) => (
+              <div style="margin-bottom:1.5rem; padding:1.25rem; background:var(--surface); border-radius:0.75rem; border:1px solid var(--border);">
+                <label style="display:block; font-weight:600; margin-bottom:1rem;">{q.text}</label>
+                <div style="display:flex; gap:0.75rem; flex-wrap:wrap;">
+                  {[1,2,3,4,5].map((v) => (
+                    <label style="display:flex; align-items:center; gap:0.4rem; cursor:pointer;">
+                      <input type="radio" name={q.name} value={v} required style="accent-color:var(--accent);" />
+                      <span style="font-size:0.875rem;">{v}</span>
+                    </label>
+                  ))}
+                </div>
+              </div>
+            ))}
+
+            <div style="display:flex; gap:1rem;">
+              <button type="button" class="btn btn-outline prev-step" data-prev="3">← Back</button>
+              <button type="button" class="btn btn-primary next-step" data-next="5">See your results →</button>
+            </div>
+          </div>
+
+          <!-- STEP 5: Results + Contact -->
+          <div class="step-panel" id="step-5">
+            <h2>Your ERP readiness results</h2>
+            <div id="results-display" style="background:var(--surface); border-radius:1rem; padding:2rem; margin-bottom:2rem; border:1px solid var(--border);">
+              <div id="score-display" style="text-align:center; margin-bottom:1.5rem;">
+                <div id="score-number" style="font-size:4rem; font-weight:700; color:var(--accent);">—</div>
+                <div style="color:var(--text-muted); font-size:0.875rem;">Overall readiness score</div>
+              </div>
+              <div id="score-message" style="text-align:center;"></div>
+            </div>
+
+            <div class="info-card" style="padding:2rem; margin-bottom:2rem;">
+              <h3 style="margin-top:0;">Get your full assessment report</h3>
+              <p>Enter your details and we'll send a personalised report with specific recommendations based on your answers — plus an optional 30-minute call to discuss.</p>
+              <div style="display:flex; flex-direction:column; gap:1rem; margin-top:1.25rem;">
+                <input type="text" name="contact_name" placeholder="Your name" class="form-input" required />
+                <input type="email" name="contact_email" placeholder="Business email" class="form-input" required />
+                <input type="text" name="contact_company" placeholder="Company name" class="form-input" required />
+                <button type="submit" class="btn btn-primary">Send me my report →</button>
+              </div>
+            </div>
+
+            <p style="font-size:0.8125rem; text-align:center; color:var(--text-muted);">No spam. We'll only contact you about your assessment results.</p>
+          </div>
+
+        </form>
+
+        <!-- SUCCESS STATE -->
+        <div id="form-success" style="display:none; text-align:center; padding:3rem 1rem;">
+          <div style="font-size:4rem; margin-bottom:1rem;">✅</div>
+          <h2>Report on its way</h2>
+          <p style="color:var(--text-muted); max-width:480px; margin:1rem auto 2rem;">
+            We've received your assessment. You'll receive your personalised report within one business day.
+            If you'd prefer to speak with a consultant directly, you can book time below.
+          </p>
+          <a href="/book-demo" class="btn btn-primary">Book a 45-min consultation</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</BaseLayout>
+
+<script>
+  // Step navigation
+  var steps = document.querySelectorAll('.step-panel');
+  var dots = document.querySelectorAll('.step-dot');
+
+  function showStep(n: number) {
+    steps.forEach(function(s) { s.classList.remove('step-panel--active'); });
+    dots.forEach(function(d) { d.classList.remove('step-dot--active'); });
+    var panel = document.getElementById('step-' + n);
+    if (panel) panel.classList.add('step-panel--active');
+    var dot = document.querySelector('[data-step="' + n + '"]');
+    if (dot) dot.classList.add('step-dot--active');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  document.querySelectorAll('.next-step').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var next = parseInt((btn as HTMLElement).getAttribute('data-next') || '1');
+      if (next === 5) calculateScore();
+      showStep(next);
+    });
+  });
+
+  document.querySelectorAll('.prev-step').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var prev = parseInt((btn as HTMLElement).getAttribute('data-prev') || '1');
+      showStep(prev);
+    });
+  });
+
+  function calculateScore() {
+    var form = document.getElementById('readiness-form') as HTMLFormElement;
+    var total = 0;
+    var count = 0;
+    var questions = ['q_process_1','q_process_2','q_process_3','q_data_1','q_data_2','q_data_3','q_org_1','q_org_2','q_org_3','q_org_4'];
+    questions.forEach(function(q) {
+      var selected = form.querySelector('input[name="' + q + '"]:checked') as HTMLInputElement;
+      if (selected) { total += parseInt(selected.value); count++; }
+    });
+    var pct = count > 0 ? Math.round((total / (count * 5)) * 100) : 0;
+    var scoreEl = document.getElementById('score-number');
+    var msgEl = document.getElementById('score-message');
+    if (scoreEl) scoreEl.textContent = pct + '%';
+    if (msgEl) {
+      if (pct >= 70) {
+        msgEl.innerHTML = '<strong style="color:var(--accent)">Strong readiness</strong><p style="color:var(--text-muted);margin-top:0.5rem;">Your business shows good readiness for ERP. The key next step is a detailed scoping conversation to define the right implementation approach.</p>';
+      } else if (pct >= 45) {
+        msgEl.innerHTML = '<strong style="color:#f59e0b">Moderate readiness</strong><p style="color:var(--text-muted);margin-top:0.5rem;">Some areas need attention before implementation. Your report will identify the specific gaps and what to do about them.</p>';
+      } else {
+        msgEl.innerHTML = '<strong style="color:#ef4444">Readiness gaps identified</strong><p style="color:var(--text-muted);margin-top:0.5rem;">There are meaningful gaps to address before starting an ERP implementation. Your report will explain what to fix first — and why rushing would be costly.</p>';
+      }
+    }
+  }
+
+  // Form submit
+  var form = document.getElementById('readiness-form') as HTMLFormElement;
+  var successEl = document.getElementById('form-success');
+  if (form) {
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      form.style.display = 'none';
+      if (successEl) successEl.style.display = 'block';
+    });
+  }
+</script>

@@ -1,0 +1,103 @@
+---
+import BaseLayout from "@layouts/BaseLayout.astro";
+---
+
+<BaseLayout
+  title="Solutions | Ecosoft"
+  description="Ecosoft delivers open-source ERP, BI, automation, and custom Frappe/Odoo solutions for manufacturing, government, trading, and professional services across Thailand."
+>
+
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container">
+      <p class="eyebrow">What We Build</p>
+      <h1>Open-source solutions for every layer of your business</h1>
+      <p class="hero-lead">
+        From full ERP implementation to targeted automation, BI dashboards, and custom Frappe applications —
+        Ecosoft delivers production-grade open-source solutions that you own completely.
+      </p>
+      <div class="hero-actions">
+        <a href="/contact" class="btn btn-primary">Talk to a Consultant</a>
+        <a href="/solutions/pricing" class="btn btn-outline">View Pricing</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOLUTIONS GRID -->
+  <section class="section">
+    <div class="container">
+      <div class="cards-grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+
+        <div class="info-card">
+          <div class="info-card-icon">🟠</div>
+          <h3><a href="/solutions/erp-odoo">ERP — Odoo</a></h3>
+          <p>Full Odoo Community Edition implementation with OCA-certified modules. Thai accounting compliance. No licence fees. Full source ownership.</p>
+          <a href="/solutions/erp-odoo" class="btn btn-outline" style="margin-top:1rem">Learn more →</a>
+        </div>
+
+        <div class="info-card">
+          <div class="info-card-icon">🔵</div>
+          <h3><a href="/solutions/erp-erpnext">ERP — ERPNext</a></h3>
+          <p>ERPNext for growing SMEs — manufacturing, trading, and professional services. Fully open-source with no per-user licence cost.</p>
+          <a href="/solutions/erp-erpnext" class="btn btn-outline" style="margin-top:1rem">Learn more →</a>
+        </div>
+
+        <div class="info-card">
+          <div class="info-card-icon">🏛️</div>
+          <h3><a href="/solutions/government-erp">Government ERP</a></h3>
+          <p>Purpose-built for Thai public sector — budget encumbrance, government procurement compliance, multi-fund accounting, and audit trails.</p>
+          <a href="/solutions/government-erp" class="btn btn-outline" style="margin-top:1rem">Learn more →</a>
+        </div>
+
+        <div class="info-card">
+          <div class="info-card-icon">📊</div>
+          <h3><a href="/solutions/bi-dashboard">BI Dashboard</a></h3>
+          <p>Real-time analytics and dashboards built on Apache Superset, connected to your ERP data. No per-seat BI licence.</p>
+          <a href="/solutions/bi-dashboard" class="btn btn-outline" style="margin-top:1rem">Learn more →</a>
+        </div>
+
+        <div class="info-card">
+          <div class="info-card-icon">⚙️</div>
+          <h3><a href="/solutions/automation">Automation</a></h3>
+          <p>Eliminate manual steps with workflow automation — document routing, approval chains, system integrations, and scheduled jobs.</p>
+          <a href="/solutions/automation" class="btn btn-outline" style="margin-top:1rem">Learn more →</a>
+        </div>
+
+        <div class="info-card">
+          <div class="info-card-icon">🧩</div>
+          <h3><a href="/solutions/frappe-apps">Frappe Apps</a></h3>
+          <p>Custom applications built on the Frappe framework — the same platform powering ERPNext — for bespoke business requirements.</p>
+          <a href="/solutions/frappe-apps" class="btn btn-outline" style="margin-top:1rem">Learn more →</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- INDUSTRIES ROW -->
+  <section class="section" style="background: var(--surface);">
+    <div class="container" style="text-align:center;">
+      <h2>Built for your industry</h2>
+      <p class="section-lead">Ecosoft has implemented open-source ERP for companies across manufacturing, government, trading, and technology sectors across Thailand.</p>
+      <div class="industry-pills" style="justify-content:center; margin-top:2rem;">
+        <a href="/industries/manufacturing" class="industry-pill">Manufacturing</a>
+        <a href="/industries/government" class="industry-pill">Government</a>
+        <a href="/industries/trading" class="industry-pill">Trading</a>
+        <a href="/industries/professional-services" class="industry-pill">Professional Services</a>
+        <a href="/industries/technology" class="industry-pill">Technology</a>
+        <a href="/industries/healthcare" class="industry-pill">Healthcare</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA STRIP -->
+  <section class="cta-strip">
+    <div class="container">
+      <h2>Not sure which solution fits your business?</h2>
+      <p>Talk to a consultant — we'll recommend the right platform and scope for your situation.</p>
+      <a href="/contact" class="btn btn-primary">Book a Free Consultation</a>
+    </div>
+  </section>
+
+</BaseLayout>

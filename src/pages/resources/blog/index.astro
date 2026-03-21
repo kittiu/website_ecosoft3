@@ -1,0 +1,90 @@
+---
+import BaseLayout from "@layouts/BaseLayout.astro";
+import { getCollection } from "astro:content";
+
+const posts = await getCollection("blog");
+const sorted = posts.sort((a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime());
+
+function formatDate(d: Date) {
+  return new Date(d).toLocaleDateString("en-GB", { year: "numeric", month: "long", day: "numeric" });
+}
+---
+
+<BaseLayout
+  title="Blog — Open Source ERP Insights | Ecosoft"
+  description="Articles, guides, and case study writeups from Ecosoft — covering Odoo, ERPNext, open-source ERP implementation, and Thai business operations."
+>
+
+
+  <!-- HERO -->
+  <section class="hero" style="padding-bottom:2rem;">
+    <div class="container">
+      <p class="eyebrow">Resources</p>
+      <h1>ERP insights from the field</h1>
+      <p class="hero-lead">
+        Practical articles on Odoo, ERPNext, open-source ERP implementation, and how Thai businesses are
+        using open-source software to manage their operations.
+      </p>
+    </div>
+  </section>
+
+  <!-- FEATURED POST -->
+  {sorted.length > 0 && (
+    <section class="section" style="background: var(--surface); padding-top:2rem; padding-bottom:2rem;">
+      <div class="container">
+        <div class="case-study-featured">
+          <div>
+            <span class="tag">{sorted[0].data.category}</span>
+            <h2 style="margin-top:1rem;">{sorted[0].data.title}</h2>
+            <p style="color:var(--text-muted); font-size:0.875rem; margin-bottom:1rem;">
+              {formatDate(sorted[0].data.date)} · {sorted[0].data.author}
+            </p>
+            <p>{sorted[0].data.description}</p>
+            <a href={`/resources/blog/${sorted[0].id}`} class="btn btn-primary" style="margin-top:1.5rem;">Read post →</a>
+          </div>
+          <div style="background:var(--border); border-radius:1rem; aspect-ratio:4/3; display:flex; align-items:center; justify-content:center; color:var(--text-muted);">
+            {sorted[0].data.image ? (
+              <img src={sorted[0].data.image} alt={sorted[0].data.title} style="width:100%; height:100%; object-fit:cover; border-radius:1rem;" />
+            ) : (
+              <span style="font-size:4rem;">📝</span>
+            )}
+          </div>
+        </div>
+      </div>
+    </section>
+  )}
+
+  <!-- POST GRID -->
+  <section class="section">
+    <div class="container">
+      <h2>All posts</h2>
+      <div class="cards-grid" style="grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap:1.5rem; margin-top:2rem;">
+        {sorted.slice(1).map((post) => (
+          <div class="info-card">
+            <div style="display:flex; gap:0.5rem; margin-bottom:0.75rem;">
+              <span class="tag">{post.data.category}</span>
+            </div>
+            <h3 style="font-size:1.1rem; margin-top:0;">
+              <a href={`/resources/blog/${post.id}`} style="color:inherit; text-decoration:none;">{post.data.title}</a>
+            </h3>
+            <p style="font-size:0.8125rem; color:var(--text-muted); margin-bottom:0.75rem;">
+              {formatDate(post.data.date)} · {post.data.author}
+            </p>
+            <p style="font-size:0.9rem;">{post.data.description}</p>
+            <a href={`/resources/blog/${post.id}`} style="font-size:0.875rem; color:var(--accent); font-weight:600; display:block; margin-top:1rem;">Read →</a>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-strip">
+    <div class="container">
+      <h2>Ready to talk about your ERP challenge?</h2>
+      <p>Reading is useful. A conversation is better. Talk to a consultant about your specific situation.</p>
+      <a href="/contact" class="btn btn-primary">Book a Free Consultation</a>
+    </div>
+  </section>
+
+</BaseLayout>

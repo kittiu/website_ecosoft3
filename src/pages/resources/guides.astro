@@ -1,0 +1,102 @@
+---
+import BaseLayout from "@layouts/BaseLayout.astro";
+
+const guides = [
+  {
+    title: "ERP Readiness Assessment Guide",
+    description: "How to evaluate whether your business is ready for ERP — and what to fix before you start an implementation. Covers process maturity, data quality, and change management.",
+    category: "Planning",
+    icon: "📋",
+    gated: true,
+  },
+  {
+    title: "The Odoo CE vs Odoo Enterprise Decision Framework",
+    description: "A structured guide to evaluating whether you actually need Odoo Enterprise, or whether OCA modules cover your requirements. Includes a module-by-module gap analysis template.",
+    category: "Odoo",
+    icon: "🟠",
+    gated: true,
+  },
+  {
+    title: "ERPNext Implementation Checklist",
+    description: "A comprehensive pre-go-live checklist for ERPNext implementations — covering configuration, data migration, user acceptance testing, and cutover planning.",
+    category: "ERPNext",
+    icon: "🔵",
+    gated: true,
+  },
+  {
+    title: "Thai Accounting Compliance in Odoo",
+    description: "How Thai VAT, withholding tax, revenue department reporting, and Thai chart of accounts are handled in Odoo CE with OCA modules. Includes configuration reference.",
+    category: "Accounting",
+    icon: "💰",
+    gated: true,
+  },
+  {
+    title: "Manufacturing ERP Scope Guide",
+    description: "What to include (and exclude) in a manufacturing ERP scope. Covers BOM complexity, production tracking, quality control, and the most common scope creep pitfalls.",
+    category: "Manufacturing",
+    icon: "🏭",
+    gated: true,
+  },
+  {
+    title: "Open Source ERP TCO Calculator",
+    description: "A spreadsheet model for comparing total cost of ownership between open-source ERP (Odoo CE, ERPNext) and proprietary alternatives (SAP Business One, Oracle NetSuite).",
+    category: "Planning",
+    icon: "📊",
+    gated: true,
+  },
+];
+---
+
+<BaseLayout
+  title="ERP Guides & Resources | Ecosoft"
+  description="Practical guides for ERP planning, Odoo and ERPNext implementation, Thai accounting compliance, and manufacturing ERP scoping."
+>
+
+
+  <!-- HERO -->
+  <section class="hero" style="padding-bottom:2rem;">
+    <div class="container">
+      <p class="eyebrow">Resources</p>
+      <h1>Practical guides for ERP decision-makers</h1>
+      <p class="hero-lead">
+        Detailed guides for businesses evaluating, planning, or implementing open-source ERP.
+        Written by consultants who have run these implementations — not by marketing teams.
+      </p>
+    </div>
+  </section>
+
+  <!-- GUIDES GRID -->
+  <section class="section">
+    <div class="container">
+      <div class="guides-grid">
+        {guides.map((guide) => (
+          <div class="guide-card">
+            <div class="guide-card-icon">{guide.icon}</div>
+            <div class="guide-card-body">
+              <span class="tag" style="margin-bottom:0.75rem; display:inline-block;">{guide.category}</span>
+              <h3 style="margin-top:0.5rem;">{guide.title}</h3>
+              <p>{guide.description}</p>
+              <div style="margin-top:1.25rem;">
+                {guide.gated ? (
+                  <a href="/contact" class="btn btn-outline">Request guide →</a>
+                ) : (
+                  <a href="#" class="btn btn-primary">Download free →</a>
+                )}
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-strip">
+    <div class="container">
+      <h2>Looking for something specific?</h2>
+      <p>If there's a guide topic you'd find useful that isn't listed here, let us know — we write based on what clients actually need.</p>
+      <a href="/contact" class="btn btn-primary">Request a Guide Topic</a>
+    </div>
+  </section>
+
+</BaseLayout>

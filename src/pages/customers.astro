@@ -1,0 +1,128 @@
+---
+import BaseLayout from "@layouts/BaseLayout.astro";
+import { getCollection } from "astro:content";
+
+const allCaseStudies = await getCollection("case-studies");
+const sorted = allCaseStudies.sort((a, b) => {
+  if (a.data.featured && !b.data.featured) return -1;
+  if (!a.data.featured && b.data.featured) return 1;
+  return a.data.client.localeCompare(b.data.client);
+});
+---
+
+<BaseLayout
+  title="Customers | Ecosoft"
+  description="Ecosoft clients across manufacturing, government, and technology — including Raja Cycle, NSTDA, EOS Orbit, Lamphun Plastpack, and Square Panel Systems."
+>
+
+  <!-- HERO -->
+  <section class="hero" style="padding-bottom:2rem;">
+    <div class="container">
+      <p class="eyebrow">Our Clients</p>
+      <h1>Businesses that have trusted Ecosoft with their ERP.</h1>
+      <p class="hero-lead">
+        From Thailand's first satellite manufacturer to a bicycle factory that has run on Odoo for over a decade —
+        every client here is a production system used daily by real teams, not a pilot installation.
+      </p>
+      <div class="hero-actions">
+        <a href="/case-studies" class="btn btn-primary">Browse Case Studies</a>
+        <a href="/case-studies/video-testimonials" class="btn btn-outline">Watch Video Testimonials</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section style="background: var(--surface); padding:2.5rem 0; border-bottom:1px solid var(--border);">
+    <div class="container">
+      <div style="display:flex; gap:3rem; justify-content:center; flex-wrap:wrap; text-align:center;">
+        <div>
+          <div style="font-size:2.5rem; font-weight:700; color:var(--accent);">10+</div>
+          <div style="font-size:0.875rem; color:var(--text-muted);">Years, longest partnership</div>
+        </div>
+        <div>
+          <div style="font-size:2.5rem; font-weight:700; color:var(--accent);">50+</div>
+          <div style="font-size:0.875rem; color:var(--text-muted);">Clients implemented</div>
+        </div>
+        <div>
+          <div style="font-size:2.5rem; font-weight:700; color:var(--accent);">2</div>
+          <div style="font-size:0.875rem; color:var(--text-muted);">Platforms (Odoo + ERPNext)</div>
+        </div>
+        <div>
+          <div style="font-size:2.5rem; font-weight:700; color:var(--accent);">4+</div>
+          <div style="font-size:0.875rem; color:var(--text-muted);">Industries served</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED CLIENTS -->
+  <section class="section">
+    <div class="container">
+      <h2>Featured clients</h2>
+      <div class="case-studies-grid" style="margin-top:2rem;">
+        {sorted.filter(cs => cs.data.featured).map((cs) => (
+          <div class="case-study-card" style="border-top:3px solid var(--accent);">
+            <div class="case-study-card-tags">
+              <span class="tag">{cs.data.solution}</span>
+              <span class="tag tag--industry">{cs.data.industry}</span>
+            </div>
+            <h3>{cs.data.client}</h3>
+            <p style="font-size:0.875rem; color:var(--text-muted); margin-bottom:0.75rem;">{cs.data.location} · {cs.data.size}</p>
+            <blockquote style="border-left:3px solid var(--border); padding-left:1rem; margin:0.75rem 0; font-style:italic; font-size:0.9rem; color:var(--text-muted);">
+              "{cs.data.quote.substring(0, 160)}{cs.data.quote.length > 160 ? '…' : ''}"
+            </blockquote>
+            <p style="font-size:0.8rem; color:var(--text-muted); margin-bottom:1rem;">— {cs.data.quoteAuthor}</p>
+            <a href={`/case-studies/${cs.id}`} class="btn btn-outline">Read case study →</a>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- ALL CLIENTS -->
+  <section class="section" style="background: var(--surface);">
+    <div class="container">
+      <h2>All clients</h2>
+      <div class="case-studies-grid" style="margin-top:2rem;">
+        {sorted.filter(cs => !cs.data.featured).map((cs) => (
+          <div class="case-study-card">
+            <div class="case-study-card-tags">
+              <span class="tag">{cs.data.solution}</span>
+              <span class="tag tag--industry">{cs.data.industry}</span>
+            </div>
+            <h3>{cs.data.client}</h3>
+            <p style="font-size:0.875rem; color:var(--text-muted); margin-bottom:0.75rem;">{cs.data.location} · {cs.data.size}</p>
+            <p style="font-size:0.9rem;">{cs.data.outcome}</p>
+            <a href={`/case-studies/${cs.id}`} class="btn btn-outline" style="margin-top:1rem;">Read case study →</a>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- INDUSTRIES -->
+  <section class="section">
+    <div class="container" style="text-align:center;">
+      <h2>Industries we serve</h2>
+      <p class="section-lead">Open-source ERP across Thailand's key business sectors.</p>
+      <div class="industry-pills" style="justify-content:center; margin-top:2rem;">
+        <a href="/industries/manufacturing" class="industry-pill">Manufacturing</a>
+        <a href="/industries/government" class="industry-pill">Government</a>
+        <a href="/industries/trading" class="industry-pill">Trading</a>
+        <a href="/industries/professional-services" class="industry-pill">Professional Services</a>
+        <a href="/industries/technology" class="industry-pill">Technology</a>
+        <a href="/industries/healthcare" class="industry-pill">Healthcare</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-strip">
+    <div class="container">
+      <h2>Ready to join this list?</h2>
+      <p>Talk to us about your ERP challenge — we'll give you an honest assessment of whether open-source ERP is the right fit.</p>
+      <a href="/contact" class="btn btn-primary">Book a Free Consultation</a>
+    </div>
+  </section>
+
+</BaseLayout>

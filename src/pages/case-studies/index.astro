@@ -1,0 +1,112 @@
+---
+import BaseLayout from "@layouts/BaseLayout.astro";
+import { getCollection } from "astro:content";
+
+const allCaseStudies = await getCollection("case-studies");
+
+// Sort: featured first, then alphabetical
+const sorted = allCaseStudies.sort((a, b) => {
+  if (a.data.featured && !b.data.featured) return -1;
+  if (!a.data.featured && b.data.featured) return 1;
+  return a.data.client.localeCompare(b.data.client);
+});
+---
+
+<BaseLayout
+  title="Case Studies | Ecosoft"
+  description="Real-world Odoo and ERPNext implementations by Ecosoft — manufacturing, government, technology, and trading clients across Thailand."
+>
+
+  <!-- HERO -->
+  <section class="hero" style="padding-bottom:2rem;">
+    <div class="container">
+      <p class="eyebrow">Client Results</p>
+      <h1>Real implementations. Real outcomes.</h1>
+      <p class="hero-lead">
+        Every case study here represents a production system — running today, used daily by real teams.
+        We don't publish proof-of-concepts or pilot installations. These are long-term partnerships.
+      </p>
+    </div>
+  </section>
+
+  <!-- FILTER BAR -->
+  <section style="background: var(--surface); padding: 1.5rem 0;">
+    <div class="container">
+      <div class="case-study-filters" id="filters">
+        <button class="filter-btn filter-btn--active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="Manufacturing">Manufacturing</button>
+        <button class="filter-btn" data-filter="Government">Government</button>
+        <button class="filter-btn" data-filter="Technology">Technology</button>
+        <button class="filter-btn" data-filter="Trading">Trading</button>
+        <button class="filter-btn" data-filter="Odoo">Odoo</button>
+        <button class="filter-btn" data-filter="ERPNext">ERPNext</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- CASE STUDIES GRID -->
+  <section class="section">
+    <div class="container">
+      <div class="case-studies-grid" id="case-studies-grid">
+        {sorted.map((cs) => (
+          <div class="case-study-card" data-industry={cs.data.industry} data-solution={cs.data.solution}>
+            <div class="case-study-card-tags">
+              <span class="tag">{cs.data.solution}</span>
+              <span class="tag tag--industry">{cs.data.industry}</span>
+              {cs.data.featured && <span class="tag" style="background:var(--accent);color:#fff;">Featured</span>}
+            </div>
+            <h3>{cs.data.client}</h3>
+            <p style="font-size:0.875rem; color:var(--text-muted); margin-bottom:0.5rem;">{cs.data.location} · {cs.data.size}</p>
+            <p>{cs.data.outcome}</p>
+            <a href={`/case-studies/${cs.id}`} class="btn btn-outline" style="margin-top:1rem;">Read case study →</a>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- VIDEO TESTIMONIALS CTA -->
+  <section class="section" style="background: var(--surface);">
+    <div class="container" style="text-align:center;">
+      <h2>Prefer to hear it directly from clients?</h2>
+      <p class="section-lead">Watch video testimonials from the managing directors and executives who made the decision to implement with Ecosoft.</p>
+      <a href="/case-studies/video-testimonials" class="btn btn-primary" style="margin-top:1.5rem;">Watch Video Testimonials</a>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-strip">
+    <div class="container">
+      <h2>Ready to become a case study?</h2>
+      <p>Talk to us about your ERP challenge — we'll tell you honestly whether open-source is the right fit.</p>
+      <a href="/contact" class="btn btn-primary">Book a Free Consultation</a>
+    </div>
+  </section>
+
+</BaseLayout>
+
+<script>
+  var filterBtns = document.querySelectorAll('.filter-btn');
+  var cards = document.querySelectorAll('.case-study-card');
+
+  filterBtns.forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var filter = btn.getAttribute('data-filter');
+
+      // Update active button
+      filterBtns.forEach(function(b) { b.classList.remove('filter-btn--active'); });
+      btn.classList.add('filter-btn--active');
+
+      // Filter cards
+      cards.forEach(function(card) {
+        if (filter === 'all') {
+          card.style.display = '';
+        } else {
+          var industry = card.getAttribute('data-industry');
+          var solution = card.getAttribute('data-solution');
+          card.style.display = (industry === filter || solution === filter) ? '' : 'none';
+        }
+      });
+    });
+  });
+</script>

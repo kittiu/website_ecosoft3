@@ -1,0 +1,145 @@
+---
+import BaseLayout from "@layouts/BaseLayout.astro";
+---
+
+<BaseLayout
+  title="Contact Us | Ecosoft"
+  description="Start a conversation with Ecosoft. No obligation, no hard sell — just an honest discussion about your ERP goals."
+>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container">
+      <div style="max-width: 42rem;">
+        <p class="eyebrow">Get in Touch</p>
+        <h1>Let's start with a conversation. No obligation, no hard sell.</h1>
+        <p class="hero-lead">
+          Tell us about your business and current systems. Our team will respond within one
+          business day with a no-obligation assessment and next steps.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT FORM + INFO -->
+  <section class="section section-accent">
+    <div class="container contact-grid">
+      <div>
+        <p class="eyebrow eyebrow-light">What to Expect</p>
+        <h2>We respond within one business day</h2>
+        <p>
+          Submit the form and one of our senior consultants will reach out personally.
+          We don't pass enquiries to a sales team — you'll speak directly with the people
+          who will work on your project.
+        </p>
+        <ul class="contact-meta">
+          <li>Free initial consultation &amp; demo</li>
+          <li>ERP readiness &amp; ROI assessment</li>
+          <li>Migration &amp; implementation planning</li>
+          <li>Honest recommendation — Odoo or ERPNext</li>
+        </ul>
+        <div style="margin-top: 2rem; padding: 1.25rem 1.5rem; background: rgba(255,255,255,0.15); border-radius: 0.75rem; font-size: 0.9rem;">
+          <p style="margin: 0 0 0.4rem; font-weight: 700;">Alternative contact</p>
+          <p style="margin: 0 0 0.2rem;">📧 sales@ecosoft.co.th</p>
+          <p style="margin: 0 0 0.2rem;">📞 +66 81 841 7480</p>
+          <p style="margin: 0;">📍 459/132 Suksawat Rd., Ratchaburana, Bangkok 10140</p>
+        </div>
+      </div>
+      <form class="contact-form" id="contact-form" novalidate>
+        <div class="form-row">
+          <label for="contact-name">
+            Full Name <span aria-hidden="true">*</span>
+            <input id="contact-name" type="text" name="name" placeholder="Your full name" required />
+          </label>
+          <label for="contact-company">
+            Company <span aria-hidden="true">*</span>
+            <input id="contact-company" type="text" name="company" placeholder="Company name" required />
+          </label>
+        </div>
+        <div class="form-row">
+          <label for="contact-email">
+            Email <span aria-hidden="true">*</span>
+            <input id="contact-email" type="email" name="email" placeholder="you@company.com" required />
+          </label>
+          <label for="contact-phone">
+            Phone <span style="font-weight:400; color: var(--text-faint);">(optional)</span>
+            <input id="contact-phone" type="tel" name="phone" placeholder="+66 ..." />
+          </label>
+        </div>
+        <div class="form-row">
+          <label for="contact-size">
+            Company Size
+            <select id="contact-size" name="company_size" style="border-radius: 0.6rem; border: 1px solid var(--input-border); background: var(--input-bg); color: var(--text); padding: 0.55rem 0.7rem; font: inherit; width: 100%;">
+              <option value="">Select...</option>
+              <option>1 – 20 employees</option>
+              <option>20 – 100 employees</option>
+              <option>100 – 500 employees</option>
+              <option>500+ employees</option>
+            </select>
+          </label>
+          <label for="contact-industry">
+            Industry
+            <select id="contact-industry" name="industry" style="border-radius: 0.6rem; border: 1px solid var(--input-border); background: var(--input-bg); color: var(--text); padding: 0.55rem 0.7rem; font: inherit; width: 100%;">
+              <option value="">Select...</option>
+              <option>Manufacturing</option>
+              <option>Government / NGO</option>
+              <option>Trading &amp; Retail</option>
+              <option>Technology</option>
+              <option>Professional Services</option>
+              <option>Healthcare</option>
+              <option>Other</option>
+            </select>
+          </label>
+        </div>
+        <label for="contact-system">
+          Current System
+          <input id="contact-system" type="text" name="current_system" placeholder="e.g. SAP, spreadsheets, accounting software, nothing" />
+        </label>
+        <label for="contact-message">
+          What are you looking to achieve? <span aria-hidden="true">*</span>
+          <textarea
+            id="contact-message"
+            name="message"
+            rows="4"
+            placeholder="Describe your current pain points, goals, and timeline."
+            required
+          ></textarea>
+        </label>
+        <label for="contact-source">
+          How did you hear about us?
+          <select id="contact-source" name="source" style="border-radius: 0.6rem; border: 1px solid var(--input-border); background: var(--input-bg); color: var(--text); padding: 0.55rem 0.7rem; font: inherit; width: 100%;">
+            <option value="">Select...</option>
+            <option>Google search</option>
+            <option>LinkedIn</option>
+            <option>Referral from a colleague</option>
+            <option>Event or conference</option>
+            <option>Other</option>
+          </select>
+        </label>
+        <div id="form-success" class="form-success" hidden>
+          Thank you! We'll be in touch within one business day.
+        </div>
+        <button type="submit" class="btn btn-primary btn-full">
+          Send Enquiry
+        </button>
+        <p class="form-note">
+          Your information is kept strictly confidential and used only to respond to your enquiry.
+        </p>
+      </form>
+      <script is:inline>
+        (function () {
+          var form = document.getElementById('contact-form');
+          if (!form) return;
+          form.addEventListener('submit', function (e) {
+            e.preventDefault();
+            if (!form.checkValidity()) { form.reportValidity(); return; }
+            var success = document.getElementById('form-success');
+            if (success) success.removeAttribute('hidden');
+            form.reset();
+          });
+        })();
+      </script>
+    </div>
+  </section>
+
+</BaseLayout>

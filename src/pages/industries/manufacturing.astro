@@ -1,0 +1,121 @@
+---
+import BaseLayout from "@layouts/BaseLayout.astro";
+---
+
+<BaseLayout
+  title="ERP for Manufacturing — Odoo & ERPNext | Ecosoft"
+  description="Ecosoft implements Odoo and ERPNext for Thai manufacturers — BOM management, production scheduling, inventory, lot tracking, and Thai accounting compliance."
+>
+
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container">
+      <p class="eyebrow">Industry — Manufacturing</p>
+      <h1>ERP that understands how a factory actually works.</h1>
+      <p class="hero-lead">
+        Manufacturing ERP is not the same as accounting software with a production tab bolted on.
+        Ecosoft has implemented open-source ERP for manufacturers since 2013 — bicycle factories, plastics plants,
+        acoustic panel makers, and aerospace companies. We know the difference between a standard BOM
+        and a make-to-order configuration challenge.
+      </p>
+      <div class="hero-actions">
+        <a href="/contact" class="btn btn-primary">Talk to a Manufacturing ERP Specialist</a>
+        <a href="/case-studies" class="btn btn-outline">See Manufacturing Case Studies</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CHALLENGES -->
+  <section class="section" style="background: var(--surface);">
+    <div class="container">
+      <h2 style="text-align:center;">Manufacturing challenges we solve</h2>
+      <div class="cards-grid" style="grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap:1.5rem; margin-top:2.5rem;">
+        <div class="info-card">
+          <h4>Custom-configuration orders</h4>
+          <p>Made-to-order products where each sales order has unique specifications — requiring a custom BOM generated per order rather than a fixed standard BOM.</p>
+        </div>
+        <div class="info-card">
+          <h4>Multi-level BOMs</h4>
+          <p>Complex assemblies with sub-assemblies, phantom BOMs, and component variants. Standard ERP BOM management often collapses under real manufacturing complexity.</p>
+        </div>
+        <div class="info-card">
+          <h4>Production scheduling</h4>
+          <p>Moving from reactive scheduling (what's urgent today?) to proactive planning (what do we need to start now to meet delivery dates?).</p>
+        </div>
+        <div class="info-card">
+          <h4>Lot and serial tracking</h4>
+          <p>Full traceability from raw material receipt through production stages to finished goods delivery — required for ISO compliance, quality recalls, and customer audits.</p>
+        </div>
+        <div class="info-card">
+          <h4>Production costing</h4>
+          <p>Accurate job costing that captures material, labour, and overhead — not just the purchase cost of components. Real margin visibility per production run.</p>
+        </div>
+        <div class="info-card">
+          <h4>Thai accounting compliance</h4>
+          <p>VAT, withholding tax, Thai chart of accounts, and month-end close that works for a manufacturer — not just a trading company.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MODULES -->
+  <section class="section">
+    <div class="container">
+      <h2 style="text-align:center;">What a manufacturing implementation includes</h2>
+      <div class="cards-grid" style="grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap:1.5rem; margin-top:2.5rem;">
+        <div class="info-card"><h4>📦 BOM Management</h4><p>Multi-level bills of materials, BOM versioning, phantom assemblies, and by-product handling.</p></div>
+        <div class="info-card"><h4>🏭 Work Orders</h4><p>Production orders from sales or MRP, work centre assignment, operation routing, and real-time progress tracking.</p></div>
+        <div class="info-card"><h4>📊 MRP / Planning</h4><p>Material requirements planning that generates purchase and production recommendations from demand forecasts and current stock.</p></div>
+        <div class="info-card"><h4>🔢 Lot Tracking</h4><p>Lot and serial number tracking across goods receipt, production consumption, and finished goods delivery with full traceability.</p></div>
+        <div class="info-card"><h4>✅ Quality Control</h4><p>Inspection points at goods receipt, in-process, and final inspection — with non-conformance logging and corrective action tracking.</p></div>
+        <div class="info-card"><h4>🏪 Inventory</h4><p>Multi-warehouse stock management, reorder rules, cycle counting, and landed cost allocation.</p></div>
+        <div class="info-card"><h4>🛒 Purchasing</h4><p>Supplier management, RFQ-to-PO workflows, 3-way matching, and supplier evaluation.</p></div>
+        <div class="info-card"><h4>💰 Job Costing</h4><p>Real material, labour, and overhead cost capture per production order — with variance analysis against standard cost.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CASE STUDIES -->
+  <section class="section" style="background: var(--surface);">
+    <div class="container">
+      <h2 style="text-align:center;">Manufacturing clients</h2>
+      <div class="cards-grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap:1.5rem; margin-top:2rem;">
+        <div class="case-study-card">
+          <div class="case-study-card-tags">
+            <span class="tag">Odoo</span><span class="tag tag--industry">Manufacturing</span>
+          </div>
+          <h3>Raja Cycle</h3>
+          <p>Thailand's leading bicycle manufacturer. 10+ year partnership. Multi-company implementation covering Raja Cycle and Raja Engineering.</p>
+          <a href="/case-studies/raja-cycle" class="btn btn-outline">Read case study →</a>
+        </div>
+        <div class="case-study-card">
+          <div class="case-study-card-tags">
+            <span class="tag">ERPNext</span><span class="tag tag--industry">Manufacturing</span>
+          </div>
+          <h3>Lamphun Plastpack</h3>
+          <p>Plastic packaging manufacturer. Moved from accounting software to full ERP with lot traceability and production costing.</p>
+          <a href="/case-studies/lamphun-plastpack" class="btn btn-outline">Read case study →</a>
+        </div>
+        <div class="case-study-card">
+          <div class="case-study-card-tags">
+            <span class="tag">Odoo</span><span class="tag tag--industry">Manufacturing</span>
+          </div>
+          <h3>Square Panel Systems</h3>
+          <p>Custom acoustic panel manufacturer. Specification-to-BOM automation for made-to-order production.</p>
+          <a href="/case-studies/square-panel-systems" class="btn btn-outline">Read case study →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-strip">
+    <div class="container">
+      <h2>Ready to replace spreadsheets with a real manufacturing ERP?</h2>
+      <p>Talk to a consultant who has implemented ERP in actual factories — not just read the brochures.</p>
+      <a href="/contact" class="btn btn-primary">Book a Manufacturing ERP Consultation</a>
+    </div>
+  </section>
+
+</BaseLayout>

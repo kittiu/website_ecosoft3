@@ -1,0 +1,120 @@
+---
+import BaseLayout from "@layouts/BaseLayout.astro";
+
+const testimonials = [
+  {
+    name: "Nantachai Siripronprasarn",
+    title: "Director, Raja Cycle",
+    company: "Raja Cycle",
+    solution: "Odoo",
+    industry: "Manufacturing",
+    quote: "The system allows management to track production in real time. Since 2013 Ecosoft has been our trusted ERP partner. They understand our business as well as we do.",
+    caseStudySlug: "raja-cycle",
+  },
+  {
+    name: "Varunee Leeladhanawithaya",
+    title: "Vice President, NSTDA",
+    company: "NSTDA",
+    solution: "Odoo",
+    industry: "Government",
+    quote: "Odoo replaced our SAP system in 2018. The flexibility and cost savings have been remarkable for our organisation. We now have a system that we actually own and can evolve with our needs.",
+    caseStudySlug: "nstda",
+  },
+  {
+    name: "Supidit Boonnawattanam",
+    title: "CEO, EOS Orbit",
+    company: "EOS Orbit",
+    solution: "ERPNext",
+    industry: "Technology",
+    quote: "ERPNext has become our core infrastructure. It enables rapid decision-making that is critical for a space-tech startup. Ecosoft understood our unique project-based structure from day one.",
+    caseStudySlug: "eos-orbit",
+  },
+  {
+    name: "Athip Rungkirtikul",
+    title: "Managing Director, Lamphun Plastpack",
+    company: "Lamphun Plastpack",
+    solution: "ERPNext",
+    industry: "Manufacturing",
+    quote: "ERPNext is a perfect fit for us. Ecosoft's ability to customise without compromising the core system is what sets them apart. We now have full visibility from raw material to finished goods.",
+    caseStudySlug: "lamphun-plastpack",
+  },
+  {
+    name: "Somboon Thannyavun",
+    title: "Managing Director, Square Panel Systems",
+    company: "Square Panel Systems",
+    solution: "Odoo",
+    industry: "Manufacturing",
+    quote: "Moving from spreadsheets to Odoo with Ecosoft dramatically reduced errors and gave us full visibility across the business. We can quote customers faster, track orders in real time, and close month-end in days instead of weeks.",
+    caseStudySlug: "square-panel-systems",
+  },
+];
+---
+
+<BaseLayout
+  title="Client Video Testimonials | Ecosoft"
+  description="Hear directly from managing directors and executives at Raja Cycle, NSTDA, EOS Orbit, Lamphun Plastpack, and Square Panel Systems on their ERP experience with Ecosoft."
+>
+
+  <!-- HERO -->
+  <section class="hero" style="padding-bottom:2rem;">
+    <div class="container">
+      <p class="eyebrow">From Our Clients</p>
+      <h1>Hear it from the people who use the system every day.</h1>
+      <p class="hero-lead">
+        Managing directors, VPs, and CEOs who made the decision to implement open-source ERP with Ecosoft —
+        in their own words.
+      </p>
+      <div class="hero-actions">
+        <a href="/case-studies" class="btn btn-outline">Read written case studies</a>
+        <a href="/contact" class="btn btn-primary">Book a consultation</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="section">
+    <div class="container">
+      <div style="display: flex; flex-direction: column; gap: 3rem; max-width: 860px; margin: 0 auto;">
+        {testimonials.map((t) => (
+          <div class="info-card" style="padding: 2.5rem;">
+            <div style="display:flex; gap:0.75rem; flex-wrap:wrap; margin-bottom:1.5rem;">
+              <span class="tag">{t.solution}</span>
+              <span class="tag tag--industry">{t.industry}</span>
+            </div>
+
+            <!-- VIDEO PLACEHOLDER -->
+            <div style="background: var(--surface); border: 2px dashed var(--border); border-radius: 0.75rem; aspect-ratio: 16/9; display:flex; align-items:center; justify-content:center; margin-bottom:1.5rem;">
+              <div style="text-align:center; color:var(--text-muted);">
+                <div style="font-size:3rem; margin-bottom:0.5rem;">▶</div>
+                <p style="font-size:0.875rem; margin:0;">{t.name} — {t.company}</p>
+                <p style="font-size:0.75rem; margin:0.25rem 0 0; opacity:0.7;">Video coming soon</p>
+              </div>
+            </div>
+
+            <blockquote style="margin:0 0 1.5rem; border-left:3px solid var(--accent); padding-left:1.25rem;">
+              <p style="font-style:italic; line-height:1.7; margin:0;">"{t.quote}"</p>
+            </blockquote>
+
+            <div style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:1rem;">
+              <div>
+                <strong>{t.name}</strong><br />
+                <span style="font-size:0.875rem; color:var(--text-muted);">{t.title}</span>
+              </div>
+              <a href={`/case-studies/${t.caseStudySlug}`} class="btn btn-outline">Read full case study →</a>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-strip">
+    <div class="container">
+      <h2>Want to speak with a reference client?</h2>
+      <p>For qualified opportunities, we can arrange direct calls with clients who have agreed to speak with prospective customers.</p>
+      <a href="/contact" class="btn btn-primary">Contact Us</a>
+    </div>
+  </section>
+
+</BaseLayout>

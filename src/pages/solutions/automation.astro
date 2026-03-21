@@ -1,0 +1,115 @@
+---
+import BaseLayout from "@layouts/BaseLayout.astro";
+---
+
+<BaseLayout
+  title="Workflow Automation | Ecosoft"
+  description="Eliminate manual steps with open-source workflow automation — document routing, approval chains, system integrations, and scheduled jobs built into your ERP."
+>
+
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container">
+      <p class="eyebrow">Workflow Automation</p>
+      <h1>Stop doing manually what your system should handle automatically.</h1>
+      <p class="hero-lead">
+        Most ERP implementations stop at data entry. The biggest gains come after — when the system starts
+        routing documents, triggering approvals, notifying the right people, and connecting to external services
+        without anyone manually pushing buttons.
+      </p>
+      <div class="hero-actions">
+        <a href="/contact" class="btn btn-primary">Tell Us What You're Automating</a>
+        <a href="/book-demo" class="btn btn-outline">See a Live Automation Demo</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHAT WE AUTOMATE -->
+  <section class="section" style="background: var(--surface);">
+    <div class="container">
+      <h2 style="text-align:center;">What Ecosoft automates</h2>
+      <p class="section-lead" style="text-align:center;">Common automation patterns we've implemented across manufacturing, trading, and government clients.</p>
+      <div class="cards-grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap:1.5rem; margin-top:2.5rem;">
+
+        <div class="info-card">
+          <div class="info-card-icon">📋</div>
+          <h4>Approval workflows</h4>
+          <p>Purchase orders, expense claims, leave requests, and contract approvals routed automatically to the right approver based on value, department, and policy rules — with email notifications and deadline escalation.</p>
+        </div>
+
+        <div class="info-card">
+          <div class="info-card-icon">📄</div>
+          <h4>Document generation</h4>
+          <p>Quotations, purchase orders, invoices, delivery notes, and reports generated automatically from ERP data — formatted to your branding and sent to customers or suppliers without manual intervention.</p>
+        </div>
+
+        <div class="info-card">
+          <div class="info-card-icon">🔁</div>
+          <h4>System integrations</h4>
+          <p>Bidirectional data sync between your ERP and external systems — e-commerce platforms, logistics APIs, banking feeds, government portals, and custom line-of-business applications.</p>
+        </div>
+
+        <div class="info-card">
+          <div class="info-card-icon">⏱️</div>
+          <h4>Scheduled jobs</h4>
+          <p>Recurring inventory reconciliation, automated reorder triggers, scheduled financial close jobs, and periodic report generation — all running on schedule without manual initiation.</p>
+        </div>
+
+        <div class="info-card">
+          <div class="info-card-icon">🔔</div>
+          <h4>Alerts & notifications</h4>
+          <p>Stock level alerts, overdue invoice notifications, production milestone updates, and compliance deadline reminders — delivered via email, LINE, or internal ERP notification.</p>
+        </div>
+
+        <div class="info-card">
+          <div class="info-card-icon">🔄</div>
+          <h4>Data transformation</h4>
+          <p>Automated data cleaning, format conversion, and aggregation pipelines — turning raw ERP data into the structures your reporting, export, or integration layer needs.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW WE BUILD -->
+  <section class="section">
+    <div class="container">
+      <div style="max-width:760px; margin:0 auto;">
+        <h2>How we build automation</h2>
+        <p class="section-lead">
+          We use the native automation capabilities of Odoo and ERPNext where possible — these are maintained, tested,
+          and upgrade-safe. For requirements beyond what the platform provides natively, we build custom modules to OCA standards.
+        </p>
+        <div style="display:flex; flex-direction:column; gap:1.5rem; margin-top:2rem;">
+          <div class="info-card">
+            <h4>Odoo Automated Actions</h4>
+            <p>Odoo's built-in automation engine handles time-based and event-based triggers, field updates, email sending, and record creation — all configurable without code for common patterns.</p>
+          </div>
+          <div class="info-card">
+            <h4>ERPNext Server Scripts & Webhooks</h4>
+            <p>ERPNext's server script layer enables custom automation logic in Python, plus webhook delivery to external systems on document events — create, submit, cancel, amend.</p>
+          </div>
+          <div class="info-card">
+            <h4>Custom OCA-standard modules</h4>
+            <p>For complex automation requirements that exceed native capabilities, Ecosoft develops custom modules to OCA coding standards — maintainable, upgrade-safe, and documented.</p>
+          </div>
+          <div class="info-card">
+            <h4>n8n / Python integration bridges</h4>
+            <p>For multi-system orchestration, Ecosoft can deploy n8n (open-source automation) or custom Python services to bridge your ERP with external platforms and APIs.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-strip">
+    <div class="container">
+      <h2>What's the most painful manual process in your business today?</h2>
+      <p>Tell us and we'll show you how to automate it. Most common patterns can be implemented in days, not months.</p>
+      <a href="/contact" class="btn btn-primary">Let's Talk Automation</a>
+    </div>
+  </section>
+
+</BaseLayout>

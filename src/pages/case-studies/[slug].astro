@@ -1,0 +1,109 @@
+---
+import BaseLayout from "@layouts/BaseLayout.astro";
+import { getCollection, render } from "astro:content";
+
+export async function getStaticPaths() {
+  const caseStudies = await getCollection("case-studies");
+  return caseStudies.map((cs) => ({
+    params: { slug: cs.id },
+    props: { cs },
+  }));
+}
+
+const { cs } = Astro.props;
+const { Content } = await render(cs);
+---
+
+<BaseLayout
+  title={`${cs.data.client} — Case Study | Ecosoft`}
+  description={cs.data.outcome}
+>
+
+  <!-- BREADCRUMB -->
+  <section style="background: var(--surface); padding: 1rem 0; border-bottom: 1px solid var(--border);">
+    <div class="container">
+      <nav style="font-size:0.875rem; color:var(--text-muted);">
+        <a href="/" style="color:var(--text-muted);">Home</a>
+        <span style="margin:0 0.5rem;">›</span>
+        <a href="/case-studies" style="color:var(--text-muted);">Case Studies</a>
+        <span style="margin:0 0.5rem;">›</span>
+        <span>{cs.data.client}</span>
+      </nav>
+    </div>
+  </section>
+
+  <!-- CASE STUDY HEADER -->
+  <section class="hero" style="padding-bottom:2rem;">
+    <div class="container">
+      <div style="display:flex; gap:0.75rem; flex-wrap:wrap; margin-bottom:1.5rem;">
+        <span class="tag">{cs.data.solution}</span>
+        <span class="tag tag--industry">{cs.data.industry}</span>
+        {cs.data.featured && <span class="tag" style="background:var(--accent);color:#fff;">Featured</span>}
+      </div>
+      <h1>{cs.data.client}</h1>
+      <div style="display:flex; gap:2rem; flex-wrap:wrap; margin-top:1rem; color:var(--text-muted); font-size:0.875rem;">
+        <span>📍 {cs.data.location}</span>
+        <span>👥 {cs.data.size}</span>
+        <span>🛠️ {cs.data.solution}</span>
+        <span>🏭 {cs.data.industry}</span>
+      </div>
+      <p style="margin-top:1.5rem; font-size:1.125rem; max-width:760px;">{cs.data.outcome}</p>
+    </div>
+  </section>
+
+  <!-- QUOTE -->
+  <section style="background: var(--accent); padding: 3rem 0;">
+    <div class="container">
+      <blockquote style="max-width:800px; margin:0 auto; text-align:center;">
+        <p style="font-size:1.25rem; font-style:italic; color:#fff; line-height:1.7; margin:0;">"{cs.data.quote}"</p>
+        <footer style="margin-top:1.5rem; color:rgba(255,255,255,0.85);">
+          <strong style="color:#fff;">{cs.data.quoteAuthor}</strong><br />
+          {cs.data.quoteTitle}
+        </footer>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- CASE STUDY BODY -->
+  <section class="section">
+    <div class="container">
+      <div style="max-width:760px; margin:0 auto;" class="prose">
+        <Content />
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-strip">
+    <div class="container">
+      <h2>Facing similar challenges?</h2>
+      <p>Talk to the team that built this system — we'll give you an honest assessment of whether open-source ERP is the right fit for you.</p>
+      <div style="display:flex; gap:1rem; justify-content:center; flex-wrap:wrap;">
+        <a href="/contact" class="btn btn-primary">Book a Free Consultation</a>
+        <a href="/case-studies" class="btn btn-white">More Case Studies</a>
+      </div>
+    </div>
+  </section>
+
+</BaseLayout>
+
+<style>
+  .prose h2 {
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  .prose p {
+    margin-bottom: 1rem;
+    line-height: 1.7;
+  }
+  .prose ul {
+    margin: 1rem 0 1.5rem 1.5rem;
+  }
+  .prose li {
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+  }
+  .prose strong {
+    color: var(--text);
+  }
+</style>

@@ -1,0 +1,202 @@
+---
+import BaseLayout from "@layouts/BaseLayout.astro";
+
+const openings = [
+  {
+    title: "ERP Business Analyst",
+    team: "Consulting",
+    count: 5,
+    type: "Full-time",
+    level: "Mid–Senior",
+    week: "Working with clients to map business processes, configure Odoo or ERPNext, lead UAT sessions, and deliver user training. Projects span manufacturing, trading, and government sectors.",
+    looking: [
+      "3+ years experience in ERP consulting or a related business analyst role",
+      "Knowledge of accounting, supply chain, or procurement operations",
+      "Strong communication skills — you will present to C-level stakeholders",
+      "Interest in open-source software and willingness to contribute",
+      "Thai fluency required; English business level preferred",
+    ],
+    nice: "Experience with Odoo or ERPNext. CPA or accounting background. Government procurement knowledge.",
+  },
+  {
+    title: "Software Developer — Odoo",
+    team: "Engineering",
+    count: 1,
+    type: "Full-time",
+    level: "Mid–Senior",
+    week: "Developing custom Odoo modules to OCA standards, reviewing and contributing to OCA repositories, supporting client implementations with technical solutions, and maintaining our Thai localisation suite.",
+    looking: [
+      "2+ years Python development experience",
+      "Understanding of Odoo module architecture (models, views, wizards, reports)",
+      "Commitment to OCA code quality standards",
+      "Familiarity with Git and code review processes",
+    ],
+    nice: "Existing OCA contributions. Knowledge of Thai accounting or tax regulations. Experience with Odoo 16/17.",
+  },
+  {
+    title: "Software Developer — ERPNext",
+    team: "Engineering",
+    count: 1,
+    type: "Full-time",
+    level: "Mid–Senior",
+    week: "Building custom Frappe apps and ERPNext extensions, contributing to upstream ERPNext and Frappe Framework, and supporting complex ERPNext implementations in manufacturing and technology sectors.",
+    looking: [
+      "2+ years Python development experience",
+      "Familiarity with Frappe Framework and ERPNext architecture",
+      "Experience with JavaScript (Frappe UI components)",
+      "Comfortable contributing to public open-source repositories",
+    ],
+    nice: "Existing Frappe/ERPNext contributions on GitHub. Experience with manufacturing ERP workflows. Knowledge of Thai payroll.",
+  },
+];
+---
+
+<BaseLayout
+  title="Careers | Why Ecosoft"
+  description="Join the team building the future of open-source ERP in Thailand. Current openings: ERP Business Analyst (5), Software Developer — Odoo, Software Developer — ERPNext."
+>
+
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow">Careers at Ecosoft</p>
+        <h1>Join the team that's building the future of open-source ERP in Thailand.</h1>
+        <p class="hero-lead">
+          We are looking for people who care deeply about quality, enjoy solving real business
+          problems, and believe in the open-source way. Ecosoft offers a rare environment: small
+          enough to have genuine impact on every project, large enough to have built a 10-year
+          track record with some of Thailand's most interesting organisations.
+        </p>
+        <div class="hero-metas">
+          <div>
+            <p class="metric-number">{openings.reduce((sum, j) => sum + j.count, 0)}</p>
+            <p class="metric-label">open positions</p>
+          </div>
+          <div>
+            <p class="metric-number">Bangkok</p>
+            <p class="metric-label">location</p>
+          </div>
+          <div>
+            <p class="metric-number">Hybrid</p>
+            <p class="metric-label">work style</p>
+          </div>
+        </div>
+      </div>
+      <div class="hero-card">
+        <div class="hero-card-main">
+          <h2>Why join Ecosoft</h2>
+          <ul>
+            <li>Work on real business problems — not toy projects</li>
+            <li>Contribute to global open-source repositories</li>
+            <li>Learn from Thailand's most experienced ERP team</li>
+            <li>Client diversity: manufacturing, government, space tech</li>
+            <li>Small team, genuine impact on every project</li>
+          </ul>
+        </div>
+        <div class="hero-card-badges">
+          <span>Open Source Culture</span>
+          <span>Real-World ERP</span>
+          <span>Bangkok Hybrid</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VALUES -->
+  <section class="section section-alt">
+    <div class="container">
+      <header class="section-header">
+        <p class="eyebrow">Our Culture</p>
+        <h2>What we value — and what we don't</h2>
+      </header>
+      <div class="values-grid">
+        <div class="value-card">
+          <div class="value-card-icon">🎯</div>
+          <h3>Quality over speed</h3>
+          <p>We build things right. If a module doesn't pass OCA review, it doesn't ship. We'd rather take longer and deliver something our clients can maintain for 10 years.</p>
+        </div>
+        <div class="value-card">
+          <div class="value-card-icon">🔓</div>
+          <h3>Open source as a philosophy</h3>
+          <p>We don't just use open source — we contribute to it. If you join Ecosoft, you'll be encouraged to contribute publicly and build a reputation in the global community.</p>
+        </div>
+        <div class="value-card">
+          <div class="value-card-icon">🤝</div>
+          <h3>Business understanding first</h3>
+          <p>We hire consultants who understand the business problems they're solving. Technical skill matters; business judgment matters more.</p>
+        </div>
+        <div class="value-card">
+          <div class="value-card-icon">📈</div>
+          <h3>Long-term thinking</h3>
+          <p>We build relationships that last decades. That applies to our clients and to our team. Low turnover is a sign of something working.</p>
+        </div>
+        <div class="value-card">
+          <div class="value-card-icon">🌱</div>
+          <h3>Continuous learning</h3>
+          <p>ERP platforms evolve constantly. We invest in our team's development through conference attendance, community involvement, and learning time.</p>
+        </div>
+        <div class="value-card">
+          <div class="value-card-icon">🚫</div>
+          <h3>No politics, no bullshit</h3>
+          <p>Small teams work better when everyone is direct and honest. We don't have time for corporate theatre. Results and craftsmanship are what matter.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- JOB LISTINGS -->
+  <section class="section">
+    <div class="container">
+      <header class="section-header">
+        <p class="eyebrow">Open Positions</p>
+        <h2>Current openings</h2>
+        <p>All positions are based in Bangkok with hybrid working. Apply by emailing your CV and a short paragraph about why you want to work in open-source ERP.</p>
+      </header>
+      <div class="job-list">
+        {openings.map((job) => (
+          <article class="job-card">
+            <div>
+              <div class="job-card-meta">
+                <span class="job-tag">{job.team}</span>
+                <span class="job-tag">{job.level}</span>
+                <span class="job-tag">{job.type}</span>
+                {job.count > 1 && <span class="job-tag">{job.count} positions</span>}
+              </div>
+              <h3>{job.title}</h3>
+              <p style="margin-bottom: 0.75rem;">{job.week}</p>
+              <p style="font-size: 0.85rem; color: var(--text-faint); margin: 0;">
+                <strong style="color: var(--text-subtle);">We're looking for:</strong>{" "}
+                {job.looking.slice(0, 2).join(" · ")}
+              </p>
+            </div>
+            <div class="job-card-cta">
+              <a href={`/contact?role=${encodeURIComponent(job.title)}`} class="btn btn-primary" style="font-size: 0.82rem; padding-inline: 1rem; padding-block: 0.55rem; white-space: nowrap;">
+                Apply Now
+              </a>
+              <p style="font-size: 0.75rem; color: var(--text-faint); margin: 0; text-align: right;">careers@ecosoft.co.th</p>
+            </div>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- APPLY CTA -->
+  <section class="cta-strip">
+    <div class="container cta-strip-grid">
+      <div class="cta-strip-item">
+        <h3>Don't see your role listed?</h3>
+        <p>We hire for exceptional people when we find them. Send your CV and tell us what you'd bring to Ecosoft.</p>
+        <a href="mailto:careers@ecosoft.co.th" class="btn btn-white">Send a Speculative Application</a>
+      </div>
+      <div class="cta-strip-item">
+        <h3>Want to know more before applying?</h3>
+        <p>Read about the team you'd be joining and the work we do.</p>
+        <a href="/why-ecosoft/our-team" class="btn btn-teal-outline">Meet the Team →</a>
+      </div>
+    </div>
+  </section>
+
+</BaseLayout>

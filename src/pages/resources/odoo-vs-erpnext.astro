@@ -1,0 +1,196 @@
+---
+import BaseLayout from "@layouts/BaseLayout.astro";
+---
+
+<BaseLayout
+  title="Odoo vs ERPNext — Which Is Right for Your Business? | Ecosoft"
+  description="An honest comparison of Odoo Community Edition and ERPNext from a consultancy that implements both — covering modules, customisation, cost, and which suits different business types."
+>
+
+
+  <!-- HERO -->
+  <section class="hero" style="padding-bottom:2rem;">
+    <div class="container">
+      <p class="eyebrow">Resources</p>
+      <h1>Odoo vs ERPNext — an honest comparison from a firm that implements both.</h1>
+      <p class="hero-lead">
+        Most comparisons are written by companies that sell only one platform. We implement both.
+        This is our honest assessment of when each platform is the right choice — and when it isn't.
+      </p>
+    </div>
+  </section>
+
+  <!-- SUMMARY VERDICT -->
+  <section class="section" style="background: var(--surface);">
+    <div class="container">
+      <div style="display:grid; grid-template-columns: 1fr 1fr; gap:2rem; max-width:900px; margin:0 auto;">
+        <div class="info-card" style="border-top: 4px solid #f97316; padding:2rem;">
+          <h3 style="margin-top:0;">Choose Odoo if…</h3>
+          <ul style="list-style:none; padding:0; display:flex; flex-direction:column; gap:0.5rem;">
+            <li>✓ You're a manufacturer with complex BOM requirements</li>
+            <li>✓ You have a large sales team needing CRM + sales management</li>
+            <li>✓ You need a wide range of OCA community modules</li>
+            <li>✓ You want maximum flexibility for future customisation</li>
+            <li>✓ You're a government agency needing Thai public sector compliance</li>
+          </ul>
+        </div>
+        <div class="info-card" style="border-top: 4px solid #3b82f6; padding:2rem;">
+          <h3 style="margin-top:0;">Choose ERPNext if…</h3>
+          <ul style="list-style:none; padding:0; display:flex; flex-direction:column; gap:0.5rem;">
+            <li>✓ You're a project-based business (services, consulting, aerospace)</li>
+            <li>✓ Your team is technically sophisticated and values developer tooling</li>
+            <li>✓ You want Python-native customisation via server scripts</li>
+            <li>✓ You need strong HR, payroll, and leave management out of the box</li>
+            <li>✓ You want a fully integrated helpdesk and CRM without extra modules</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMPARISON TABLE -->
+  <section class="section">
+    <div class="container">
+      <h2 style="text-align:center;">Feature comparison</h2>
+      <div style="overflow-x:auto; margin-top:2rem;">
+        <table class="pricing-table" style="width:100%;">
+          <thead>
+            <tr>
+              <th>Feature / Criterion</th>
+              <th>Odoo CE + OCA</th>
+              <th>ERPNext</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Licence</td>
+              <td>LGPL (free, open-source)</td>
+              <td>GPL / MIT (free, open-source)</td>
+            </tr>
+            <tr>
+              <td>Per-user cost</td>
+              <td>None</td>
+              <td>None</td>
+            </tr>
+            <tr>
+              <td>Manufacturing / BOM</td>
+              <td>✓ Excellent — OCA adds depth</td>
+              <td>✓ Good — strong for project-based</td>
+            </tr>
+            <tr>
+              <td>Project management</td>
+              <td>Basic</td>
+              <td>✓ Strong — native project billing</td>
+            </tr>
+            <tr>
+              <td>CRM & Sales</td>
+              <td>✓ Excellent</td>
+              <td>Good</td>
+            </tr>
+            <tr>
+              <td>HR & Payroll</td>
+              <td>Good (OCA modules)</td>
+              <td>✓ Strong — built-in payroll engine</td>
+            </tr>
+            <tr>
+              <td>Accounting</td>
+              <td>✓ Excellent — Thai OCA modules</td>
+              <td>✓ Good — Thai compliance available</td>
+            </tr>
+            <tr>
+              <td>Government ERP modules</td>
+              <td>✓ Available (Ecosoft-built)</td>
+              <td>Not available</td>
+            </tr>
+            <tr>
+              <td>Developer experience</td>
+              <td>Python / XML / OWL</td>
+              <td>✓ Python / Jinja — more accessible</td>
+            </tr>
+            <tr>
+              <td>REST API</td>
+              <td>✓ Comprehensive</td>
+              <td>✓ Comprehensive + webhooks</td>
+            </tr>
+            <tr>
+              <td>Community size</td>
+              <td>✓ Larger — OCA alone has 3,500+ modules</td>
+              <td>Smaller but active</td>
+            </tr>
+            <tr>
+              <td>Module upgrade path</td>
+              <td>Annual major versions</td>
+              <td>Annual major versions</td>
+            </tr>
+            <tr>
+              <td>Best for industries</td>
+              <td>Manufacturing, Trading, Government</td>
+              <td>Technology, Services, Healthcare</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="pricing-note" style="text-align:center; margin-top:1.5rem;">
+        This comparison covers Odoo Community Edition + OCA modules and ERPNext. Odoo Enterprise is a separate, paid product — Ecosoft implements Community Edition only.
+      </p>
+    </div>
+  </section>
+
+  <!-- DEEPER DIVE -->
+  <section class="section" style="background: var(--surface);">
+    <div class="container">
+      <div style="max-width:760px; margin:0 auto; display:flex; flex-direction:column; gap:2rem;">
+        <div>
+          <h2>The module ecosystem difference</h2>
+          <p>
+            Odoo's OCA (Odoo Community Association) maintains over 3,500 open-source modules across hundreds of repositories.
+            This is a significant advantage for complex or unusual requirements — there is likely an existing OCA module
+            for most things, reducing custom development cost.
+          </p>
+          <p style="margin-top:1rem;">
+            ERPNext's community app ecosystem is smaller but growing. The advantage of ERPNext is that the core system
+            covers more ground natively — HR, payroll, project management, and helpdesk are all built in without needing
+            additional modules.
+          </p>
+        </div>
+
+        <div>
+          <h2>Customisation philosophy</h2>
+          <p>
+            Both platforms support custom development — but the experience differs. Odoo customisation uses Python,
+            XML/QWeb, and OWL JavaScript, following the Odoo module inheritance pattern.
+            ERPNext customisation uses Python, Jinja templates, and Frappe's DocType system,
+            with server scripts providing a more accessible customisation layer for simpler cases.
+          </p>
+          <p style="margin-top:1rem;">
+            For sophisticated technical teams, both are viable. For businesses without in-house developers who want
+            to make lightweight changes without engaging a consultant, ERPNext's server script approach is more accessible.
+          </p>
+        </div>
+
+        <div>
+          <h2>Thai compliance</h2>
+          <p>
+            Both platforms have Thai accounting compliance available. For Odoo, the Thai localisation is maintained
+            by the OCA Thai community, and Ecosoft has contributed directly. For ERPNext, Thai compliance is available
+            through community and Ecosoft-maintained modules.
+          </p>
+          <p style="margin-top:1rem;">
+            For government-specific compliance (budget encumbrance, government procurement), Odoo with Ecosoft's
+            custom modules is the only viable open-source option in Thailand — ERPNext government modules don't exist.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-strip">
+    <div class="container">
+      <h2>Still not sure which platform is right for you?</h2>
+      <p>Tell us about your business and requirements. We'll give you a direct recommendation — not a sales pitch for the platform we prefer to implement.</p>
+      <a href="/contact" class="btn btn-primary">Get a Platform Recommendation</a>
+    </div>
+  </section>
+
+</BaseLayout>

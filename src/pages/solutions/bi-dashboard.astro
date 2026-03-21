@@ -1,0 +1,173 @@
+---
+import BaseLayout from "@layouts/BaseLayout.astro";
+---
+
+<BaseLayout
+  title="BI Dashboard — Apache Superset | Ecosoft"
+  description="Real-time analytics and BI dashboards built on Apache Superset, connected to your Odoo or ERPNext data. No per-seat licence. Full data ownership."
+>
+
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container">
+      <p class="eyebrow">BI Dashboard</p>
+      <h1>Real-time analytics on your ERP data. No Tableau licence. No Power BI subscription.</h1>
+      <p class="hero-lead">
+        Apache Superset is the world's leading open-source BI platform — used by Airbnb, Lyft, Twitter, and thousands
+        of organisations globally. Ecosoft connects Superset directly to your Odoo or ERPNext database,
+        giving management real-time visibility without adding another vendor invoice.
+      </p>
+      <div class="hero-actions">
+        <a href="/contact" class="btn btn-primary">Request a BI Demo</a>
+        <a href="/book-demo" class="btn btn-outline">Book a 45-min walkthrough</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROBLEM -->
+  <section class="section" style="background: var(--surface);">
+    <div class="container">
+      <div style="max-width:760px; margin:0 auto; text-align:center;">
+        <h2>Your ERP has the data. You just can't see it.</h2>
+        <p class="section-lead">
+          Every ERP system stores rich operational data — sales trends, production efficiency, cash flow, supplier performance.
+          But most management teams still rely on weekly Excel reports assembled manually.
+          The data exists. The visibility doesn't.
+        </p>
+      </div>
+      <div class="cards-grid" style="grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap:1.5rem; margin-top:2.5rem;">
+        <div class="info-card">
+          <h4>Weekly reports are already stale</h4>
+          <p>By the time a report reaches management, the week it covers is gone. Decisions are made on outdated data.</p>
+        </div>
+        <div class="info-card">
+          <h4>Excel doesn't scale with the business</h4>
+          <p>Manual report assembly is a tax on your finance and operations team — time that compounds as the business grows.</p>
+        </div>
+        <div class="info-card">
+          <h4>BI licences are expensive</h4>
+          <p>Tableau, Power BI, and Looker all charge per user per month. For a 50-person business, that adds up fast.</p>
+        </div>
+        <div class="info-card">
+          <h4>Disconnected views miss the full picture</h4>
+          <p>Sales data in one report, production in another, cashflow in a third. No unified view of what's actually happening.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHAT WE DELIVER -->
+  <section class="section">
+    <div class="container">
+      <h2 style="text-align:center;">What Ecosoft delivers</h2>
+      <p class="section-lead" style="text-align:center;">A production-grade Superset installation, connected to your ERP, with pre-built dashboards for your business context.</p>
+      <div class="cards-grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap:1.5rem; margin-top:2.5rem;">
+
+        <div class="info-card">
+          <div class="info-card-icon">🔌</div>
+          <h4>Direct ERP connection</h4>
+          <p>Superset connects directly to your Odoo or ERPNext database via read-only queries — no data warehouse required for most SME deployments.</p>
+        </div>
+
+        <div class="info-card">
+          <div class="info-card-icon">📈</div>
+          <h4>Pre-built dashboard library</h4>
+          <p>Sales performance, production efficiency, inventory turns, cash flow — Ecosoft delivers a library of dashboards aligned to your industry context.</p>
+        </div>
+
+        <div class="info-card">
+          <div class="info-card-icon">🎛️</div>
+          <h4>Custom dashboard development</h4>
+          <p>Business-specific KPIs and drill-down views built to your specification — using Superset's chart builder or direct SQL/Python for complex metrics.</p>
+        </div>
+
+        <div class="info-card">
+          <div class="info-card-icon">👤</div>
+          <h4>Role-based access</h4>
+          <p>Management sees full P&L. Sales team sees pipeline. Production sees throughput. Finance sees cash position. Each role gets the view they need.</p>
+        </div>
+
+        <div class="info-card">
+          <div class="info-card-icon">📧</div>
+          <h4>Scheduled report delivery</h4>
+          <p>Key dashboards emailed to management on schedule — daily, weekly, monthly. Superset natively handles report scheduling and PDF export.</p>
+        </div>
+
+        <div class="info-card">
+          <div class="info-card-icon">🔐</div>
+          <h4>Hosted on your infrastructure</h4>
+          <p>Superset runs on your server — your data never leaves your environment. No SaaS vendor holds your business intelligence.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SUPERSET VS ALTERNATIVES -->
+  <section class="section" style="background: var(--surface);">
+    <div class="container">
+      <h2 style="text-align:center;">Apache Superset vs commercial BI tools</h2>
+      <div style="overflow-x:auto; margin-top:2rem;">
+        <table class="pricing-table" style="width:100%;">
+          <thead>
+            <tr>
+              <th></th>
+              <th>Apache Superset</th>
+              <th>Tableau</th>
+              <th>Power BI</th>
+              <th>Looker</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Licence cost</td>
+              <td>Free (open-source)</td>
+              <td>~$70/user/month</td>
+              <td>~$10/user/month</td>
+              <td>~$3,000+/month</td>
+            </tr>
+            <tr>
+              <td>Data stays on your server</td>
+              <td>✓ Yes</td>
+              <td>Cloud option only</td>
+              <td>Cloud-first</td>
+              <td>Cloud-only</td>
+            </tr>
+            <tr>
+              <td>Direct DB connection</td>
+              <td>✓ Yes</td>
+              <td>✓ Yes</td>
+              <td>Limited</td>
+              <td>✓ Yes</td>
+            </tr>
+            <tr>
+              <td>SQL support</td>
+              <td>✓ Full SQL</td>
+              <td>Limited</td>
+              <td>DAX only</td>
+              <td>LookML only</td>
+            </tr>
+            <tr>
+              <td>Source code access</td>
+              <td>✓ Full</td>
+              <td>None</td>
+              <td>None</td>
+              <td>None</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-strip">
+    <div class="container">
+      <h2>See what your ERP data actually looks like in a real dashboard</h2>
+      <p>Book a 45-minute demo and we'll show you a live Superset installation connected to Odoo data.</p>
+      <a href="/book-demo" class="btn btn-primary">Book a BI Dashboard Demo</a>
+    </div>
+  </section>
+
+</BaseLayout>

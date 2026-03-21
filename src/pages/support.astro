@@ -1,0 +1,183 @@
+---
+import BaseLayout from "@layouts/BaseLayout.astro";
+
+const supportPlans = [
+  {
+    name: "Essential",
+    description: "For stable implementations needing occasional assistance.",
+    includes: [
+      "Email support (business hours)",
+      "Bug investigation and fixes",
+      "Minor configuration changes",
+      "System health monitoring",
+      "Annual version review",
+    ],
+    responseTime: "2 business days",
+    suitable: "Live systems with low change volume",
+  },
+  {
+    name: "Standard",
+    description: "For actively evolving systems with regular change requests.",
+    includes: [
+      "Email + phone support (business hours)",
+      "Bug investigation and fixes",
+      "Configuration changes and module updates",
+      "Scheduled development hours per month",
+      "Quarterly review calls",
+      "System health monitoring",
+    ],
+    responseTime: "1 business day",
+    suitable: "Growing businesses adding modules or users",
+    highlighted: true,
+  },
+  {
+    name: "Priority",
+    description: "For mission-critical systems where downtime is not an option.",
+    includes: [
+      "Email + phone + LINE support",
+      "Extended hours coverage",
+      "Same-day response for critical issues",
+      "Monthly development hours included",
+      "Monthly review calls",
+      "Proactive monitoring and alerts",
+      "Dedicated account consultant",
+    ],
+    responseTime: "Same day (critical issues: 4 hours)",
+    suitable: "Enterprise and government installations",
+  },
+];
+---
+
+<BaseLayout
+  title="Support Plans | Ecosoft"
+  description="Annual support contracts for Odoo and ERPNext implementations — bug fixes, configuration changes, system monitoring, and ongoing development."
+>
+
+  <!-- HERO -->
+  <section class="hero" style="padding-bottom:2rem;">
+    <div class="container">
+      <p class="eyebrow">After Go-Live</p>
+      <h1>ERP systems need tending. We handle that.</h1>
+      <p class="hero-lead">
+        An ERP implementation is not a one-time event. As your business evolves, your system needs to evolve with it.
+        Ecosoft's support contracts keep your system running cleanly — and ensure you have experienced help when you need it.
+      </p>
+      <div class="hero-actions">
+        <a href="/contact" class="btn btn-primary">Talk to Us About Support</a>
+        <a href="/solutions/pricing" class="btn btn-outline">View Pricing</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SUPPORT PLANS -->
+  <section class="section">
+    <div class="container">
+      <h2 style="text-align:center;">Support plans</h2>
+      <p class="section-lead" style="text-align:center;">Annual contracts covering the full range of post-implementation support needs.</p>
+      <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap:1.5rem; margin-top:2.5rem;">
+        {supportPlans.map((plan) => (
+          <div class="info-card" style={`padding:2rem; ${plan.highlighted ? 'border:2px solid var(--accent);' : ''}`}>
+            {plan.highlighted && (
+              <div style="text-align:center; margin-bottom:1rem;">
+                <span class="tag" style="background:var(--accent);color:#fff;">Most Popular</span>
+              </div>
+            )}
+            <h3 style="margin-top:0;">{plan.name}</h3>
+            <p style="color:var(--text-muted); font-size:0.875rem; margin-bottom:1.5rem;">{plan.description}</p>
+            <div style="font-size:0.8125rem; color:var(--text-muted); margin-bottom:1.25rem;">
+              <strong style="color:var(--text);">Response time:</strong> {plan.responseTime}
+            </div>
+            <ul style="list-style:none; padding:0; margin:0 0 1.5rem; display:flex; flex-direction:column; gap:0.5rem;">
+              {plan.includes.map((item) => (
+                <li style="font-size:0.875rem; display:flex; gap:0.5rem; align-items:flex-start;">
+                  <span style="color:var(--accent); flex-shrink:0;">✓</span>
+                  <span>{item}</span>
+                </li>
+              ))}
+            </ul>
+            <p style="font-size:0.8125rem; color:var(--text-muted); margin-bottom:1.25rem;">
+              <strong style="color:var(--text);">Best for:</strong> {plan.suitable}
+            </p>
+            <a href="/contact" class="btn btn-outline" style="width:100%; text-align:center; display:block;">Get a quote →</a>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- WHAT SUPPORT COVERS -->
+  <section class="section" style="background: var(--surface);">
+    <div class="container">
+      <h2 style="text-align:center;">What support actually means</h2>
+      <p class="section-lead" style="text-align:center;">A clear description of what's in scope — and what requires a separate project.</p>
+      <div class="cards-grid" style="grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap:1.5rem; margin-top:2.5rem;">
+        <div class="info-card">
+          <h4>✓ Covered by support</h4>
+          <ul style="list-style:none; padding:0; display:flex; flex-direction:column; gap:0.4rem; font-size:0.875rem;">
+            <li>Bug fixes — system not working as configured</li>
+            <li>Configuration changes — adjusting existing settings</li>
+            <li>User access management</li>
+            <li>Minor report modifications</li>
+            <li>System monitoring and alerts</li>
+            <li>Guidance on how to use existing functionality</li>
+          </ul>
+        </div>
+        <div class="info-card">
+          <h4>⚡ Handled via development hours</h4>
+          <ul style="list-style:none; padding:0; display:flex; flex-direction:column; gap:0.4rem; font-size:0.875rem;">
+            <li>New module implementation</li>
+            <li>Custom module development</li>
+            <li>Major workflow changes</li>
+            <li>New report or dashboard development</li>
+            <li>Third-party integrations</li>
+            <li>Version upgrades</li>
+          </ul>
+        </div>
+        <div class="info-card">
+          <h4>📋 Proactive (Standard / Priority)</h4>
+          <ul style="list-style:none; padding:0; display:flex; flex-direction:column; gap:0.4rem; font-size:0.875rem;">
+            <li>Scheduled review calls</li>
+            <li>System performance checks</li>
+            <li>New release notes and impact assessment</li>
+            <li>User feedback gathering</li>
+            <li>Roadmap planning</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CURRENT CLIENTS -->
+  <section class="section">
+    <div class="container" style="text-align:center;">
+      <h2>Long-term partnerships</h2>
+      <p class="section-lead" style="max-width:640px; margin:0 auto;">
+        Ecosoft's oldest client relationship is over 10 years. This isn't accidental — it reflects a support model built around keeping systems healthy, not generating ticket volume.
+      </p>
+      <div style="display:flex; gap:2rem; justify-content:center; flex-wrap:wrap; margin-top:2.5rem;">
+        <div style="text-align:center;">
+          <div style="font-size:2.5rem; font-weight:700; color:var(--accent);">10+</div>
+          <div style="font-size:0.875rem; color:var(--text-muted);">Years, Raja Cycle</div>
+        </div>
+        <div style="text-align:center;">
+          <div style="font-size:2.5rem; font-weight:700; color:var(--accent);">7+</div>
+          <div style="font-size:0.875rem; color:var(--text-muted);">Years, NSTDA</div>
+        </div>
+        <div style="text-align:center;">
+          <div style="font-size:2.5rem; font-weight:700; color:var(--accent);">10+</div>
+          <div style="font-size:0.875rem; color:var(--text-muted);">Years, Square Panel Systems</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-strip">
+    <div class="container">
+      <h2>Need support for an existing Odoo or ERPNext installation?</h2>
+      <p>Talk to us — even if we didn't implement your system originally, we can take over support and stabilise it.</p>
+      <a href="/contact" class="btn btn-primary">Get a Support Quote</a>
+    </div>
+  </section>
+
+</BaseLayout>

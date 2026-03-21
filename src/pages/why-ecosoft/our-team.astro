@@ -1,0 +1,146 @@
+---
+import BaseLayout from "@layouts/BaseLayout.astro";
+
+const team = [
+  {
+    icon: "👨‍💼",
+    name: "Kitti Upariphutthangkul",
+    role: "Founder & Lead Architect",
+    bio: "10+ years building open-source ERP in Thailand. OCA member since 2015. Deep expertise in Thai accounting, supply chain, and Odoo architecture. Active contributor to OCA Thai localisation.",
+    tags: ["Odoo", "OCA", "Thai Accounting", "Architecture"],
+  },
+  {
+    icon: "👩‍💻",
+    name: "Senior ERP Consultant",
+    role: "Business Analyst — Supply Chain",
+    bio: "Specialist in manufacturing and supply chain ERP implementations. 7+ years configuring procurement, inventory, and MRP workflows for Thai industrial companies.",
+    tags: ["Supply Chain", "Manufacturing", "ERPNext"],
+  },
+  {
+    icon: "👨‍💻",
+    name: "Senior Developer",
+    role: "Software Engineer — Odoo",
+    bio: "OCA-standard module developer with expertise in Thai accounting localisation. Maintains Ecosoft's core modules in the global OCA repository.",
+    tags: ["Python", "Odoo", "OCA Modules"],
+  },
+  {
+    icon: "👩‍💼",
+    name: "ERP Business Analyst",
+    role: "Consultant — Finance & Accounting",
+    bio: "CPA with 8 years in Thai accounting and ERP finance modules. Expert in VAT, withholding tax, and government financial reporting requirements.",
+    tags: ["Finance", "Thai VAT", "Government ERP"],
+  },
+  {
+    icon: "👨‍🔧",
+    name: "ERPNext Developer",
+    role: "Software Engineer — Frappe/ERPNext",
+    bio: "Active contributor to the ERPNext and Frappe Framework open-source projects. Specialist in manufacturing and project-based ERPNext implementations.",
+    tags: ["Python", "ERPNext", "Frappe"],
+  },
+  {
+    icon: "👩‍💻",
+    name: "ERP Consultant",
+    role: "Business Analyst — Government",
+    bio: "Specialist in Thai public-sector ERP with experience at NSTDA, NXPO, and HII. Deep knowledge of government procurement regulations and fund accounting.",
+    tags: ["Government ERP", "Procurement", "Budget Control"],
+  },
+];
+---
+
+<BaseLayout
+  title="Our Team | Why Ecosoft"
+  description="The practitioners who will implement your ERP — not a sales team, but domain experts in Thai accounting, supply chain, and open-source ERP platforms."
+>
+
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container">
+      <div style="max-width: 44rem;">
+        <p class="eyebrow">Our Team</p>
+        <h1>The people who will implement your ERP — not a sales team, but practitioners.</h1>
+        <p class="hero-lead">
+          Our team combines functional consultants with deep domain knowledge in supply chain
+          management, Thai accounting, and procurement — alongside software engineers who
+          contribute actively to open-source ERP platforms. When you work with Ecosoft, you are
+          working with people who understand both the business problem and the technical solution.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- TEAM GRID -->
+  <section class="section">
+    <div class="container">
+      <header class="section-header">
+        <p class="eyebrow">Meet the Team</p>
+        <h2>Domain experts, not generalists</h2>
+        <p>Every member of our team has hands-on experience in the business processes they implement. We hire practitioners, not salespeople.</p>
+      </header>
+      <div class="team-grid">
+        {team.map((member) => (
+          <article class="team-card">
+            <div class="team-card-avatar">{member.icon}</div>
+            <div>
+              <p class="team-card-name">{member.name}</p>
+              <p class="team-card-role">{member.role}</p>
+            </div>
+            <p class="team-card-bio">{member.bio}</p>
+            <div class="team-card-tags">
+              {member.tags.map((tag) => <span>{tag}</span>)}
+            </div>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY PRACTITIONERS MATTER -->
+  <section class="section section-alt">
+    <div class="container">
+      <header class="section-header">
+        <p class="eyebrow">Why It Matters</p>
+        <h2>The difference between a practitioner and a generalist</h2>
+      </header>
+      <div class="cards-grid">
+        <article class="info-card pillar-card">
+          <span class="pillar-number">01</span>
+          <h3>They Understand Your Pain Points</h3>
+          <p>Our accountants have closed month-ends in Thai GAAP. Our supply chain consultants have managed warehouse operations. They know what you mean when you describe a problem.</p>
+        </article>
+        <article class="info-card pillar-card">
+          <span class="pillar-number">02</span>
+          <h3>They Design Better Systems</h3>
+          <p>Domain knowledge produces better ERP design. A consultant who has done AP reconciliation knows which configurations save 10 hours a month and which create bottlenecks.</p>
+        </article>
+        <article class="info-card pillar-card">
+          <span class="pillar-number">03</span>
+          <h3>They Train More Effectively</h3>
+          <p>Practitioner trainers teach in the language of the business — not the language of the software. Your team learns faster and adopts higher.</p>
+        </article>
+        <article class="info-card pillar-card">
+          <span class="pillar-number">04</span>
+          <h3>They Stay With You</h3>
+          <p>We have low turnover. The consultant who discovers your business in Step 1 is the same person who runs your go-live training. That continuity matters.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-strip">
+    <div class="container cta-strip-grid">
+      <div class="cta-strip-item">
+        <h3>Want to join the team?</h3>
+        <p>We're hiring ERP consultants and developers who care about quality and open source.</p>
+        <a href="/why-ecosoft/careers" class="btn btn-white">View Open Positions</a>
+      </div>
+      <div class="cta-strip-item">
+        <h3>Ready to work with us?</h3>
+        <p>Start a conversation — you'll meet the actual team, not a sales representative.</p>
+        <a href="/contact" class="btn btn-teal-outline">Book a Free Consultation →</a>
+      </div>
+    </div>
+  </section>
+
+</BaseLayout>
