@@ -250,8 +250,8 @@ img {
 }
 
 .nav-cta:hover {
-  background: #1646c1;
-  border-color: #1646c1;
+  background: #5a9094;
+  border-color: #5a9094;
 }
 
 /* ── Hamburger button ────────────────────────────────── */
@@ -379,12 +379,12 @@ img {
 .btn-primary {
   background: #76abae;
   color: #ffffff;
-  box-shadow: 0 2px 8px rgba(26, 86, 219, 0.3);
+  box-shadow: 0 2px 8px rgba(118, 171, 174, 0.35);
 }
 
 .btn-primary:hover {
-  background: #1646c1;
-  box-shadow: 0 4px 12px rgba(26, 86, 219, 0.35);
+  background: #5a9094;
+  box-shadow: 0 4px 12px rgba(118, 171, 174, 0.45);
 }
 
 .btn-outline {
