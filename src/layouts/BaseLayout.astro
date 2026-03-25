@@ -79,7 +79,6 @@ const { title = "Ecosoft | Open Source ERP Solutions", description = "Ecosoft is
               <a href="/why-ecosoft/careers">Careers</a>
             </div>
           </div>
-          <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">🌙</button>
           <button class="lang-toggle" id="lang-toggle" aria-label="Toggle language">TH</button>
           <a href="/contact" class="nav-cta">Contact</a>
         </nav>
@@ -250,28 +249,6 @@ const { title = "Ecosoft | Open Source ERP Solutions", description = "Ecosoft is
         });
       })();
 
-      // ── Dark mode toggle ──────────────────────────────────
-      (function () {
-        var btn = document.getElementById('theme-toggle');
-        var saved = localStorage.getItem('theme');
-        var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-        var theme = saved || (prefersDark ? 'dark' : 'light');
-
-        function apply(t) {
-          document.documentElement.setAttribute('data-theme', t);
-          if (btn) btn.textContent = t === 'dark' ? '☀️' : '🌙';
-        }
-
-        apply(theme);
-
-        if (btn) {
-          btn.addEventListener('click', function () {
-            var next = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
-            localStorage.setItem('theme', next);
-            apply(next);
-          });
-        }
-      })();
     </script>
   </body>
 </html>
