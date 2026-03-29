@@ -69,10 +69,10 @@ import BaseLayout from "@layouts/BaseLayout.astro";
       <p class="eyebrow eyebrow-centered">Our Technology Partners</p>
       <div class="tech-logos">
         <div class="tech-logo-item">
-          <img src="/images/oca-logo.png" alt="OCA" />
+          <img src="/images/odoo-logo.png" alt="Odoo" />
         </div>
         <div class="tech-logo-item">
-          <img src="/images/odoo-logo.png" alt="Odoo" />
+          <img src="/images/oca-logo.png" alt="OCA" />
         </div>
         <div class="tech-logo-item">
           <img src="/images/frappe-logo.png" alt="Frappe" />
@@ -374,7 +374,7 @@ import BaseLayout from "@layouts/BaseLayout.astro";
         vx: randomBetween(-0.3, 0.3),
         vy: randomBetween(-0.3, 0.3),
         r: large ? randomBetween(4, 7) : randomBetween(2, 4),
-        color: large ? '#1a56db' : '#60a5fa'
+        color: large ? '#76abae' : '#5a9094'
       });
     }
   }
@@ -391,7 +391,7 @@ import BaseLayout from "@layouts/BaseLayout.astro";
         if (dist < MAX_DIST) {
           var alpha = (1 - dist / MAX_DIST) * 0.4;
           ctx.beginPath();
-          ctx.strokeStyle = 'rgba(96, 165, 250, ' + alpha + ')';
+          ctx.strokeStyle = 'rgba(118, 171, 174, ' + alpha + ')';
           ctx.lineWidth = 1;
           ctx.moveTo(particles[i].x, particles[i].y);
           ctx.lineTo(particles[j].x, particles[j].y);
