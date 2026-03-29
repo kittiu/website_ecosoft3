@@ -127,7 +127,7 @@ const categories = [...new Set(modules.map(m => m.category))];
       {categories.map((cat) => (
         <div style="margin-bottom:3rem;">
           <h2 style="margin-bottom:1.5rem; padding-bottom:0.75rem; border-bottom:2px solid var(--border);">{cat}</h2>
-          <div class="cards-grid" style="grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap:1.25rem;">
+          <div class="cards-grid" style="grid-template-columns: repeat(auto-fill, minmax(min(300px, 100%), 1fr)); gap:1.25rem;">
             {modules.filter(m => m.category === cat).map((mod) => (
               <div class="info-card" style="padding:1.5rem;">
                 <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:0.75rem; flex-wrap:wrap; gap:0.5rem;">
