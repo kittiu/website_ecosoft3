@@ -204,40 +204,6 @@ import BaseLayout from "@layouts/BaseLayout.astro";
     </div>
   </section>
 
-  <!-- 1.7 FEATURED CASE STUDY -->
-  <section class="section">
-    <div class="container">
-      <header class="section-header">
-        <p class="eyebrow">Featured Case Study</p>
-        <h2>See what's possible with open-source ERP</h2>
-      </header>
-      <div class="case-study-featured">
-        <div>
-          <blockquote>
-            ERPNext has become our core infrastructure. It enables rapid decision-making
-            that is critical for a space-tech startup like ours. Ecosoft understood our
-            unique project-based structure from day one and delivered a system that
-            genuinely supports how we work.
-          </blockquote>
-          <div class="case-study-attribution">
-            <strong>Supidit Boonnawattanam</strong>
-            CEO, EOS Orbit — Thailand's first satellite manufacturer
-          </div>
-          <div style="margin-top: 1.25rem;">
-            <a href="/case-studies/eos-orbit" class="btn btn-outline">Read the full story →</a>
-          </div>
-        </div>
-        <div class="case-study-client-panel">
-          <div class="case-study-tag">Technology</div>
-          <div class="case-study-tag">ERPNext</div>
-          <p style="font-size: 0.82rem; color: var(--text-faint); margin: 0.5rem 0 0;">
-            EOS Orbit<br />Aerospace &amp; Satellite
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- 1.8 CLIENT LOGO WALL -->
   <section class="section section-logos">
     <div class="container">
@@ -249,83 +215,6 @@ import BaseLayout from "@layouts/BaseLayout.astro";
           </div>
         ))}
       </div>
-    </div>
-  </section>
-
-  <!-- 1.9 TESTIMONIALS -->
-  <section id="testimonials" class="section section-alt">
-    <div class="container">
-      <header class="section-header">
-        <p class="eyebrow">Client Testimonials</p>
-        <h2>Trusted by leading Thai organisations</h2>
-        <p>From manufacturing and logistics to government agencies and space technology — our clients operate across every major sector.</p>
-      </header>
-      <div class="testimonials-grid">
-        <article class="testimonial-card">
-          <blockquote class="testimonial-quote">
-            The system allows management to track production in real time.
-            Since 2013 Ecosoft has been our trusted ERP partner.
-          </blockquote>
-          <div class="testimonial-meta">
-            <span class="testimonial-name">Nantachai Siripronprasarn</span>
-            <span class="testimonial-company">Raja Cycle</span>
-          </div>
-        </article>
-        <article class="testimonial-card">
-          <blockquote class="testimonial-quote">
-            Odoo replaced our SAP system in 2018. The flexibility and cost savings
-            have been remarkable for our organisation.
-          </blockquote>
-          <div class="testimonial-meta">
-            <span class="testimonial-name">Varunee Leeladhanawithaya</span>
-            <span class="testimonial-company">NSTDA (Vice President)</span>
-          </div>
-        </article>
-        <article class="testimonial-card">
-          <blockquote class="testimonial-quote">
-            Moving from spreadsheets to Odoo with Ecosoft dramatically reduced errors
-            and gave us full visibility across the business.
-          </blockquote>
-          <div class="testimonial-meta">
-            <span class="testimonial-name">Somboon Thannyavun</span>
-            <span class="testimonial-company">Square Panel Systems</span>
-          </div>
-        </article>
-        <article class="testimonial-card">
-          <blockquote class="testimonial-quote">
-            ERPNext is a perfect fit for us. Ecosoft's ability to customise without
-            compromising the core system is what sets them apart.
-          </blockquote>
-          <div class="testimonial-meta">
-            <span class="testimonial-name">Athip Rungkirtikul</span>
-            <span class="testimonial-company">Lamphun Plastpack</span>
-          </div>
-        </article>
-        <article class="testimonial-card">
-          <blockquote class="testimonial-quote">
-            ERPNext has become our core infrastructure. It enables rapid
-            decision-making that is critical for a space-tech startup.
-          </blockquote>
-          <div class="testimonial-meta">
-            <span class="testimonial-name">Supidit Boonnawattanam</span>
-            <span class="testimonial-company">EOS Orbit (CEO) — Thailand's first satellite manufacturer</span>
-          </div>
-        </article>
-      </div>
-      <script is:inline>
-        (function () {
-          var cards = document.querySelectorAll('.testimonial-card');
-          var observer = new IntersectionObserver(function (entries) {
-            entries.forEach(function (entry) {
-              if (entry.isIntersecting) {
-                entry.target.classList.add('testimonial-card--visible');
-                observer.unobserve(entry.target);
-              }
-            });
-          }, { threshold: 0.2 });
-          cards.forEach(function (card) { observer.observe(card); });
-        })();
-      </script>
     </div>
   </section>
 
