@@ -1,14 +1,14 @@
 /* ── Theme variables ─────────────────────────────────── */
 :root {
-  --bg:              #eeeeee;
-  --bg-alt:          #e4e4e4;
+  --bg:              #f8fafb;
+  --bg-alt:          #eef4f5;
   --bg-card:         #ffffff;
   --bg-card-blue:    #dde8e9;
   --text:            #222831;
   --text-muted:      #31363f;
   --text-faint:      #556068;
   --text-subtle:     #31363f;
-  --border:          #c8cdd2;
+  --border:          #d0d8db;
   --border-blue:     #76abae;
   --header-bg:       #222831;
   --header-border:   #31363f;
@@ -16,19 +16,19 @@
   --pillar-number:   #76abae;
   --footer-bg:       #222831;
   --footer-border:   #31363f;
-  --footer-text:     #eeeeee;
+  --footer-text:     #f8fafb;
   --footer-heading:  #76abae;
   --footer-bottom-border: #31363f;
   --input-bg:        #ffffff;
   --input-border:    #76abae;
-  --form-bg:         #eeeeee;
+  --form-bg:         #f8fafb;
   --tabs-bg:         #31363f;
   --tab-active-bg:   #76abae;
-  --logos-bg:        #eeeeee;
-  --logos-border:    #c8cdd2;
+  --logos-bg:        #f8fafb;
+  --logos-border:    #d0d8db;
   --hero-radial-l:   #dde8e9;
   --hero-radial-r:   #e4eced;
-  --hero-gradient:   #eeeeee;
+  --hero-gradient:   #f8fafb;
   --accent:          #76abae;
 }
 
