@@ -12,132 +12,68 @@ import BaseLayout from "@layouts/BaseLayout.astro";
     <div class="container">
       <div style="max-width: 42rem;">
         <p class="eyebrow">ติดต่อเรา</p>
-        <h1>Let's start with a conversation. No obligation, no hard sell.</h1>
-        <p class="hero-lead">
-          บอกเราเกี่ยวกับธุรกิจและระบบที่คุณใช้อยู่ในปัจจุบัน ทีมงานของเราจะตอบกลับภายในหนึ่งวันทำการ
-          พร้อมการประเมินเบื้องต้นและขั้นตอนถัดไปโดยไม่มีข้อผูกมัด
-        </p>
+        <h1>Let's start with a conversation.<br/>No obligation, no hard sell.</h1>
       </div>
-    </div>
-  </section>
 
-  <!-- CONTACT FORM + INFO -->
-  <section class="section section-accent">
-    <div class="container contact-grid">
-      <div>
-        <p class="eyebrow eyebrow-light">สิ่งที่คุณจะได้รับ</p>
-        <h2>เราตอบกลับภายในหนึ่งวันทำการ</h2>
-        <p>
-          กรอกแบบฟอร์มแล้วที่ปรึกษาอาวุโสของเราจะติดต่อกลับโดยตรง
-          เราไม่ส่งต่อคำถามไปยังทีมขาย — คุณจะได้พูดคุยโดยตรงกับผู้ที่จะรับผิดชอบโครงการของคุณ
-        </p>
-        <ul class="contact-meta">
-          <li>การให้คำปรึกษาและ demo เบื้องต้นฟรี</li>
-          <li>การประเมินความพร้อม ERP และ ROI</li>
-          <li>การวางแผนการย้ายระบบและการติดตั้ง</li>
-          <li>คำแนะนำที่ตรงไปตรงมา — Odoo หรือ ERPNext</li>
-        </ul>
-        <div style="margin-top: 2rem; padding: 1.25rem 1.5rem; background: rgba(255,255,255,0.15); border-radius: 0.75rem; font-size: 0.9rem;">
-          <p style="margin: 0 0 0.4rem; font-weight: 700;">ช่องทางติดต่ออื่น</p>
-          <p style="margin: 0 0 0.2rem;">📧 sales@ecosoft.co.th</p>
-          <p style="margin: 0 0 0.2rem;">📞 +66 81 841 7480</p>
-          <p style="margin: 0;">📍 459/132 ถนนสุขสวัสดิ์ ราษฎร์บูรณะ กรุงเทพฯ 10140</p>
+
+      <div class="cards-grid cards-grid-3" style="align-items: stretch;">
+
+        <!-- Card 1: Contact Info -->
+        <div class="info-card" style="display: flex; flex-direction: column; gap: 0.75rem;">
+          <h3 style="margin: 0; font-size: 1.1rem;">Ecosoft Co., Ltd.</h3>
+          <p style="margin: 0; font-size: 0.9rem; line-height: 1.6; color: var(--text-muted);">
+            459/132 ถนนสุขสวัสดิ์<br />
+            ราษฎร์บูรณะ กรุงเทพฯ 10140
+          </p>
+          <div style="font-size: 0.9rem; display: flex; flex-direction: column; gap: 0.4rem;">
+            <a href="mailto:sales@ecosoft.co.th" style="color: var(--text); text-decoration: none;">
+              📧 sales@ecosoft.co.th
+            </a>
+            <a href="tel:+66818417480" style="color: var(--text); text-decoration: none;">
+              📞 +66 81 841 7480
+            </a>
+          </div>
+          <div style="margin-top: auto; padding-top: 0.75rem; font-size: 0.85rem; color: var(--text-muted);">
+            เปิดทำการ จันทร์ – ศุกร์ เวลา 09:00 – 18:00 น.
+          </div>
         </div>
+
+        <!-- Card 2: CTA -->
+        <div class="info-card section-accent" style="display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; gap: 1.25rem; padding: 2rem 1.5rem;">
+          <div style="font-size: 2.5rem;">💬</div>
+          <h3 style="margin: 0; font-size: 1.15rem; color: var(--text-muted);">
+            พร้อมคุยแล้วใช่ไหม?
+          </h3>
+          <a
+            href="https://ecosoft.frappe.cloud/contact-us/new"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn-primary"
+            style="font-size: 0.95rem; padding: 0.75rem 1.5rem; width: 100%; text-align: center;"
+          >
+            แจ้งรายละเอียดให้เราติดต่อกลับ
+          </a>
+          <p style="margin: 0; font-size: 0.8rem; color: var(--text-muted-on-accent, rgba(255,255,255,0.6));">
+            ฟรี ไม่มีข้อผูกมัด
+          </p>
+        </div>
+        <!-- Card 3: Map -->
+        <div class="info-card" style="padding: 0; overflow: hidden; min-height: 280px;">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3876.83030032625!2d100.51213107567237!3d13.668080699225111!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29f2c65e4467b%3A0xb4765fc451747e3f!2sEcosoft%20Co.%2C%20Ltd.%20Your%20ERP%20Partner!5e0!3m2!1sen!2sth!4v1775198573152!5m2!1sen!2sth"
+            width="100%"
+            height="100%"
+            style="border: 0; display: block; min-height: 280px;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Ecosoft office location"
+          ></iframe>
+        </div>
+
+
       </div>
-      <form class="contact-form" id="contact-form" novalidate>
-        <div class="form-row">
-          <label for="contact-name">
-            ชื่อ-นามสกุล <span aria-hidden="true">*</span>
-            <input id="contact-name" type="text" name="name" placeholder="ชื่อ-นามสกุลของคุณ" required />
-          </label>
-          <label for="contact-company">
-            บริษัท <span aria-hidden="true">*</span>
-            <input id="contact-company" type="text" name="company" placeholder="ชื่อบริษัท" required />
-          </label>
-        </div>
-        <div class="form-row">
-          <label for="contact-email">
-            อีเมล <span aria-hidden="true">*</span>
-            <input id="contact-email" type="email" name="email" placeholder="you@company.com" required />
-          </label>
-          <label for="contact-phone">
-            เบอร์โทรศัพท์ <span style="font-weight:400; color: var(--text-faint);">(ไม่บังคับ)</span>
-            <input id="contact-phone" type="tel" name="phone" placeholder="+66 ..." />
-          </label>
-        </div>
-        <div class="form-row">
-          <label for="contact-size">
-            ขนาดบริษัท
-            <select id="contact-size" name="company_size" style="border-radius: 0.6rem; border: 1px solid var(--input-border); background: var(--input-bg); color: var(--text); padding: 0.55rem 0.7rem; font: inherit; width: 100%;">
-              <option value="">เลือก...</option>
-              <option>1 – 20 คน</option>
-              <option>20 – 100 คน</option>
-              <option>100 – 500 คน</option>
-              <option>500+ คน</option>
-            </select>
-          </label>
-          <label for="contact-industry">
-            อุตสาหกรรม
-            <select id="contact-industry" name="industry" style="border-radius: 0.6rem; border: 1px solid var(--input-border); background: var(--input-bg); color: var(--text); padding: 0.55rem 0.7rem; font: inherit; width: 100%;">
-              <option value="">เลือก...</option>
-              <option>Manufacturing</option>
-              <option>Government / NGO</option>
-              <option>Trading &amp; Retail</option>
-              <option>Technology</option>
-              <option>Professional Services</option>
-              <option>Healthcare</option>
-              <option>อื่นๆ</option>
-            </select>
-          </label>
-        </div>
-        <label for="contact-system">
-          ระบบที่ใช้อยู่ในปัจจุบัน
-          <input id="contact-system" type="text" name="current_system" placeholder="เช่น SAP, spreadsheets, โปรแกรมบัญชี, ยังไม่มี" />
-        </label>
-        <label for="contact-message">
-          คุณต้องการบรรลุเป้าหมายอะไร? <span aria-hidden="true">*</span>
-          <textarea
-            id="contact-message"
-            name="message"
-            rows="4"
-            placeholder="อธิบายปัญหาที่พบ เป้าหมาย และระยะเวลาที่ต้องการ"
-            required
-          ></textarea>
-        </label>
-        <label for="contact-source">
-          คุณรู้จักเราจากที่ไหน?
-          <select id="contact-source" name="source" style="border-radius: 0.6rem; border: 1px solid var(--input-border); background: var(--input-bg); color: var(--text); padding: 0.55rem 0.7rem; font: inherit; width: 100%;">
-            <option value="">เลือก...</option>
-            <option>ค้นหาจาก Google</option>
-            <option>LinkedIn</option>
-            <option>คนรู้จักแนะนำ</option>
-            <option>งานสัมมนา / งานแสดงสินค้า</option>
-            <option>อื่นๆ</option>
-          </select>
-        </label>
-        <div id="form-success" class="form-success" hidden>
-          ขอบคุณ! เราจะติดต่อกลับภายในหนึ่งวันทำการ
-        </div>
-        <button type="submit" class="btn btn-primary btn-full">
-          ส่งข้อความ
-        </button>
-        <p class="form-note">
-          ข้อมูลของคุณจะถูกเก็บเป็นความลับอย่างเคร่งครัด และใช้เพื่อตอบกลับคำถามของคุณเท่านั้น
-        </p>
-      </form>
-      <script is:inline>
-        (function () {
-          var form = document.getElementById('contact-form');
-          if (!form) return;
-          form.addEventListener('submit', function (e) {
-            e.preventDefault();
-            if (!form.checkValidity()) { form.reportValidity(); return; }
-            var success = document.getElementById('form-success');
-            if (success) success.removeAttribute('hidden');
-            form.reset();
-          });
-        })();
-      </script>
+
     </div>
   </section>
 
