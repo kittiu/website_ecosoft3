@@ -14,7 +14,7 @@ const { post } = Astro.props;
 const { Content } = await render(post);
 
 function formatDate(d: Date) {
-  return new Date(d).toLocaleDateString("en-GB", { year: "numeric", month: "long", day: "numeric" });
+  return new Date(d).toLocaleDateString("th-TH", { year: "numeric", month: "long", day: "numeric" });
 }
 ---
 
@@ -27,9 +27,9 @@ function formatDate(d: Date) {
   <section style="background: var(--surface); padding: 1rem 0; border-bottom: 1px solid var(--border);">
     <div class="container">
       <nav style="font-size:0.875rem; color:var(--text-muted);">
-        <a href="/" style="color:var(--text-muted);">Home</a>
+        <a href="/" style="color:var(--text-muted);">หน้าหลัก</a>
         <span style="margin:0 0.5rem;">›</span>
-        <a href="/resources/blog" style="color:var(--text-muted);">Blog</a>
+        <a href="/resources/blog" style="color:var(--text-muted);">บล็อก</a>
         <span style="margin:0 0.5rem;">›</span>
         <span>{post.data.title}</span>
       </nav>
@@ -69,14 +69,14 @@ function formatDate(d: Date) {
     <div class="container">
       <div style="max-width:760px; margin:0 auto; display:flex; flex-direction:column; gap:2rem;">
         <div class="info-card" style="padding:1.5rem;">
-          <p style="font-size:0.875rem; color:var(--text-muted); margin:0 0 0.25rem;">Written by</p>
+          <p style="font-size:0.875rem; color:var(--text-muted); margin:0 0 0.25rem;">เขียนโดย</p>
           <strong>{post.data.author}</strong>
-          <p style="font-size:0.875rem; margin:0.5rem 0 0;">Ecosoft is a Thai open-source ERP consultancy specialising in Odoo and ERPNext implementation, customisation, and long-term support.</p>
+          <p style="font-size:0.875rem; margin:0.5rem 0 0;">Ecosoft คือบริษัทที่ปรึกษา Open Source ERP ของไทย เชี่ยวชาญด้านการติดตั้ง ปรับแต่ง และดูแลระบบ Odoo และ ERPNext ในระยะยาว</p>
         </div>
         <div style="text-align:center;">
-          <h3>Have questions about what you just read?</h3>
-          <p>Talk to a consultant — we're happy to discuss how this applies to your specific situation.</p>
-          <a href="/contact" class="btn btn-primary" style="margin-top:1rem;">Book a Free Consultation</a>
+          <h3>มีคำถามเกี่ยวกับสิ่งที่อ่านหรือไม่?</h3>
+          <p>พูดคุยกับที่ปรึกษาของเรา — เรายินดีอธิบายว่าเนื้อหานี้เกี่ยวข้องกับสถานการณ์ของคุณอย่างไร</p>
+          <a href="/contact" class="btn btn-primary" style="margin-top:1rem;">จองการปรึกษาฟรี</a>
         </div>
       </div>
     </div>

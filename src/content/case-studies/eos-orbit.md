@@ -1,50 +1,50 @@
 ---
 client: "EOS Orbit"
-industry: "Technology"
+industry: "เทคโนโลยี"
 solution: "ERPNext"
-size: "50–100 employees"
-location: "Bangkok, Thailand"
-outcome: "Unified ERPNext system covering production, procurement, and project management for Thailand's first satellite manufacturer."
+size: "50–100 พนักงาน"
+location: "กรุงเทพมหานคร, ประเทศไทย"
+outcome: "ระบบ ERPNext แบบรวมศูนย์ครอบคลุมการผลิต การจัดซื้อ และการบริหารโครงการสำหรับผู้ผลิตดาวเทียมรายแรกของไทย"
 featured: true
-quote: "ERPNext has become our core infrastructure. It enables rapid decision-making that is critical for a space-tech startup. Ecosoft understood our unique project-based structure from day one and delivered a system that genuinely supports how we work."
+quote: "ERPNext กลายเป็นโครงสร้างพื้นฐานหลักของเรา ช่วยให้การตัดสินใจรวดเร็วซึ่งสำคัญมากสำหรับ Startup ด้านเทคโนโลยีอวกาศ Ecosoft เข้าใจโครงสร้างงานเฉพาะทางแบบ Project-based ของเราตั้งแต่วันแรก และส่งมอบระบบที่สนับสนุนวิธีทำงานของเราอย่างแท้จริง"
 quoteAuthor: "Supidit Boonnawattanam"
 quoteTitle: "CEO, EOS Orbit"
 ---
 
-## Client Overview
+## ภาพรวมลูกค้า
 
-EOS Orbit is Thailand's first satellite manufacturer — a space technology company designing, developing, and operating Low Earth Orbit (LEO) satellites. Founded by engineers and entrepreneurs, EOS Orbit launched LOGSATS, Thailand's first fully functional domestically-built satellite. The company operates under ISO 9001 certification and manages projects of extraordinary complexity, with each satellite unit involving thousands of components, multi-stage testing, and strict regulatory compliance.
+EOS Orbit คือผู้ผลิตดาวเทียมรายแรกของไทย — บริษัทเทคโนโลยีอวกาศที่ออกแบบ พัฒนา และปฏิบัติการดาวเทียมวงโคจรต่ำ (LEO) ก่อตั้งโดยวิศวกรและผู้ประกอบการ EOS Orbit ได้ส่ง LOGSATS ขึ้นสู่วงโคจร — ดาวเทียมที่สร้างในประเทศไทยเป็นลำแรกอย่างสมบูรณ์และใช้งานได้จริง บริษัทดำเนินงานภายใต้การรับรอง ISO 9001 และบริหารโครงการที่มีความซับซ้อนสูงยิ่ง โดยดาวเทียมแต่ละหน่วยประกอบด้วยชิ้นส่วนหลายพันชิ้น การทดสอบหลายขั้นตอน และการปฏิบัติตามกฎระเบียบอย่างเคร่งครัด
 
-## The Challenge
+## ความท้าทาย
 
-EOS Orbit faced ERP challenges that most software vendors have never encountered. Their business combines aerospace-grade engineering workflows, project-based production, multi-level bill of materials for highly customised products, and strict traceability requirements for every component from procurement to integration.
+EOS Orbit เผชิญกับความท้าทายด้าน ERP ที่ผู้จำหน่ายซอฟต์แวร์ส่วนใหญ่ไม่เคยพบมาก่อน ธุรกิจของพวกเขารวมกระบวนการทำงานวิศวกรรมระดับ Aerospace การผลิตแบบ Project-based Bill of Materials หลายระดับสำหรับผลิตภัณฑ์ที่ปรับแต่งสูง และข้อกำหนดการตรวจสอบย้อนกลับที่เข้มงวดสำหรับทุกชิ้นส่วนตั้งแต่การจัดซื้อจนถึงการประกอบ
 
-On top of this, the company needed Thai accounting compliance — VAT, withholding tax, financial reporting — built into the same system managing their space hardware procurement. Most ERP systems could handle one or the other. EOS Orbit needed both.
+นอกจากนี้ บริษัทยังต้องการการปฏิบัติตามกฎหมายบัญชีไทย — VAT ภาษีหัก ณ ที่จ่าย รายงานทางการเงิน — ที่ถูกสร้างไว้ในระบบเดียวกับที่จัดการการจัดซื้ออุปกรณ์อวกาศ ระบบ ERP ส่วนใหญ่รองรับได้เพียงอย่างใดอย่างหนึ่ง แต่ EOS Orbit ต้องการทั้งสองอย่าง
 
-Their team had evaluated several ERP options and found that generic systems required either compromising on engineering workflows or adding expensive customisation that no implementor could guarantee would hold up across versions.
+ทีมงานได้ประเมินตัวเลือก ERP หลายรายการและพบว่าระบบทั่วไปต้องการให้ยอมประนีประนอมด้านกระบวนการทำงานวิศวกรรม หรือต้องเพิ่มการปรับแต่งราคาแพงที่ไม่มีผู้ดำเนินการรายใดรับประกันได้ว่าจะใช้งานได้ข้ามเวอร์ชัน
 
-## Why Ecosoft
+## เหตุใดจึงเลือก Ecosoft
 
-EOS Orbit chose Ecosoft for two reasons: deep ERPNext platform knowledge and genuine business understanding. Ecosoft's team spent significant time in discovery understanding how a satellite production project actually runs — the project phases, the BOM structures, the integration test procedures, the component traceability chain. That level of engagement before any software was configured gave the EOS Orbit team confidence that Ecosoft understood their business, not just the software.
+EOS Orbit เลือก Ecosoft ด้วยเหตุผลสองประการ: ความรู้เชิงลึกด้าน Platform ERPNext และความเข้าใจธุรกิจอย่างแท้จริง ทีมงาน Ecosoft ใช้เวลาอย่างมากในการวิเคราะห์เพื่อทำความเข้าใจว่าโครงการผลิตดาวเทียมดำเนินการอย่างไรจริงๆ — ระยะโครงการ โครงสร้าง BOM ขั้นตอนการทดสอบ Integration ห่วงโซ่การตรวจสอบย้อนกลับชิ้นส่วน ระดับการมีส่วนร่วมก่อนที่จะมีการตั้งค่าซอฟต์แวร์ใดๆ ทำให้ทีม EOS Orbit มั่นใจว่า Ecosoft เข้าใจธุรกิจของพวกเขา ไม่ใช่แค่ซอฟต์แวร์
 
-Ecosoft's status as an active ERPNext contributor also mattered. Knowing that the implementor contributed to the platform itself — not just implemented it — was an important trust signal for a technically sophisticated client.
+สถานะของ Ecosoft ในฐานะผู้ Contribute งานให้กับ ERPNext อย่างแข็งขันก็มีความสำคัญเช่นกัน การรู้ว่าผู้ดำเนินการมีส่วนร่วมกับ Platform เอง ไม่ใช่แค่ติดตั้ง — เป็นสัญญาณแห่งความน่าเชื่อถือที่สำคัญสำหรับลูกค้าที่มีความซับซ้อนทางเทคนิค
 
-## What We Implemented
+## สิ่งที่เราดำเนินการติดตั้ง
 
-- **Manufacturing module** — multi-level BOMs, work orders, job cards, production planning aligned with satellite project phases
-- **Project Management** — project-based tracking of production milestones, resource allocation, and billing
-- **Buying & Procurement** — RFQ, PO, goods receipt with component-level traceability
-- **Stock & Inventory** — serial number tracking for high-value aerospace components
-- **Accounting** — Thai-compliant chart of accounts, VAT, withholding tax, financial reporting
-- **Quality Inspection** — inspection points at integration milestones, non-conformance logging
+- **โมดูลการผลิต** — BOM หลายระดับ Work Orders, Job Cards, การวางแผนการผลิตที่สอดคล้องกับระยะโครงการดาวเทียม
+- **การบริหารโครงการ** — การติดตามแบบ Project-based ของ Milestone การผลิต การจัดสรรทรัพยากร และการเรียกเก็บเงิน
+- **การซื้อและการจัดซื้อ** — RFQ, PO, การรับสินค้าพร้อมการตรวจสอบย้อนกลับระดับชิ้นส่วน
+- **สต็อกและคลังสินค้า** — การติดตามหมายเลข Serial สำหรับชิ้นส่วน Aerospace มูลค่าสูง
+- **บัญชี** — ผังบัญชีที่สอดคล้องกับกฎหมายไทย VAT ภาษีหัก ณ ที่จ่าย รายงานทางการเงิน
+- **การตรวจสอบคุณภาพ** — จุดตรวจสอบที่ Milestone การประกอบ บันทึกความไม่สอดคล้อง
 
-## The Outcome
+## ผลลัพธ์
 
-EOS Orbit now runs its entire operation on a single ERPNext system. Production planning, procurement, quality control, and financial reporting are unified. Management has real-time visibility across all active satellite projects. The system supports ISO 9001 compliance by providing complete traceability from component procurement to finished satellite integration.
+EOS Orbit บริหารจัดการการดำเนินงานทั้งหมดบนระบบ ERPNext เดียว การวางแผนการผลิต การจัดซื้อ การควบคุมคุณภาพ และการรายงานทางการเงินได้รับการรวมเป็นหนึ่งเดียว ฝ่ายบริหารมองเห็นโครงการดาวเทียมที่ดำเนินอยู่ทั้งหมดแบบ Real-time ระบบรองรับการปฏิบัติตาม ISO 9001 โดยให้การตรวจสอบย้อนกลับอย่างสมบูรณ์ตั้งแต่การจัดซื้อชิ้นส่วนจนถึงการประกอบดาวเทียมสำเร็จรูป
 
-Decision-making speed increased significantly — the CEO and COO can see project status, procurement pipeline, and financial position in real time without waiting for manual reports.
+ความเร็วในการตัดสินใจเพิ่มขึ้นอย่างมีนัยสำคัญ — CEO และ COO สามารถเห็นสถานะโครงการ Pipeline การจัดซื้อ และสถานะการเงินแบบ Real-time โดยไม่ต้องรอรายงาน Manual
 
-## Related Case Studies
+## กรณีศึกษาที่เกี่ยวข้อง
 
-- Lamphun Plastpack — Manufacturing / ERPNext
-- Raja Cycle — Manufacturing / Odoo
+- Lamphun Plastpack — การผลิต / ERPNext
+- Raja Cycle — การผลิต / Odoo

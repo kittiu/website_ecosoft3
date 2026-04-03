@@ -1,46 +1,46 @@
 ---
 client: "Lamphun Plastpack"
-industry: "Manufacturing"
+industry: "การผลิต"
 solution: "ERPNext"
-size: "50–200 employees"
-location: "Lamphun, Thailand"
-outcome: "Transformed from accounting software to full ERP — eliminated manual errors, gained production visibility, and achieved ISO-compliant traceability across the entire manufacturing process."
+size: "50–200 พนักงาน"
+location: "ลำพูน, ประเทศไทย"
+outcome: "เปลี่ยนจากซอฟต์แวร์บัญชีสู่ ERP แท้จริง — กำจัดข้อผิดพลาดแบบ Manual ได้รับการมองเห็นการผลิต และบรรลุการตรวจสอบย้อนกลับตามมาตรฐาน ISO ครอบคลุมกระบวนการผลิตทั้งหมด"
 featured: false
-quote: "ERPNext is a perfect fit for us. Ecosoft's ability to customise without compromising the core system is what sets them apart. We now have full visibility from raw material to finished goods."
-quoteAuthor: "Athip Rungkirtikul"
-quoteTitle: "Managing Director, Lamphun Plastpack"
+quote: "ERPNext เหมาะกับเราอย่างสมบูรณ์แบบ ความสามารถของ Ecosoft ในการปรับแต่งโดยไม่กระทบระบบหลักคือสิ่งที่ทำให้พวกเขาแตกต่าง ตอนนี้เรามองเห็นได้ครบทุกขั้นตอนตั้งแต่วัตถุดิบจนถึงสินค้าสำเร็จรูป"
+quoteAuthor: "อธิเทพ รุ่งกีรติกุล"
+quoteTitle: "กรรมการผู้จัดการ, Lamphun Plastpack"
 ---
 
-## Client Overview
+## ภาพรวมลูกค้า
 
-Lamphun Plastpack is a plastic packaging manufacturer based in Lamphun, Northern Thailand. The company produces a range of plastic packaging products for industrial and consumer clients, managing complex manufacturing workflows with lot-tracked raw materials, multi-stage production, and strict quality requirements.
+Lamphun Plastpack คือผู้ผลิตบรรจุภัณฑ์พลาสติกที่ตั้งอยู่ในจังหวัดลำพูน ภาคเหนือของประเทศไทย บริษัทผลิตบรรจุภัณฑ์พลาสติกหลากหลายประเภทสำหรับลูกค้าอุตสาหกรรมและผู้บริโภค โดยบริหารจัดการกระบวนการผลิตที่ซับซ้อนด้วยวัตถุดิบที่ติดตาม Lot การผลิตหลายขั้นตอน และข้อกำหนดคุณภาพที่เข้มงวด
 
-## The Challenge
+## ความท้าทาย
 
-Lamphun Plastpack had been operating on standalone accounting software — managing production, inventory, and quality control through a combination of that software and manual spreadsheets. As the business grew, the limitations became critical: no real-time visibility into production progress, manual batch tracking prone to errors, and an inability to accurately cost production runs.
+Lamphun Plastpack ดำเนินงานบนซอฟต์แวร์บัญชีแบบ Standalone — บริหารจัดการการผลิต สินค้าคงคลัง และการควบคุมคุณภาพผ่านซอฟต์แวร์นั้นผสมกับ Spreadsheet แบบ Manual เมื่อธุรกิจเติบโต ข้อจำกัดกลายเป็นปัญหาวิกฤต: ไม่มีการมองเห็นสถานะการผลิตแบบ Real-time การติดตาม Batch แบบ Manual ที่เกิดข้อผิดพลาดง่าย และไม่สามารถคำนวณต้นทุนการผลิตได้อย่างถูกต้อง
 
-The company needed a system that could handle the full manufacturing cycle — from raw material procurement through production, quality inspection, and finished goods delivery — with accurate lot tracking and costing. Thai accounting compliance was also a non-negotiable requirement.
+บริษัทต้องการระบบที่รองรับวงจรการผลิตทั้งหมด — ตั้งแต่การจัดซื้อวัตถุดิบผ่านการผลิต การตรวจสอบคุณภาพ และการส่งมอบสินค้าสำเร็จรูป — พร้อมการติดตาม Lot และต้นทุนที่แม่นยำ การปฏิบัติตามกฎหมายบัญชีไทยก็เป็นข้อกำหนดที่ไม่สามารถต่อรองได้
 
-## Why Ecosoft
+## เหตุใดจึงเลือก Ecosoft
 
-Lamphun Plastpack selected Ecosoft based on their manufacturing ERP expertise and their recommendation of ERPNext as the right platform for a growing manufacturing SME. Ecosoft's consultants demonstrated deep knowledge of production workflows and batch/lot tracking — not just generic ERP configuration. The fully open-source nature of ERPNext, with no per-user licence costs, also made the business case compelling.
+Lamphun Plastpack เลือก Ecosoft โดยอาศัยความเชี่ยวชาญด้าน ERP การผลิตและคำแนะนำของ ERPNext ในฐานะ Platform ที่เหมาะสมสำหรับ SME การผลิตที่กำลังเติบโต ที่ปรึกษาของ Ecosoft สาธิตความรู้เชิงลึกเกี่ยวกับกระบวนการผลิตและการติดตาม Batch/Lot — ไม่ใช่แค่การตั้งค่า ERP ทั่วไป ลักษณะ Open Source อย่างสมบูรณ์ของ ERPNext ที่ไม่มีค่า License รายผู้ใช้ยังทำให้กรณีทางธุรกิจน่าสนใจยิ่งขึ้น
 
-## What We Implemented
+## สิ่งที่เราดำเนินการติดตั้ง
 
-- **Manufacturing** — BOM management, work orders, job cards, production planning
-- **Stock & Inventory** — lot/batch tracking from raw material to finished goods, quality inspection
-- **Buying** — raw material procurement, supplier evaluation, goods receipt
-- **Selling** — sales orders, delivery notes, customer invoicing
-- **Accounting** — Thai-compliant financials, production costing, variance analysis
-- **Quality Control** — inspection checkpoints, non-conformance management
+- **การผลิต** — การบริหาร BOM, Work Orders, Job Cards, การวางแผนการผลิต
+- **สต็อกและคลังสินค้า** — การติดตาม Lot/Batch ตั้งแต่วัตถุดิบจนถึงสินค้าสำเร็จรูป การตรวจสอบคุณภาพ
+- **การซื้อ** — การจัดซื้อวัตถุดิบ การประเมิน Supplier การรับสินค้า
+- **การขาย** — คำสั่งขาย ใบส่งของ การออกใบแจ้งหนี้ลูกค้า
+- **บัญชี** — การเงินที่สอดคล้องกับกฎหมายไทย ต้นทุนการผลิต การวิเคราะห์ Variance
+- **การควบคุมคุณภาพ** — จุดตรวจสอบ การบริหารความไม่สอดคล้อง
 
-## The Outcome
+## ผลลัพธ์
 
-Lamphun Plastpack now has end-to-end visibility across their manufacturing operation. Production costs are calculated accurately in real time. Lot traceability provides complete audit trails from raw material to finished product. Manual data entry errors have been eliminated across procurement and production processes.
+Lamphun Plastpack มีการมองเห็น End-to-End ทั่วการดำเนินงานการผลิต ต้นทุนการผลิตถูกคำนวณอย่างแม่นยำแบบ Real-time การตรวจสอบย้อนกลับ Lot ให้เส้นทางการตรวจสอบอย่างสมบูรณ์ตั้งแต่วัตถุดิบถึงผลิตภัณฑ์สำเร็จรูป ข้อผิดพลาดจากการป้อนข้อมูลแบบ Manual ได้รับการกำจัดทั่วกระบวนการจัดซื้อและผลิต
 
-The transition from accounting software to full ERP was completed on schedule and within budget — with user adoption high from day one due to the training investment made during implementation.
+การเปลี่ยนจากซอฟต์แวร์บัญชีสู่ ERP แท้จริงเสร็จสมบูรณ์ตามกำหนดเวลาและงบประมาณ — โดยมีการนำไปใช้งานของผู้ใช้สูงตั้งแต่วันแรกเนื่องจากการลงทุนในการฝึกอบรมระหว่างการติดตั้ง
 
-## Related Case Studies
+## กรณีศึกษาที่เกี่ยวข้อง
 
-- EOS Orbit — Technology / ERPNext
-- Raja Cycle — Manufacturing / Odoo
+- EOS Orbit — เทคโนโลยี / ERPNext
+- Raja Cycle — การผลิต / Odoo

@@ -1,51 +1,51 @@
 ---
 client: "NSTDA"
-industry: "Government"
+industry: "หน่วยงานราชการ"
 solution: "Odoo"
-size: "500+ employees"
-location: "Pathum Thani, Thailand"
-outcome: "Replaced SAP in 2018. 7+ years of continuous operation covering multiple departments and complex project-based funding structures."
+size: "500+ พนักงาน"
+location: "ปทุมธานี, ประเทศไทย"
+outcome: "แทนที่ SAP ในปี 2561 การดำเนินงานต่อเนื่องกว่า 7 ปีครอบคลุมหลายฝ่ายและโครงสร้างเงินทุนแบบ Project-based ที่ซับซ้อน"
 featured: true
-quote: "Odoo replaced our SAP system in 2018. The flexibility and cost savings have been remarkable for our organisation. We now have a system that we actually own and can evolve with our needs."
-quoteAuthor: "Varunee Leeladhanawithaya"
-quoteTitle: "Vice President, NSTDA"
+quote: "Odoo เข้ามาแทนที่ระบบ SAP ของเราในปี 2561 ความยืดหยุ่นและการประหยัดค่าใช้จ่ายนั้นน่าทึ่งมากสำหรับองค์กรของเรา ตอนนี้เรามีระบบที่เราเป็นเจ้าของอย่างแท้จริงและสามารถพัฒนาตามความต้องการของเราได้"
+quoteAuthor: "วารุณี ลีลาธนวิทยา"
+quoteTitle: "รองผู้อำนวยการ, สวทช."
 ---
 
-## Client Overview
+## ภาพรวมลูกค้า
 
-NSTDA (National Science and Technology Development Agency) is Thailand's premier government science and technology agency, operating under the Ministry of Higher Education, Science, Research and Innovation. With over 500 staff across multiple research centres and technology parks, NSTDA manages complex project-based funding, government procurement requirements, and a diverse portfolio of R&D programmes and technology transfer initiatives.
+NSTDA (สำนักงานพัฒนาวิทยาศาสตร์และเทคโนโลยีแห่งชาติ หรือ สวทช.) คือหน่วยงานวิทยาศาสตร์และเทคโนโลยีของรัฐบาลไทยชั้นนำ ดำเนินงานภายใต้กระทรวงการอุดมศึกษา วิทยาศาสตร์ วิจัยและนวัตกรรม ด้วยบุคลากรกว่า 500 คนกระจายอยู่ตามศูนย์วิจัยและอุทยานเทคโนโลยีหลายแห่ง สวทช. บริหารจัดการเงินทุนแบบ Project-based ที่ซับซ้อน ข้อกำหนดการจัดซื้อจัดจ้างภาครัฐ และแฟ้มโครงการ R&D และการถ่ายทอดเทคโนโลยีที่หลากหลาย
 
-## The Challenge
+## ความท้าทาย
 
-NSTDA had been running SAP for years — a significant enterprise investment that was increasingly difficult to maintain, expensive to licence, and inflexible in the face of changing government procurement regulations and organisational restructuring. The system required expensive consultants for every change, and the annual licence fees represented a significant drain on a public-sector budget.
+สวทช. ดำเนินงานบน SAP มาหลายปี — การลงทุนด้านองค์กรขนาดใหญ่ที่บำรุงรักษายากขึ้นเรื่อยๆ มีค่า License แพง และไม่ยืดหยุ่นต่อการเปลี่ยนแปลงกฎระเบียบการจัดซื้อจัดจ้างภาครัฐและการปรับโครงสร้างองค์กร ระบบต้องการที่ปรึกษาราคาแพงสำหรับทุกการเปลี่ยนแปลง และค่า License รายปีเป็นภาระที่สำคัญต่องบประมาณภาคสาธารณะ
 
-Beyond cost, NSTDA's operational complexity presented genuine technical challenges. Their funding structure is project-based — budgets are allocated by programme and fund, not simply by department. Procurement must comply with Thai government procurement regulations. Financial reporting must meet public sector standards. And the system had to accommodate the diverse needs of multiple research centres with different operational profiles.
+นอกจากต้นทุนแล้ว ความซับซ้อนในการดำเนินงานของ สวทช. ยังนำเสนอความท้าทายทางเทคนิคที่แท้จริง โครงสร้างเงินทุนของพวกเขาเป็นแบบ Project-based — งบประมาณถูกจัดสรรตาม Programme และกองทุน ไม่ใช่แค่ตามฝ่าย การจัดซื้อต้องปฏิบัติตามกฎระเบียบการจัดซื้อจัดจ้างภาครัฐไทย รายงานทางการเงินต้องเป็นไปตามมาตรฐานภาคสาธารณะ และระบบต้องรองรับความต้องการที่หลากหลายของศูนย์วิจัยหลายแห่งที่มีโปรไฟล์การดำเนินงานต่างกัน
 
-## Why Ecosoft
+## เหตุใดจึงเลือก Ecosoft
 
-NSTDA selected Ecosoft after a competitive evaluation of several ERP vendors. The decisive factors were Ecosoft's existing government ERP modules — purpose-built for Thai public sector compliance — and their deep understanding of how Thai government agencies actually operate.
+สวทช. เลือก Ecosoft หลังจากการประเมินแบบแข่งขันของ Vendor ERP หลายราย ปัจจัยชี้ขาดคือโมดูล ERP ของราชการที่มีอยู่ของ Ecosoft — สร้างขึ้นเฉพาะสำหรับการปฏิบัติตามข้อกำหนดภาคสาธารณะไทย — และความเข้าใจเชิงลึกถึงวิธีที่หน่วยงานราชการไทยดำเนินงานจริง
 
-Ecosoft was the only vendor that could demonstrate prior experience with government procurement regulations, budget encumbrance accounting, and multi-fund financial reporting. The fact that all customisation would be delivered as open-source modules — not proprietary code locked to Ecosoft — was also critical for a public institution with long-term technology governance responsibilities.
+Ecosoft เป็น Vendor เพียงรายเดียวที่สามารถสาธิตประสบการณ์ก่อนหน้านี้กับกฎระเบียบการจัดซื้อจัดจ้างภาครัฐ การบัญชีผูกพันงบประมาณ และรายงานทางการเงินหลายกองทุน ความจริงที่ว่าการปรับแต่งทั้งหมดจะถูกส่งมอบเป็นโมดูล Open Source — ไม่ใช่โค้ดแบบ Proprietary ที่ผูกติดกับ Ecosoft — ก็มีความสำคัญอย่างยิ่งสำหรับสถาบันสาธารณะที่มีความรับผิดชอบด้านกำกับดูแลเทคโนโลยีระยะยาว
 
-## What We Implemented
+## สิ่งที่เราดำเนินการติดตั้ง
 
-- **Budget Planning & Encumbrance Control** — annual budget allocation, budget transfer, real-time budget monitoring, over-spend prevention
-- **Government Procurement** — compliant workflows aligned with Thai government procurement regulations
-- **Multi-fund Accounting** — income and expense tracking by project, programme, and funding source
-- **Finance & Accounting** — government-standard financial reporting, Thai chart of accounts, VAT compliance
-- **Contract Management** — contract register, milestone tracking, payment schedule management
-- **Asset Management** — government-standard asset register, depreciation schedules, disposal workflows
-- **HR & Payroll** — employee records, leave management, Thai government payroll compliance
+- **การวางแผนงบประมาณและการควบคุมการผูกพัน** — การจัดสรรงบประมาณรายปี การโอนงบประมาณ การติดตามงบประมาณแบบ Real-time การป้องกันการใช้เกินงบประมาณ
+- **การจัดซื้อจัดจ้างภาครัฐ** — กระบวนการที่สอดคล้องกับกฎระเบียบการจัดซื้อจัดจ้างภาครัฐไทย
+- **การบัญชีหลายกองทุน** — การติดตามรายรับและรายจ่ายตามโครงการ Programme และแหล่งเงินทุน
+- **การเงินและบัญชี** — รายงานทางการเงินตามมาตรฐานราชการ ผังบัญชีไทย การปฏิบัติตาม VAT
+- **การบริหารสัญญา** — ทะเบียนสัญญา การติดตาม Milestone การบริหารตารางการชำระเงิน
+- **การบริหารสินทรัพย์** — ทะเบียนสินทรัพย์ตามมาตรฐานราชการ ตารางค่าเสื่อมราคา กระบวนการจำหน่าย
+- **HR และเงินเดือน** — ข้อมูลพนักงาน การบริหารลา การปฏิบัติตามกฎหมายเงินเดือนราชการไทย
 
-## The Outcome
+## ผลลัพธ์
 
-NSTDA has been running on Odoo for 7+ years without interruption. The system covers multiple departments and research centres, manages the agency's complex project-based funding structure, and has been continuously evolved as organisational needs changed.
+สวทช. ดำเนินงานบน Odoo มากกว่า 7 ปีโดยไม่หยุดชะงัก ระบบครอบคลุมหลายฝ่ายและศูนย์วิจัย บริหารจัดการโครงสร้างเงินทุนแบบ Project-based ที่ซับซ้อนของหน่วยงาน และได้รับการพัฒนาอย่างต่อเนื่องตามความต้องการขององค์กรที่เปลี่ยนแปลง
 
-Annual licence cost savings compared to SAP have been substantial — savings that have been reinvested into system improvements and additional module development. NSTDA now owns its ERP system completely and can engage any competent developer to maintain or extend it.
+การประหยัดค่า License รายปีเมื่อเทียบกับ SAP มีนัยสำคัญ — การประหยัดที่ถูกนำไปลงทุนในการปรับปรุงระบบและการพัฒนาโมดูลเพิ่มเติม สวทช. เป็นเจ้าของระบบ ERP อย่างสมบูรณ์และสามารถจ้างนักพัฒนาที่มีความสามารถรายใดก็ได้เพื่อบำรุงรักษาหรือขยายระบบ
 
-The VP-level endorsement from NSTDA's leadership remains one of Ecosoft's strongest references in the government sector — evidence that open-source ERP can meet the most demanding public-sector requirements in Thailand.
+การรับรองจากระดับ VP ของผู้นำ สวทช. ยังคงเป็นหนึ่งในอ้างอิงที่แข็งแกร่งที่สุดของ Ecosoft ในภาครัฐ — หลักฐานที่แสดงว่า Open Source ERP สามารถตอบสนองข้อกำหนดภาคสาธารณะที่เรียกร้องสูงที่สุดในประเทศไทยได้
 
-## Related Case Studies
+## กรณีศึกษาที่เกี่ยวข้อง
 
-- NXPO — Government / Odoo
-- EOS Orbit — Technology / ERPNext
+- NXPO — หน่วยงานราชการ / Odoo
+- EOS Orbit — เทคโนโลยี / ERPNext

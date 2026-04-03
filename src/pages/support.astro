@@ -4,67 +4,68 @@ import BaseLayout from "@layouts/BaseLayout.astro";
 const supportPlans = [
   {
     name: "Essential",
-    description: "For stable implementations needing occasional assistance.",
+    description: "สำหรับระบบที่เสถียรและต้องการความช่วยเหลือเป็นครั้งคราว",
     includes: [
-      "Email support (business hours)",
-      "Bug investigation and fixes",
-      "Minor configuration changes",
-      "System health monitoring",
-      "Annual version review",
+      "รองรับทางอีเมล (ในเวลาทำการ)",
+      "ตรวจสอบและแก้ไขข้อผิดพลาด",
+      "ปรับแต่งการตั้งค่าเล็กน้อย",
+      "ติดตามสถานภาพระบบ",
+      "ทบทวน version รายปี",
     ],
-    responseTime: "2 business days",
-    suitable: "Live systems with low change volume",
+    responseTime: "2 วันทำการ",
+    suitable: "ระบบที่ใช้งานจริงที่มีปริมาณการเปลี่ยนแปลงน้อย",
   },
   {
     name: "Standard",
-    description: "For actively evolving systems with regular change requests.",
+    description: "สำหรับระบบที่พัฒนาต่อเนื่องและมีคำขอเปลี่ยนแปลงสม่ำเสมอ",
     includes: [
-      "Email + phone support (business hours)",
-      "Bug investigation and fixes",
-      "Configuration changes and module updates",
-      "Scheduled development hours per month",
-      "Quarterly review calls",
-      "System health monitoring",
+      "รองรับทางอีเมลและโทรศัพท์ (ในเวลาทำการ)",
+      "ตรวจสอบและแก้ไขข้อผิดพลาด",
+      "ปรับแต่งการตั้งค่าและอัปเดตโมดูล",
+      "ชั่วโมงพัฒนาระบบตามกำหนดต่อเดือน",
+      "การประชุมรีวิวรายไตรมาส",
+      "ติดตามสถานภาพระบบ",
     ],
-    responseTime: "1 business day",
-    suitable: "Growing businesses adding modules or users",
+    responseTime: "1 วันทำการ",
+    suitable: "ธุรกิจที่กำลังขยายโมดูลหรือผู้ใช้งาน",
     highlighted: true,
   },
   {
     name: "Priority",
-    description: "For mission-critical systems where downtime is not an option.",
+    description: "สำหรับระบบที่มีความสำคัญสูงและไม่สามารถหยุดทำงานได้",
     includes: [
-      "Email + phone + LINE support",
-      "Extended hours coverage",
-      "Same-day response for critical issues",
-      "Monthly development hours included",
-      "Monthly review calls",
-      "Proactive monitoring and alerts",
-      "Dedicated account consultant",
+      "รองรับทางอีเมล โทรศัพท์ และ LINE",
+      "ครอบคลุมนอกเวลาทำการ",
+      "ตอบสนองภายในวันเดียวกันสำหรับปัญหาวิกฤต",
+      "ชั่วโมงพัฒนาระบบรายเดือนรวมอยู่ในแผน",
+      "การประชุมรีวิวรายเดือน",
+      "การติดตามและแจ้งเตือนเชิงรุก",
+      "ที่ปรึกษาประจำบัญชีโดยเฉพาะ",
     ],
-    responseTime: "Same day (critical issues: 4 hours)",
-    suitable: "Enterprise and government installations",
+    responseTime: "ภายในวันเดียวกัน (ปัญหาวิกฤต: 4 ชั่วโมง)",
+    suitable: "ระบบองค์กรขนาดใหญ่และหน่วยงานภาครัฐ",
   },
 ];
 ---
 
 <BaseLayout
-  title="Support Plans | Ecosoft"
-  description="Annual support contracts for Odoo and ERPNext implementations — bug fixes, configuration changes, system monitoring, and ongoing development."
+  title="แผนบริการหลังการติดตั้ง | Ecosoft"
+  description="สัญญาสนับสนุนรายปีสำหรับระบบ Odoo และ ERPNext — ครอบคลุมการแก้ไขข้อผิดพลาด ปรับแต่งการตั้งค่า ติดตามระบบ และการพัฒนาต่อเนื่อง"
 >
 
   <!-- HERO -->
   <section class="hero" style="padding-bottom:2rem;">
     <div class="container">
-      <p class="eyebrow">After Go-Live</p>
+      <p class="eyebrow">หลัง Go-Live</p>
       <h1>ERP systems need tending. We handle that.</h1>
       <p class="hero-lead">
-        An ERP implementation is not a one-time event. As your business evolves, your system needs to evolve with it.
-        Ecosoft's support contracts keep your system running cleanly — and ensure you have experienced help when you need it.
+        การติดตั้ง ERP ไม่ใช่งานที่ทำครั้งเดียวแล้วจบ เมื่อธุรกิจของคุณเติบโต ระบบก็ต้องพัฒนาตามไปด้วย
+        สัญญาสนับสนุนของ Ecosoft ช่วยให้ระบบของคุณทำงานได้อย่างมีประสิทธิภาพ —
+        และมั่นใจได้ว่าคุณจะได้รับความช่วยเหลือจากผู้เชี่ยวชาญเมื่อต้องการ
       </p>
       <div class="hero-actions">
-        <a href="/contact" class="btn btn-primary">Talk to Us About Support</a>
-        <a href="/solutions/pricing" class="btn btn-outline">View Pricing</a>
+        <a href="/contact" class="btn btn-primary">พูดคุยเรื่องบริการสนับสนุน</a>
+        <a href="/solutions/pricing" class="btn btn-outline">ดูราคา</a>
       </div>
     </div>
   </section>
@@ -72,20 +73,20 @@ const supportPlans = [
   <!-- SUPPORT PLANS -->
   <section class="section">
     <div class="container">
-      <h2 style="text-align:center;">Support plans</h2>
-      <p class="section-lead" style="text-align:center;">Annual contracts covering the full range of post-implementation support needs.</p>
+      <h2 style="text-align:center;">แผนบริการสนับสนุน</h2>
+      <p class="section-lead" style="text-align:center;">สัญญารายปีครอบคลุมความต้องการด้านการสนับสนุนหลังการติดตั้งอย่างครบถ้วน</p>
       <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap:1.5rem; margin-top:2.5rem;">
         {supportPlans.map((plan) => (
           <div class="info-card" style={`padding:2rem; ${plan.highlighted ? 'border:2px solid var(--accent);' : ''}`}>
             {plan.highlighted && (
               <div style="text-align:center; margin-bottom:1rem;">
-                <span class="tag" style="background:var(--accent);color:#fff;">Most Popular</span>
+                <span class="tag" style="background:var(--accent);color:#fff;">ยอดนิยม</span>
               </div>
             )}
             <h3 style="margin-top:0;">{plan.name}</h3>
             <p style="color:var(--text-muted); font-size:0.875rem; margin-bottom:1.5rem;">{plan.description}</p>
             <div style="font-size:0.8125rem; color:var(--text-muted); margin-bottom:1.25rem;">
-              <strong style="color:var(--text);">Response time:</strong> {plan.responseTime}
+              <strong style="color:var(--text);">เวลาตอบสนอง:</strong> {plan.responseTime}
             </div>
             <ul style="list-style:none; padding:0; margin:0 0 1.5rem; display:flex; flex-direction:column; gap:0.5rem;">
               {plan.includes.map((item) => (
@@ -96,9 +97,9 @@ const supportPlans = [
               ))}
             </ul>
             <p style="font-size:0.8125rem; color:var(--text-muted); margin-bottom:1.25rem;">
-              <strong style="color:var(--text);">Best for:</strong> {plan.suitable}
+              <strong style="color:var(--text);">เหมาะสำหรับ:</strong> {plan.suitable}
             </p>
-            <a href="/contact" class="btn btn-outline" style="width:100%; text-align:center; display:block;">Get a quote →</a>
+            <a href="/contact" class="btn btn-outline" style="width:100%; text-align:center; display:block;">ขอใบเสนอราคา →</a>
           </div>
         ))}
       </div>
@@ -108,39 +109,39 @@ const supportPlans = [
   <!-- WHAT SUPPORT COVERS -->
   <section class="section" style="background: var(--surface);">
     <div class="container">
-      <h2 style="text-align:center;">What support actually means</h2>
-      <p class="section-lead" style="text-align:center;">A clear description of what's in scope — and what requires a separate project.</p>
+      <h2 style="text-align:center;">ขอบเขตของบริการสนับสนุน</h2>
+      <p class="section-lead" style="text-align:center;">คำอธิบายชัดเจนว่าสิ่งใดอยู่ในขอบเขต — และสิ่งใดต้องดำเนินการเป็นโปรเจกต์แยก</p>
       <div class="cards-grid" style="grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap:1.5rem; margin-top:2.5rem;">
         <div class="info-card">
-          <h4>✓ Covered by support</h4>
+          <h4>✓ ครอบคลุมโดยบริการสนับสนุน</h4>
           <ul style="list-style:none; padding:0; display:flex; flex-direction:column; gap:0.4rem; font-size:0.875rem;">
-            <li>Bug fixes — system not working as configured</li>
-            <li>Configuration changes — adjusting existing settings</li>
-            <li>User access management</li>
-            <li>Minor report modifications</li>
-            <li>System monitoring and alerts</li>
-            <li>Guidance on how to use existing functionality</li>
+            <li>แก้ไขข้อผิดพลาด — ระบบทำงานไม่ตรงตามที่ตั้งค่าไว้</li>
+            <li>ปรับแต่งการตั้งค่า — ปรับการกำหนดค่าที่มีอยู่</li>
+            <li>จัดการสิทธิ์การเข้าถึงของผู้ใช้</li>
+            <li>แก้ไขรายงานเล็กน้อย</li>
+            <li>ติดตามระบบและแจ้งเตือน</li>
+            <li>คำแนะนำการใช้งานฟังก์ชันที่มีอยู่</li>
           </ul>
         </div>
         <div class="info-card">
-          <h4>⚡ Handled via development hours</h4>
+          <h4>⚡ ดำเนินการผ่านชั่วโมงพัฒนาระบบ</h4>
           <ul style="list-style:none; padding:0; display:flex; flex-direction:column; gap:0.4rem; font-size:0.875rem;">
-            <li>New module implementation</li>
-            <li>Custom module development</li>
-            <li>Major workflow changes</li>
-            <li>New report or dashboard development</li>
-            <li>Third-party integrations</li>
-            <li>Version upgrades</li>
+            <li>การติดตั้งโมดูลใหม่</li>
+            <li>การพัฒนาโมดูลแบบกำหนดเอง</li>
+            <li>การเปลี่ยนแปลง workflow ขนาดใหญ่</li>
+            <li>การพัฒนารายงานหรือ dashboard ใหม่</li>
+            <li>การเชื่อมต่อระบบภายนอก</li>
+            <li>การอัปเกรด version</li>
           </ul>
         </div>
         <div class="info-card">
-          <h4>📋 Proactive (Standard / Priority)</h4>
+          <h4>📋 เชิงรุก (Standard / Priority)</h4>
           <ul style="list-style:none; padding:0; display:flex; flex-direction:column; gap:0.4rem; font-size:0.875rem;">
-            <li>Scheduled review calls</li>
-            <li>System performance checks</li>
-            <li>New release notes and impact assessment</li>
-            <li>User feedback gathering</li>
-            <li>Roadmap planning</li>
+            <li>การประชุมรีวิวตามกำหนด</li>
+            <li>ตรวจสอบประสิทธิภาพระบบ</li>
+            <li>บันทึก release ใหม่และการประเมินผลกระทบ</li>
+            <li>รวบรวม feedback จากผู้ใช้</li>
+            <li>วางแผน roadmap การพัฒนา</li>
           </ul>
         </div>
       </div>
@@ -150,22 +151,23 @@ const supportPlans = [
   <!-- CURRENT CLIENTS -->
   <section class="section">
     <div class="container" style="text-align:center;">
-      <h2>Long-term partnerships</h2>
+      <h2>ความร่วมมือระยะยาว</h2>
       <p class="section-lead" style="max-width:640px; margin:0 auto;">
-        Ecosoft's oldest client relationship is over 10 years. This isn't accidental — it reflects a support model built around keeping systems healthy, not generating ticket volume.
+        ความสัมพันธ์ที่ยาวนานที่สุดของ Ecosoft กับลูกค้ามากกว่า 10 ปี ซึ่งไม่ได้เกิดขึ้นโดยบังเอิญ —
+        แต่เป็นผลจากโมเดลสนับสนุนที่เน้นรักษาระบบให้ทำงานได้ดี ไม่ใช่การสร้าง ticket ปริมาณมาก
       </p>
       <div style="display:flex; gap:2rem; justify-content:center; flex-wrap:wrap; margin-top:2.5rem;">
         <div style="text-align:center;">
           <div style="font-size:2.5rem; font-weight:700; color:var(--accent);">10+</div>
-          <div style="font-size:0.875rem; color:var(--text-muted);">Years, Raja Cycle</div>
+          <div style="font-size:0.875rem; color:var(--text-muted);">ปี กับ Raja Cycle</div>
         </div>
         <div style="text-align:center;">
           <div style="font-size:2.5rem; font-weight:700; color:var(--accent);">7+</div>
-          <div style="font-size:0.875rem; color:var(--text-muted);">Years, NSTDA</div>
+          <div style="font-size:0.875rem; color:var(--text-muted);">ปี กับ NSTDA</div>
         </div>
         <div style="text-align:center;">
           <div style="font-size:2.5rem; font-weight:700; color:var(--accent);">10+</div>
-          <div style="font-size:0.875rem; color:var(--text-muted);">Years, Square Panel Systems</div>
+          <div style="font-size:0.875rem; color:var(--text-muted);">ปี กับ Square Panel Systems</div>
         </div>
       </div>
     </div>
@@ -174,9 +176,9 @@ const supportPlans = [
   <!-- CTA -->
   <section class="cta-strip">
     <div class="container">
-      <h2>Need support for an existing Odoo or ERPNext installation?</h2>
-      <p>Talk to us — even if we didn't implement your system originally, we can take over support and stabilise it.</p>
-      <a href="/contact" class="btn btn-primary">Get a Support Quote</a>
+      <h2>ต้องการบริการสนับสนุนสำหรับระบบ Odoo หรือ ERPNext ที่มีอยู่แล้วหรือไม่?</h2>
+      <p>พูดคุยกับเรา — แม้เราไม่ใช่ผู้ติดตั้งระบบให้คุณตั้งแต่แรก เราก็สามารถรับช่วงต่อและดูแลให้ระบบมีเสถียรภาพได้</p>
+      <a href="/contact" class="btn btn-primary">ขอใบเสนอราคาบริการสนับสนุน</a>
     </div>
   </section>
 

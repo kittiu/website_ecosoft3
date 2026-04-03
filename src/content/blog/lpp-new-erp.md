@@ -1,47 +1,47 @@
 ---
-title: "From Accounting Software to a True ERP: Lamphun Plastpack's Digital Transformation"
+title: "จากซอฟต์แวร์บัญชีสู่ ERP แท้จริง: การเปลี่ยนแปลงดิจิทัลของ Lamphun Plastpack"
 date: 2025-11-01
-author: "Atitep Rungkeeratikul"
-category: "Case Study"
-description: "How a 30-year-old plastic packaging manufacturer in Lamphun moved from AccCloud to ERPNext — and what they learned along the way."
+author: "อธิเทพ รุ่งกีรติกุล"
+category: "กรณีศึกษา"
+description: "ผู้ผลิตบรรจุภัณฑ์พลาสติกอายุกว่า 30 ปีในลำพูน ย้ายจาก AccCloud มาสู่ ERPNext ได้อย่างไร และบทเรียนที่ได้รับระหว่างทาง"
 image: "/images/blog/lpp-new-erp.jpg"
 tags: ["erpnext", "case-study", "manufacturing", "digital-transformation"]
 ---
 
-## About Lamphun Plastpack Co., Ltd.
+## เกี่ยวกับ บริษัท ลำพูนพลาสแพ็ค จำกัด
 
-Established in **1995** in Lamphun Province, Lamphun Plastpack has spent over 30 years manufacturing high-quality plastic packaging for electronics, chips, and semiconductors — while expanding into food packaging and other industries. Growth brought new complexity that their old system could no longer handle.
+ก่อตั้งเมื่อปี **2538** ในจังหวัดลำพูน Lamphun Plastpack ใช้เวลากว่า 30 ปีในการผลิตบรรจุภัณฑ์พลาสติกคุณภาพสูงสำหรับอุตสาหกรรมอิเล็กทรอนิกส์ ชิป และเซมิคอนดักเตอร์ พร้อมทั้งขยายไปสู่บรรจุภัณฑ์อาหารและอุตสาหกรรมอื่นๆ การเติบโตนำมาซึ่งความซับซ้อนใหม่ที่ระบบเก่าไม่สามารถรองรับได้อีกต่อไป
 
-## The Problem with AccCloud
+## ปัญหาของ AccCloud
 
-The company previously used AccCloud, an accounting software that lacked true ERP capabilities. The limitations were clear:
+บริษัทเคยใช้ AccCloud ซึ่งเป็นซอฟต์แวร์บัญชีที่ขาดความสามารถ ERP แท้จริง ข้อจำกัดที่ชัดเจนได้แก่:
 
-- **Poor data accessibility** — information locked in separate silos
-- **Weak customization flexibility** — unable to adapt to evolving business workflows
-- **Limited self-management** — every change required external vendor support
-- **No interconnectivity** — could not meet modern decision-making speed requirements
+- **การเข้าถึงข้อมูลที่ยากลำบาก** — ข้อมูลถูกแยกเก็บในไซโลที่แตกต่างกัน
+- **ความยืดหยุ่นในการปรับแต่งต่ำ** — ไม่สามารถปรับตัวตามกระบวนการทำงานที่เปลี่ยนแปลงได้
+- **การพึ่งพา Vendor มากเกินไป** — ทุกการเปลี่ยนแปลงต้องอาศัยการสนับสนุนจากภายนอก
+- **ขาดการเชื่อมต่อ** — ไม่สามารถตอบสนองความต้องการในการตัดสินใจอย่างทันท่วงทีของยุคปัจจุบัน
 
-Management realized they needed a system they could actually own and control.
+ฝ่ายบริหารตระหนักว่าพวกเขาต้องการระบบที่ตนเองสามารถเป็นเจ้าของและควบคุมได้อย่างแท้จริง
 
-## Why ERPNext?
+## ทำไมต้อง ERPNext?
 
-After evaluating several options, ERPNext stood out for three reasons:
+หลังจากประเมินตัวเลือกหลายรายการ ERPNext โดดเด่นขึ้นมาด้วยเหตุผลสามประการ:
 
-1. **Low-code, open-source architecture** enabling flexible customization without expensive developers
-2. **Superior agility** compared to closed-source ERP (SAP, Oracle) that depend on certified developers for every change
-3. **Connected to a worldwide developer community** sharing knowledge, modules, and improvements continuously
+1. **สถาปัตยกรรม Low-code และ Open Source** ที่เปิดให้ปรับแต่งได้อย่างยืดหยุ่นโดยไม่ต้องใช้นักพัฒนาที่มีค่าใช้จ่ายสูง
+2. **ความคล่องตัวที่เหนือกว่า** เมื่อเทียบกับ ERP แบบ Closed-source อย่าง SAP หรือ Oracle ที่ต้องพึ่งพานักพัฒนาที่ผ่านการรับรองในทุกการเปลี่ยนแปลง
+3. **เชื่อมต่อกับชุมชนนักพัฒนาทั่วโลก** ที่แบ่งปันความรู้ โมดูล และการปรับปรุงอย่างต่อเนื่อง
 
-## The Results
+## ผลลัพธ์
 
-The transformation was significant across every department:
+การเปลี่ยนแปลงมีนัยสำคัญในทุกฝ่าย:
 
-- **Document workflow states** (Draft, Submitted, Cancelled) standardized employee behavior and prevented unauthorized edits
-- **Eliminated data redundancy** from paper forms and spreadsheets
-- **Real-time visibility** for management decisions — no more waiting for month-end reports
-- **Elevated process controls** from high error rates to structured, systematically verifiable workflows
+- **สถานะกระแสงาน** (Draft, Submitted, Cancelled) ช่วยสร้างมาตรฐานพฤติกรรมของพนักงานและป้องกันการแก้ไขที่ไม่ได้รับอนุญาต
+- **กำจัดข้อมูลซ้ำซ้อน** จากแบบฟอร์มกระดาษและ Spreadsheet
+- **การมองเห็นข้อมูลแบบ Real-time** สำหรับการตัดสินใจของฝ่ายบริหาร — ไม่ต้องรอรายงานสิ้นเดือนอีกต่อไป
+- **ยกระดับการควบคุมกระบวนการ** จากอัตราข้อผิดพลาดสูงไปสู่กระบวนการที่มีโครงสร้างและตรวจสอบได้อย่างเป็นระบบ
 
-> *"I recommend ERPNext for those seeking a flexible, customizable ERP system, especially those with technical backgrounds who can self-manage modifications."*
+> *"ผมขอแนะนำ ERPNext สำหรับผู้ที่ต้องการระบบ ERP ที่ยืดหยุ่นและปรับแต่งได้ โดยเฉพาะอย่างยิ่งผู้ที่มีพื้นฐานทางเทคนิคซึ่งสามารถบริหารจัดการการปรับเปลี่ยนด้วยตัวเองได้"*
 >
-> — **Atitep Rungkeeratikul**, Business Developer, Lamphun Plastpack
+> — **อธิเทพ รุ่งกีรติกุล**, Business Developer, Lamphun Plastpack
 
-The journey from accounting software to a true ERP is not just a technology upgrade — it is an organizational transformation. Lamphun Plastpack's experience shows that with the right platform and partner, even a 30-year-old manufacturer can become a modern, data-driven business.
+เส้นทางจากซอฟต์แวร์บัญชีไปสู่ ERP แท้จริงไม่ใช่แค่การอัปเกรดเทคโนโลยี — แต่คือการเปลี่ยนแปลงองค์กร ประสบการณ์ของ Lamphun Plastpack แสดงให้เห็นว่าด้วย Platform และพันธมิตรที่เหมาะสม แม้แต่ผู้ผลิตที่ดำเนินงานมากว่า 30 ปีก็สามารถกลายเป็นธุรกิจที่ขับเคลื่อนด้วยข้อมูลอย่างทันสมัยได้

@@ -3,17 +3,17 @@ import BaseLayout from "@layouts/BaseLayout.astro";
 ---
 
 <BaseLayout
-  title="ERP Readiness Assessment | Ecosoft"
-  description="A free 5-minute self-assessment to evaluate whether your business is ready for ERP implementation — covering process maturity, data quality, and organisational readiness."
+  title="แบบประเมินความพร้อม ERP | Ecosoft"
+  description="แบบประเมินตนเองฟรีภายใน 5 นาที เพื่อวัดความพร้อมของธุรกิจในการติดตั้ง ERP — ครอบคลุมความสมบูรณ์ของกระบวนการ คุณภาพข้อมูล และความพร้อมขององค์กร"
 >
 
   <!-- HERO -->
   <section class="hero" style="padding-bottom:2rem;">
     <div class="container" style="text-align:center;">
-      <p class="eyebrow">Free Tool</p>
+      <p class="eyebrow">เครื่องมือฟรี</p>
       <h1>Is your business ready for ERP?</h1>
       <p class="hero-lead" style="max-width:640px; margin:1rem auto 0;">
-        5 minutes. 15 questions. A clear assessment of where you are and what needs to happen before an implementation starts.
+        5 นาที 15 คำถาม ประเมินสถานะปัจจุบันของคุณอย่างชัดเจน และสิ่งที่ต้องเตรียมก่อนเริ่มติดตั้งระบบ
       </p>
     </div>
   </section>
@@ -36,60 +36,60 @@ import BaseLayout from "@layouts/BaseLayout.astro";
 
           <!-- STEP 1: Business context -->
           <div class="step-panel step-panel--active" id="step-1">
-            <h2>About your business</h2>
+            <h2>ข้อมูลธุรกิจของคุณ</h2>
 
             <div style="margin-bottom:1.5rem;">
-              <label style="display:block; font-weight:600; margin-bottom:0.5rem;">Company size</label>
+              <label style="display:block; font-weight:600; margin-bottom:0.5rem;">ขนาดบริษัท</label>
               <select name="size" class="form-input" required>
-                <option value="">Select…</option>
-                <option>Under 20 employees</option>
-                <option>20–50 employees</option>
-                <option>50–100 employees</option>
-                <option>100–500 employees</option>
-                <option>500+ employees</option>
+                <option value="">เลือก…</option>
+                <option>ต่ำกว่า 20 คน</option>
+                <option>20–50 คน</option>
+                <option>50–100 คน</option>
+                <option>100–500 คน</option>
+                <option>500+ คน</option>
               </select>
             </div>
 
             <div style="margin-bottom:1.5rem;">
-              <label style="display:block; font-weight:600; margin-bottom:0.5rem;">Industry</label>
+              <label style="display:block; font-weight:600; margin-bottom:0.5rem;">อุตสาหกรรม</label>
               <select name="industry" class="form-input" required>
-                <option value="">Select…</option>
+                <option value="">เลือก…</option>
                 <option>Manufacturing</option>
                 <option>Trading / Distribution</option>
                 <option>Professional Services</option>
                 <option>Technology</option>
                 <option>Government / Public sector</option>
                 <option>Healthcare</option>
-                <option>Other</option>
+                <option>อื่นๆ</option>
               </select>
             </div>
 
             <div style="margin-bottom:1.5rem;">
-              <label style="display:block; font-weight:600; margin-bottom:0.5rem;">What system do you currently use for accounting / operations?</label>
+              <label style="display:block; font-weight:600; margin-bottom:0.5rem;">ระบบที่ใช้อยู่ในปัจจุบันสำหรับบัญชี / การดำเนินงาน</label>
               <select name="current_system" class="form-input" required>
-                <option value="">Select…</option>
+                <option value="">เลือก…</option>
                 <option>Spreadsheets (Excel / Google Sheets)</option>
-                <option>Basic accounting software (QuickBooks, Xero, PEAK)</option>
-                <option>Thai accounting software (Express, FlowAccount)</option>
-                <option>Older ERP (SAP, Oracle, Microsoft Dynamics)</option>
-                <option>Odoo (current version — need upgrade)</option>
-                <option>ERPNext (current version — need upgrade)</option>
-                <option>No formal system</option>
+                <option>โปรแกรมบัญชีพื้นฐาน (QuickBooks, Xero, PEAK)</option>
+                <option>โปรแกรมบัญชีไทย (Express, FlowAccount)</option>
+                <option>ERP รุ่นเก่า (SAP, Oracle, Microsoft Dynamics)</option>
+                <option>Odoo (เวอร์ชันปัจจุบัน — ต้องการอัปเกรด)</option>
+                <option>ERPNext (เวอร์ชันปัจจุบัน — ต้องการอัปเกรด)</option>
+                <option>ยังไม่มีระบบที่เป็นทางการ</option>
               </select>
             </div>
 
-            <button type="button" class="btn btn-primary next-step" data-next="2">Continue →</button>
+            <button type="button" class="btn btn-primary next-step" data-next="2">ถัดไป →</button>
           </div>
 
           <!-- STEP 2: Process maturity -->
           <div class="step-panel" id="step-2">
-            <h2>Process maturity</h2>
-            <p style="color:var(--text-muted); margin-bottom:1.5rem;">Rate your agreement with each statement (1 = strongly disagree, 5 = strongly agree)</p>
+            <h2>ความสมบูรณ์ของกระบวนการ</h2>
+            <p style="color:var(--text-muted); margin-bottom:1.5rem;">ให้คะแนนความเห็นด้วยกับแต่ละข้อความ (1 = ไม่เห็นด้วยอย่างยิ่ง, 5 = เห็นด้วยอย่างยิ่ง)</p>
 
             {[
-              { name: "q_process_1", text: "Our core business processes (order management, procurement, production) are clearly documented and followed consistently." },
-              { name: "q_process_2", text: "We have clear owners for each major business process — someone responsible for how it works and whether it's followed." },
-              { name: "q_process_3", text: "When something goes wrong operationally, we have a standard way to identify the root cause rather than just fixing the symptom." },
+              { name: "q_process_1", text: "กระบวนการทางธุรกิจหลักของเรา (การจัดการคำสั่งซื้อ การจัดซื้อ การผลิต) ได้รับการบันทึกอย่างชัดเจนและปฏิบัติตามอย่างสม่ำเสมอ" },
+              { name: "q_process_2", text: "เรามีผู้รับผิดชอบที่ชัดเจนสำหรับกระบวนการทางธุรกิจหลักแต่ละกระบวนการ — มีบุคคลที่รับผิดชอบว่ากระบวนการทำงานอย่างไรและปฏิบัติตามหรือไม่" },
+              { name: "q_process_3", text: "เมื่อเกิดปัญหาด้านการดำเนินงาน เรามีวิธีมาตรฐานในการระบุสาเหตุที่แท้จริง ไม่ใช่แค่แก้ไขที่อาการ" },
             ].map((q) => (
               <div style="margin-bottom:1.5rem; padding:1.25rem; background:var(--surface); border-radius:0.75rem; border:1px solid var(--border);">
                 <label style="display:block; font-weight:600; margin-bottom:1rem;">{q.text}</label>
@@ -105,20 +105,20 @@ import BaseLayout from "@layouts/BaseLayout.astro";
             ))}
 
             <div style="display:flex; gap:1rem;">
-              <button type="button" class="btn btn-outline prev-step" data-prev="1">← Back</button>
-              <button type="button" class="btn btn-primary next-step" data-next="3">Continue →</button>
+              <button type="button" class="btn btn-outline prev-step" data-prev="1">← ย้อนกลับ</button>
+              <button type="button" class="btn btn-primary next-step" data-next="3">ถัดไป →</button>
             </div>
           </div>
 
           <!-- STEP 3: Data readiness -->
           <div class="step-panel" id="step-3">
-            <h2>Data readiness</h2>
-            <p style="color:var(--text-muted); margin-bottom:1.5rem;">Rate your agreement with each statement</p>
+            <h2>ความพร้อมของข้อมูล</h2>
+            <p style="color:var(--text-muted); margin-bottom:1.5rem;">ให้คะแนนความเห็นด้วยกับแต่ละข้อความ</p>
 
             {[
-              { name: "q_data_1", text: "We have a reasonably accurate and complete list of all products / services we sell, with pricing and cost information." },
-              { name: "q_data_2", text: "Our supplier and customer records are organised and relatively up-to-date — not scattered across multiple spreadsheets or people's contacts." },
-              { name: "q_data_3", text: "We could produce a reasonably accurate inventory count if asked to today." },
+              { name: "q_data_1", text: "เรามีรายชื่อสินค้า/บริการที่จำหน่ายครบถ้วนและค่อนข้างถูกต้อง พร้อมข้อมูลราคาและต้นทุน" },
+              { name: "q_data_2", text: "ข้อมูลผู้ขายและลูกค้าของเรามีการจัดระเบียบและค่อนข้างทันสมัย ไม่กระจัดกระจายอยู่ใน spreadsheet หลายชุดหรือรายชื่อติดต่อส่วนตัว" },
+              { name: "q_data_3", text: "เราสามารถนับสต็อกสินค้าได้อย่างแม่นยำพอสมควรหากต้องทำในวันนี้" },
             ].map((q) => (
               <div style="margin-bottom:1.5rem; padding:1.25rem; background:var(--surface); border-radius:0.75rem; border:1px solid var(--border);">
                 <label style="display:block; font-weight:600; margin-bottom:1rem;">{q.text}</label>
@@ -134,21 +134,21 @@ import BaseLayout from "@layouts/BaseLayout.astro";
             ))}
 
             <div style="display:flex; gap:1rem;">
-              <button type="button" class="btn btn-outline prev-step" data-prev="2">← Back</button>
-              <button type="button" class="btn btn-primary next-step" data-next="4">Continue →</button>
+              <button type="button" class="btn btn-outline prev-step" data-prev="2">← ย้อนกลับ</button>
+              <button type="button" class="btn btn-primary next-step" data-next="4">ถัดไป →</button>
             </div>
           </div>
 
           <!-- STEP 4: Organisational readiness -->
           <div class="step-panel" id="step-4">
-            <h2>Organisational readiness</h2>
-            <p style="color:var(--text-muted); margin-bottom:1.5rem;">Rate your agreement with each statement</p>
+            <h2>ความพร้อมขององค์กร</h2>
+            <p style="color:var(--text-muted); margin-bottom:1.5rem;">ให้คะแนนความเห็นด้วยกับแต่ละข้อความ</p>
 
             {[
-              { name: "q_org_1", text: "Senior management is actively supportive of this ERP project — not just tolerating it." },
-              { name: "q_org_2", text: "We have identified a capable internal project owner who will have time dedicated to this project during implementation." },
-              { name: "q_org_3", text: "The business can tolerate a period of learning curve and reduced speed during system transition — we have a realistic view of what implementation involves." },
-              { name: "q_org_4", text: "We have a realistic budget for implementation services — not just the software licence cost." },
+              { name: "q_org_1", text: "ผู้บริหารระดับสูงสนับสนุนโครงการ ERP นี้อย่างจริงจัง ไม่ใช่แค่ยอมรับ" },
+              { name: "q_org_2", text: "เราได้ระบุผู้รับผิดชอบโครงการภายในที่มีความสามารถ และจะมีเวลาอุทิศให้กับโครงการนี้ระหว่างการติดตั้ง" },
+              { name: "q_org_3", text: "ธุรกิจสามารถรับมือกับช่วงเรียนรู้และความเร็วที่ลดลงระหว่างการเปลี่ยนระบบ — เรามีมุมมองที่สมเหตุสมผลเกี่ยวกับสิ่งที่การติดตั้งต้องใช้" },
+              { name: "q_org_4", text: "เรามีงบประมาณที่สมเหตุสมผลสำหรับบริการติดตั้ง — ไม่ใช่แค่ค่าลิขสิทธิ์ซอฟต์แวร์" },
             ].map((q) => (
               <div style="margin-bottom:1.5rem; padding:1.25rem; background:var(--surface); border-radius:0.75rem; border:1px solid var(--border);">
                 <label style="display:block; font-weight:600; margin-bottom:1rem;">{q.text}</label>
@@ -164,34 +164,34 @@ import BaseLayout from "@layouts/BaseLayout.astro";
             ))}
 
             <div style="display:flex; gap:1rem;">
-              <button type="button" class="btn btn-outline prev-step" data-prev="3">← Back</button>
-              <button type="button" class="btn btn-primary next-step" data-next="5">See your results →</button>
+              <button type="button" class="btn btn-outline prev-step" data-prev="3">← ย้อนกลับ</button>
+              <button type="button" class="btn btn-primary next-step" data-next="5">ดูผลลัพธ์ของคุณ →</button>
             </div>
           </div>
 
           <!-- STEP 5: Results + Contact -->
           <div class="step-panel" id="step-5">
-            <h2>Your ERP readiness results</h2>
+            <h2>ผลการประเมินความพร้อม ERP ของคุณ</h2>
             <div id="results-display" style="background:var(--surface); border-radius:1rem; padding:2rem; margin-bottom:2rem; border:1px solid var(--border);">
               <div id="score-display" style="text-align:center; margin-bottom:1.5rem;">
                 <div id="score-number" style="font-size:4rem; font-weight:700; color:var(--accent);">—</div>
-                <div style="color:var(--text-muted); font-size:0.875rem;">Overall readiness score</div>
+                <div style="color:var(--text-muted); font-size:0.875rem;">คะแนนความพร้อมโดยรวม</div>
               </div>
               <div id="score-message" style="text-align:center;"></div>
             </div>
 
             <div class="info-card" style="padding:2rem; margin-bottom:2rem;">
-              <h3 style="margin-top:0;">Get your full assessment report</h3>
-              <p>Enter your details and we'll send a personalised report with specific recommendations based on your answers — plus an optional 30-minute call to discuss.</p>
+              <h3 style="margin-top:0;">รับรายงานการประเมินฉบับเต็ม</h3>
+              <p>กรอกข้อมูลของคุณ แล้วเราจะส่งรายงานเฉพาะบุคคลพร้อมคำแนะนำที่เจาะจงตามคำตอบของคุณ — และนัดหมายพูดคุย 30 นาทีเพิ่มเติม (ไม่บังคับ)</p>
               <div style="display:flex; flex-direction:column; gap:1rem; margin-top:1.25rem;">
-                <input type="text" name="contact_name" placeholder="Your name" class="form-input" required />
-                <input type="email" name="contact_email" placeholder="Business email" class="form-input" required />
-                <input type="text" name="contact_company" placeholder="Company name" class="form-input" required />
-                <button type="submit" class="btn btn-primary">Send me my report →</button>
+                <input type="text" name="contact_name" placeholder="ชื่อของคุณ" class="form-input" required />
+                <input type="email" name="contact_email" placeholder="อีเมลธุรกิจ" class="form-input" required />
+                <input type="text" name="contact_company" placeholder="ชื่อบริษัท" class="form-input" required />
+                <button type="submit" class="btn btn-primary">ส่งรายงานให้ฉัน →</button>
               </div>
             </div>
 
-            <p style="font-size:0.8125rem; text-align:center; color:var(--text-muted);">No spam. We'll only contact you about your assessment results.</p>
+            <p style="font-size:0.8125rem; text-align:center; color:var(--text-muted);">ไม่มี spam เราจะติดต่อเฉพาะเรื่องผลการประเมินของคุณเท่านั้น</p>
           </div>
 
         </form>
@@ -199,12 +199,12 @@ import BaseLayout from "@layouts/BaseLayout.astro";
         <!-- SUCCESS STATE -->
         <div id="form-success" style="display:none; text-align:center; padding:3rem 1rem;">
           <div style="font-size:4rem; margin-bottom:1rem;">✅</div>
-          <h2>Report on its way</h2>
+          <h2>รายงานกำลังส่งให้คุณแล้ว</h2>
           <p style="color:var(--text-muted); max-width:480px; margin:1rem auto 2rem;">
-            We've received your assessment. You'll receive your personalised report within one business day.
-            If you'd prefer to speak with a consultant directly, you can book time below.
+            เราได้รับแบบประเมินของคุณแล้ว คุณจะได้รับรายงานเฉพาะบุคคลภายในหนึ่งวันทำการ
+            หากต้องการพูดคุยกับที่ปรึกษาโดยตรง สามารถนัดหมายได้ที่นี่
           </p>
-          <a href="/book-demo" class="btn btn-primary">Book a 45-min consultation</a>
+          <a href="/book-demo" class="btn btn-primary">จองการปรึกษา 45 นาที</a>
         </div>
 
       </div>
@@ -258,11 +258,11 @@ import BaseLayout from "@layouts/BaseLayout.astro";
     if (scoreEl) scoreEl.textContent = pct + '%';
     if (msgEl) {
       if (pct >= 70) {
-        msgEl.innerHTML = '<strong style="color:var(--accent)">Strong readiness</strong><p style="color:var(--text-muted);margin-top:0.5rem;">Your business shows good readiness for ERP. The key next step is a detailed scoping conversation to define the right implementation approach.</p>';
+        msgEl.innerHTML = '<strong style="color:var(--accent)">ความพร้อมสูง</strong><p style="color:var(--text-muted);margin-top:0.5rem;">ธุรกิจของคุณมีความพร้อมสำหรับ ERP เป็นอย่างดี ขั้นตอนต่อไปคือการพูดคุยเพื่อกำหนดขอบเขตโครงการอย่างละเอียดและเลือกแนวทางการติดตั้งที่เหมาะสม</p>';
       } else if (pct >= 45) {
-        msgEl.innerHTML = '<strong style="color:#f59e0b">Moderate readiness</strong><p style="color:var(--text-muted);margin-top:0.5rem;">Some areas need attention before implementation. Your report will identify the specific gaps and what to do about them.</p>';
+        msgEl.innerHTML = '<strong style="color:#f59e0b">ความพร้อมระดับปานกลาง</strong><p style="color:var(--text-muted);margin-top:0.5rem;">บางด้านต้องการการพัฒนาก่อนเริ่มติดตั้ง รายงานของคุณจะระบุช่องว่างที่เจาะจงและสิ่งที่ต้องดำเนินการ</p>';
       } else {
-        msgEl.innerHTML = '<strong style="color:#ef4444">Readiness gaps identified</strong><p style="color:var(--text-muted);margin-top:0.5rem;">There are meaningful gaps to address before starting an ERP implementation. Your report will explain what to fix first — and why rushing would be costly.</p>';
+        msgEl.innerHTML = '<strong style="color:#ef4444">พบช่องว่างด้านความพร้อม</strong><p style="color:var(--text-muted);margin-top:0.5rem;">มีช่องว่างสำคัญที่ต้องแก้ไขก่อนเริ่มติดตั้ง ERP รายงานจะอธิบายว่าต้องแก้ไขอะไรก่อน — และเหตุผลที่การรีบเร่งจะมีต้นทุนสูง</p>';
       }
     }
   }

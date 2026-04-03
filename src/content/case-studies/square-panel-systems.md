@@ -1,46 +1,46 @@
 ---
 client: "Square Panel Systems"
-industry: "Manufacturing"
+industry: "การผลิต"
 solution: "Odoo"
-size: "20–100 employees"
-location: "Bangkok, Thailand"
-outcome: "Moved from spreadsheets to Odoo in 2014. Custom-configuration manufacturing managed end-to-end, with full management visibility and dramatically reduced manual coordination."
+size: "20–100 พนักงาน"
+location: "กรุงเทพมหานคร, ประเทศไทย"
+outcome: "ย้ายจาก Spreadsheet มาสู่ Odoo ในปี 2557 บริหารจัดการการผลิตแบบ Custom-configuration แบบ End-to-End พร้อมการมองเห็นของฝ่ายบริหารอย่างครบถ้วนและลดการประสานงานแบบ Manual อย่างมีนัยสำคัญ"
 featured: false
-quote: "Moving from spreadsheets to Odoo with Ecosoft dramatically reduced errors and gave us full visibility across the business. We can quote customers faster, track orders in real time, and close month-end in days instead of weeks."
-quoteAuthor: "Somboon Thannyavun"
-quoteTitle: "Managing Director, Square Panel Systems"
+quote: "การย้ายจาก Spreadsheet มาสู่ Odoo ด้วย Ecosoft ช่วยลดข้อผิดพลาดอย่างมากและทำให้เราเห็นภาพรวมของธุรกิจอย่างครบถ้วน เราสามารถเสนอราคาลูกค้าได้เร็วขึ้น ติดตามคำสั่งซื้อแบบ Real-time และปิดบัญชีสิ้นเดือนภายในไม่กี่วันแทนที่จะเป็นสัปดาห์"
+quoteAuthor: "สมบูรณ์ ธันยวัฒน์"
+quoteTitle: "กรรมการผู้จัดการ, Square Panel Systems"
 ---
 
-## Client Overview
+## ภาพรวมลูกค้า
 
-Square Panel Systems is a Thai manufacturer specialising in custom-configuration acoustic panels and modular building components. The company produces made-to-order products, managing a complex order-to-production workflow where each job involves unique specifications, custom BOM configurations, and client-specific quality requirements.
+Square Panel Systems คือผู้ผลิตไทยที่เชี่ยวชาญด้านแผงอะคูสติกแบบ Custom-configuration และชิ้นส่วนอาคารแบบ Modular บริษัทผลิตผลิตภัณฑ์ตามคำสั่ง โดยบริหารจัดการกระบวนการ Order-to-Production ที่ซับซ้อนซึ่งแต่ละงานมีข้อกำหนดเฉพาะ การกำหนดค่า BOM แบบ Custom และข้อกำหนดคุณภาพเฉพาะลูกค้า
 
-## The Challenge
+## ความท้าทาย
 
-When Square Panel Systems engaged Ecosoft in 2014, the business was being managed almost entirely through spreadsheets — customer orders tracked in Excel, production schedules on whiteboards, inventory counts done manually. As orders grew in volume and complexity, the manual approach was breaking down: quoting took days, production scheduling was reactive, and month-end reconciliation consumed weeks of accounting staff time.
+เมื่อ Square Panel Systems ติดต่อ Ecosoft ในปี 2557 ธุรกิจถูกบริหารจัดการเกือบทั้งหมดผ่าน Spreadsheet — คำสั่งลูกค้าติดตามใน Excel ตารางการผลิตบนไวท์บอร์ด การนับสินค้าคงคลังแบบ Manual เมื่อคำสั่งซื้อเพิ่มปริมาณและความซับซ้อน วิธีการแบบ Manual เริ่มล้มเหลว: การเสนอราคาใช้เวลาหลายวัน การจัดตารางการผลิตเป็นแบบ Reactive และการกระทบยอดสิ้นเดือนใช้เวลาหลายสัปดาห์ของทีมบัญชี
 
-The custom-configuration nature of their products added complexity beyond a standard manufacturing implementation. Each order required a custom BOM generated from client specifications, making standard ERP BOM management insufficient without customisation.
+ลักษณะ Custom-configuration ของผลิตภัณฑ์เพิ่มความซับซ้อนนอกเหนือจากการติดตั้ง ERP การผลิตมาตรฐาน แต่ละคำสั่งต้องการ BOM แบบ Custom ที่สร้างจากข้อกำหนดของลูกค้า ทำให้การบริหาร BOM ใน ERP มาตรฐานไม่เพียงพอโดยไม่มีการปรับแต่ง
 
-## Why Ecosoft
+## เหตุใดจึงเลือก Ecosoft
 
-Square Panel Systems chose Ecosoft because of their demonstrated ability to customise Odoo for non-standard manufacturing workflows without compromising the core system's integrity. Ecosoft's approach — building customisation as proper OCA-standard modules rather than quick hacks — gave the management team confidence that the system would remain maintainable and upgradeable long after implementation.
+Square Panel Systems เลือก Ecosoft เพราะความสามารถที่พิสูจน์แล้วในการปรับแต่ง Odoo สำหรับกระบวนการผลิตที่ไม่ใช่มาตรฐานโดยไม่กระทบความสมบูรณ์ของระบบหลัก แนวทางของ Ecosoft — การสร้างการปรับแต่งเป็นโมดูลที่ได้มาตรฐาน OCA อย่างเหมาะสมแทนการแก้ไขแบบเร่งรีบ — ทำให้ทีมบริหารมั่นใจว่าระบบจะบำรุงรักษาและอัปเกรดได้นานหลังการติดตั้ง
 
-## What We Implemented
+## สิ่งที่เราดำเนินการติดตั้ง
 
-- **Sales & CRM** — structured quotation process with custom-spec capture, order pipeline management
-- **Manufacturing** — custom BOM generation per order, work orders, production scheduling
-- **Inventory** — component stock management, reorder rules, goods receipt
-- **Purchase** — supplier PO management, 3-way matching, landed costs
-- **Accounting** — Thai-compliant financials, job costing, customer invoicing, VAT
-- **Custom Module** — specification-to-BOM automation that generates production BOMs directly from sales order specifications
+- **การขายและ CRM** — กระบวนการเสนอราคาที่มีโครงสร้างพร้อมการบันทึก Spec แบบ Custom การบริหาร Order Pipeline
+- **การผลิต** — การสร้าง BOM แบบ Custom ต่อคำสั่ง Work Orders การจัดตารางการผลิต
+- **สินค้าคงคลัง** — การบริหารสต็อกชิ้นส่วน กฎ Reorder การรับสินค้า
+- **การซื้อ** — การบริหาร PO ของ Supplier การจับคู่สามทาง Landed Costs
+- **บัญชี** — การเงินที่สอดคล้องกับกฎหมายไทย Job Costing การออกใบแจ้งหนี้ลูกค้า VAT
+- **โมดูลเฉพาะทาง** — ระบบอัตโนมัติ Specification-to-BOM ที่สร้าง BOM การผลิตโดยตรงจากข้อกำหนดใน Sales Order
 
-## The Outcome
+## ผลลัพธ์
 
-Square Panel Systems has operated on Odoo since 2014 — a decade-long partnership. Quoting time reduced from days to hours. Production scheduling is now proactive rather than reactive. Month-end close takes days rather than weeks. Management has real-time visibility into every active order, its production status, and its projected profitability.
+Square Panel Systems ดำเนินงานบน Odoo ตั้งแต่ปี 2557 — ความร่วมมือนานกว่าทศวรรษ เวลาในการเสนอราคาลดลงจากหลายวันเหลือไม่กี่ชั่วโมง การจัดตารางการผลิตตอนนี้เป็นแบบ Proactive แทนที่จะเป็น Reactive การปิดบัญชีสิ้นเดือนใช้เวลาเป็นวันแทนที่จะเป็นสัปดาห์ ฝ่ายบริหารมองเห็นทุกคำสั่งที่ดำเนินอยู่ สถานะการผลิต และความสามารถทำกำไรที่คาดการณ์แบบ Real-time
 
-The custom specification-to-BOM module, built and maintained by Ecosoft to OCA standards, has become a core competitive advantage — enabling the company to quote and produce custom configurations faster than competitors who manage the same complexity through manual processes.
+โมดูล Specification-to-BOM แบบ Custom ที่ Ecosoft สร้างและบำรุงรักษาตามมาตรฐาน OCA กลายเป็นความได้เปรียบในการแข่งขันหลัก — ช่วยให้บริษัทเสนอราคาและผลิต Configuration แบบ Custom ได้เร็วกว่าคู่แข่งที่บริหารจัดการความซับซ้อนเดียวกันผ่านกระบวนการแบบ Manual
 
-## Related Case Studies
+## กรณีศึกษาที่เกี่ยวข้อง
 
-- Raja Cycle — Manufacturing / Odoo
-- Lamphun Plastpack — Manufacturing / ERPNext
+- Raja Cycle — การผลิต / Odoo
+- Lamphun Plastpack — การผลิต / ERPNext

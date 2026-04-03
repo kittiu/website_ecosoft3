@@ -1,44 +1,44 @@
 ---
-title: "Is Traditional ERP Too Heavy for Your Business?"
+title: "ERP แบบดั้งเดิมหนักเกินไปสำหรับธุรกิจของคุณหรือไม่?"
 date: 2026-01-11
-author: "Kitti U."
+author: "กิตติ อ."
 category: "ERP"
-description: "Many organisations start Digital Transformation asking 'Which ERP should we choose?' The business world has changed — here's why open source ERP is often the better answer."
+description: "หลายองค์กรเริ่มต้น Digital Transformation ด้วยคำถามว่า 'ควรเลือก ERP ใด?' โลกธุรกิจเปลี่ยนแปลงไปแล้ว — นี่คือเหตุผลว่าทำไม Open Source ERP จึงมักเป็นคำตอบที่ดีกว่า"
 image: "/images/blog/move-to-opensource-erp.png"
 tags: ["erp", "open-source", "odoo", "erpnext"]
 ---
 
-Many organizations begin their Digital Transformation journey with the same question: *"Which ERP should we choose?"* Historically, commercial ERP from major vendors was considered the standard — but the business world has changed.
+หลายองค์กรเริ่มต้นเส้นทาง Digital Transformation ด้วยคำถามเดิม: *"เราควรเลือก ERP ใด?"* ในอดีต ERP เชิงพาณิชย์จากผู้จำหน่ายรายใหญ่ถือเป็นมาตรฐาน — แต่โลกธุรกิจเปลี่ยนแปลงไปแล้ว
 
-## When Traditional ERP Becomes a Burden
+## เมื่อ ERP แบบดั้งเดิมกลายเป็นภาระ
 
-- Costs accumulate from day one: per-user licensing, months-long implementation, and annual maintenance fees
-- Every process change requires vendor involvement, time, and additional cost
-- Systems once called "Best Practice" become obstacles to agility
-- Closed systems lead to vendor lock-in with no exit path
+- ต้นทุนสะสมตั้งแต่วันแรก: ค่า License รายผู้ใช้ การติดตั้งที่ใช้เวลาหลายเดือน และค่าบำรุงรักษารายปี
+- ทุกการเปลี่ยนแปลงกระบวนการต้องอาศัยการมีส่วนร่วมของ Vendor เวลา และค่าใช้จ่ายเพิ่มเติม
+- ระบบที่เคยถูกเรียกว่า "Best Practice" กลายเป็นอุปสรรคต่อความคล่องตัว
+- ระบบแบบปิดนำไปสู่การผูกติดกับ Vendor โดยไม่มีทางออก
 
-## The Arrival of Open Source ERP
+## การมาถึงของ Open Source ERP
 
-- **No licensing costs** — funds redirect toward business development
-- **Full source code access** enables customization to specific workflows
-- **Start small and expand** gradually with modules, APIs, Cloud/BI/Automation/AI integrations
-- **Organizations genuinely own the system**, enabling partner changes or self-management
+- **ไม่มีค่า License** — เงินถูกนำไปลงทุนในการพัฒนาธุรกิจแทน
+- **เข้าถึง Source Code ทั้งหมด** ช่วยให้ปรับแต่งได้ตามกระบวนการทำงานเฉพาะ
+- **เริ่มเล็กแล้วขยาย** ทีละขั้นด้วยโมดูล, API, Cloud/BI/Automation/AI Integration
+- **องค์กรเป็นเจ้าของระบบอย่างแท้จริง** สามารถเปลี่ยน Partner หรือบริหารจัดการเองได้
 
-## Open Source ERP Options
+## ตัวเลือก Open Source ERP
 
-| Platform | Best For |
+| Platform | เหมาะสำหรับ |
 |---|---|
-| **ERPNext** | SMEs and manufacturing; covers BOM, Stock, Manufacturing, Accounting |
-| **Odoo** | Large ecosystem; integrates well with E-commerce and CRM |
-| **Dolibarr** | Lightweight; easy installation; ideal for small businesses |
-| **Axelor / Tryton / Metasfresh** | Organizations requiring deep workflow customization |
+| **ERPNext** | SME และการผลิต ครอบคลุม BOM, Stock, Manufacturing, Accounting |
+| **Odoo** | Ecosystem ขนาดใหญ่ เชื่อมต่อ E-commerce และ CRM ได้ดี |
+| **Dolibarr** | น้ำหนักเบา ติดตั้งง่าย เหมาะกับธุรกิจขนาดเล็ก |
+| **Axelor / Tryton / Metasfresh** | องค์กรที่ต้องการปรับแต่ง Workflow เชิงลึก |
 
-> *"Choosing ERP isn't about finding the 'best,' but the 'most suitable for your business context.'"*
+> *"การเลือก ERP ไม่ใช่การหาสิ่งที่ 'ดีที่สุด' แต่คือสิ่งที่ 'เหมาะสมที่สุดกับบริบทของธุรกิจคุณ'"*
 
-## A Word of Caution
+## ข้อควรระวัง
 
-Open Source ERP is not a magic solution. ERP success depends on clear business processes and organizational change management. Overuse of customization flexibility can make systems unnecessarily complex — disciplined application is needed.
+Open Source ERP ไม่ใช่โซลูชันมหัศจรรย์ ความสำเร็จของ ERP ขึ้นอยู่กับกระบวนการทางธุรกิจที่ชัดเจนและการบริหารการเปลี่ยนแปลงองค์กร การใช้ความยืดหยุ่นในการปรับแต่งมากเกินไปอาจทำให้ระบบซับซ้อนโดยไม่จำเป็น — ต้องใช้วินัยในการประยุกต์ใช้
 
-## Conclusion
+## สรุป
 
-Traditional ERP was built for a slower-changing era. Open Source ERP is a strategic tool enabling businesses to remain **lightweight, agile, and growth-ready**. Advantage derives not from system size but from speed of adaptation.
+ERP แบบดั้งเดิมถูกสร้างมาสำหรับยุคที่เปลี่ยนแปลงช้า Open Source ERP คือเครื่องมือเชิงกลยุทธ์ที่ช่วยให้ธุรกิจยังคง **เบา คล่องตัว และพร้อมเติบโต** ความได้เปรียบไม่ได้มาจากขนาดของระบบ แต่จากความเร็วในการปรับตัว

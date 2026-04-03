@@ -4,43 +4,43 @@ import BaseLayout from "@layouts/BaseLayout.astro";
 const guides = [
   {
     title: "ERP Readiness Assessment Guide",
-    description: "How to evaluate whether your business is ready for ERP — and what to fix before you start an implementation. Covers process maturity, data quality, and change management.",
-    category: "Planning",
+    description: "วิธีประเมินว่าธุรกิจของคุณพร้อมสำหรับ ERP หรือยัง — และสิ่งที่ต้องปรับปรุงก่อนเริ่มการติดตั้ง ครอบคลุมความสมบูรณ์ของกระบวนการ คุณภาพของข้อมูล และการจัดการการเปลี่ยนแปลง",
+    category: "การวางแผน",
     icon: "📋",
     gated: true,
   },
   {
     title: "The Odoo CE vs Odoo Enterprise Decision Framework",
-    description: "A structured guide to evaluating whether you actually need Odoo Enterprise, or whether OCA modules cover your requirements. Includes a module-by-module gap analysis template.",
+    description: "คู่มือที่เป็นระบบสำหรับประเมินว่าคุณจำเป็นต้องใช้ Odoo Enterprise จริงหรือไม่ หรือว่า OCA modules ครอบคลุมความต้องการของคุณแล้ว พร้อมแม่แบบการวิเคราะห์ช่องว่างรายโมดูล",
     category: "Odoo",
     icon: "🟠",
     gated: true,
   },
   {
     title: "ERPNext Implementation Checklist",
-    description: "A comprehensive pre-go-live checklist for ERPNext implementations — covering configuration, data migration, user acceptance testing, and cutover planning.",
+    description: "รายการตรวจสอบก่อน Go-Live สำหรับการติดตั้ง ERPNext อย่างครบถ้วน — ครอบคลุมการตั้งค่าระบบ การย้ายข้อมูล การทดสอบการยอมรับของผู้ใช้ และการวางแผนการเปลี่ยนผ่าน",
     category: "ERPNext",
     icon: "🔵",
     gated: true,
   },
   {
     title: "Thai Accounting Compliance in Odoo",
-    description: "How Thai VAT, withholding tax, revenue department reporting, and Thai chart of accounts are handled in Odoo CE with OCA modules. Includes configuration reference.",
-    category: "Accounting",
+    description: "วิธีจัดการ VAT ภาษีหัก ณ ที่จ่าย การรายงานต่อกรมสรรพากร และผังบัญชีไทยใน Odoo CE ด้วย OCA modules พร้อมคู่มืออ้างอิงการตั้งค่า",
+    category: "บัญชี",
     icon: "💰",
     gated: true,
   },
   {
     title: "Manufacturing ERP Scope Guide",
-    description: "What to include (and exclude) in a manufacturing ERP scope. Covers BOM complexity, production tracking, quality control, and the most common scope creep pitfalls.",
-    category: "Manufacturing",
+    description: "สิ่งที่ควรรวมและไม่ควรรวมใน Scope ของ ERP สำหรับโรงงานผลิต ครอบคลุมความซับซ้อนของ BOM การติดตามการผลิต การควบคุมคุณภาพ และปัญหา Scope Creep ที่พบบ่อยที่สุด",
+    category: "การผลิต",
     icon: "🏭",
     gated: true,
   },
   {
     title: "Open Source ERP TCO Calculator",
-    description: "A spreadsheet model for comparing total cost of ownership between open-source ERP (Odoo CE, ERPNext) and proprietary alternatives (SAP Business One, Oracle NetSuite).",
-    category: "Planning",
+    description: "แบบจำลองสเปรดชีตสำหรับเปรียบเทียบต้นทุนรวมในการเป็นเจ้าของระหว่าง Open Source ERP (Odoo CE, ERPNext) กับทางเลือกเชิงพาณิชย์ (SAP Business One, Oracle NetSuite)",
+    category: "การวางแผน",
     icon: "📊",
     gated: true,
   },
@@ -48,19 +48,19 @@ const guides = [
 ---
 
 <BaseLayout
-  title="ERP Guides & Resources | Ecosoft"
-  description="Practical guides for ERP planning, Odoo and ERPNext implementation, Thai accounting compliance, and manufacturing ERP scoping."
+  title="คู่มือและทรัพยากร ERP | Ecosoft"
+  description="คู่มือเชิงปฏิบัติสำหรับการวางแผน ERP การติดตั้ง Odoo และ ERPNext การปฏิบัติตามกฎระเบียบบัญชีไทย และการกำหนดขอบเขต ERP สำหรับโรงงานผลิต"
 >
 
 
   <!-- HERO -->
   <section class="hero" style="padding-bottom:2rem;">
     <div class="container">
-      <p class="eyebrow">Resources</p>
+      <p class="eyebrow">ทรัพยากร</p>
       <h1>Practical guides for ERP decision-makers</h1>
       <p class="hero-lead">
-        Detailed guides for businesses evaluating, planning, or implementing open-source ERP.
-        Written by consultants who have run these implementations — not by marketing teams.
+        คู่มือโดยละเอียดสำหรับธุรกิจที่กำลังประเมิน วางแผน หรือนำ Open Source ERP ไปใช้งาน
+        เขียนโดยที่ปรึกษาที่มีประสบการณ์ตรงจากการติดตั้งจริง — ไม่ใช่ทีมการตลาด
       </p>
     </div>
   </section>
@@ -78,9 +78,9 @@ const guides = [
               <p>{guide.description}</p>
               <div style="margin-top:1.25rem;">
                 {guide.gated ? (
-                  <a href="/contact" class="btn btn-outline">Request guide →</a>
+                  <a href="/contact" class="btn btn-outline">ขอรับคู่มือ →</a>
                 ) : (
-                  <a href="#" class="btn btn-primary">Download free →</a>
+                  <a href="#" class="btn btn-primary">ดาวน์โหลดฟรี →</a>
                 )}
               </div>
             </div>
@@ -93,9 +93,9 @@ const guides = [
   <!-- CTA -->
   <section class="cta-strip">
     <div class="container">
-      <h2>Looking for something specific?</h2>
-      <p>If there's a guide topic you'd find useful that isn't listed here, let us know — we write based on what clients actually need.</p>
-      <a href="/contact" class="btn btn-primary">Request a Guide Topic</a>
+      <h2>กำลังมองหาเนื้อหาเฉพาะด้านอยู่ใช่ไหม?</h2>
+      <p>หากมีหัวข้อคู่มือที่คุณต้องการแต่ยังไม่มีในรายการนี้ บอกเราได้เลย — เราเขียนตามความต้องการที่แท้จริงของลูกค้า</p>
+      <a href="/contact" class="btn btn-primary">แจ้งหัวข้อคู่มือที่ต้องการ</a>
     </div>
   </section>
 

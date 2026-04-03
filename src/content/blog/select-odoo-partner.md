@@ -1,51 +1,51 @@
 ---
-title: "How to Choose the Right Odoo Implementation Partner"
+title: "วิธีเลือก Odoo Implementation Partner ที่ใช่"
 date: 2025-08-01
-author: "Ecosoft Team"
-category: "Guide"
-description: "Essential criteria for evaluating Odoo implementation partners as an end-user organisation — beyond price and feature lists."
+author: "ทีมงาน Ecosoft"
+category: "คู่มือ"
+description: "เกณฑ์สำคัญในการประเมิน Odoo Implementation Partner สำหรับองค์กรผู้ใช้งาน — ให้ลึกกว่าราคาและรายการฟีเจอร์"
 image: "/images/blog/select-odoo-partner.png"
 tags: ["odoo", "partner-selection", "oca", "open-source"]
 ---
 
-Choosing an Odoo implementation partner is one of the most consequential decisions in your ERP journey. Many organizations focus on price and feature demonstrations — and later discover their partner lacked the depth to deliver a sustainable system.
+การเลือก Odoo Implementation Partner คือหนึ่งในการตัดสินใจที่สำคัญที่สุดในเส้นทาง ERP ขององค์กร หลายองค์กรมุ่งเน้นที่ราคาและการสาธิตฟีเจอร์ — แล้วก็ค้นพบภายหลังว่า Partner ขาดความลึกพอที่จะส่งมอบระบบที่ยั่งยืนได้
 
-## Why Partner Selection Matters More Than You Think
+## ทำไมการเลือก Partner จึงสำคัญกว่าที่คิด
 
-A concerning trend of failed Odoo projects has been observed in organizations that selected partners based on surface criteria. The root cause is often the same: the partner had inadequate understanding of open-source principles and the Odoo Community Association (OCA).
+ในองค์กรที่เลือก Partner โดยอาศัยเกณฑ์ผิวเผิน พบแนวโน้มที่น่าเป็นห่วงของโครงการ Odoo ที่ล้มเหลว สาเหตุรากเหง้ามักเหมือนกัน: Partner ขาดความเข้าใจที่เพียงพอเกี่ยวกับหลักการ Open Source และ Odoo Community Association (OCA)
 
-Odoo's **"addition-based" modular architecture** is fundamentally different from SAP's rigid "subtraction-based" approach. A good partner understands this distinction and builds systems that leverage the open-source ecosystem rather than working against it.
+**สถาปัตยกรรมแบบ Modular "เพิ่มเติม"** ของ Odoo แตกต่างจากแนวทาง "ตัดทอน" แบบแข็งตัวของ SAP อย่างสิ้นเชิง Partner ที่ดีเข้าใจความแตกต่างนี้และสร้างระบบที่ใช้ประโยชน์จาก Ecosystem แบบ Open Source แทนที่จะทำงานขัดกับมัน
 
-## What to Look For: 3 Categories of Criteria
+## สิ่งที่ควรมองหา: 3 หมวดหมู่ของเกณฑ์
 
-### 1. Community Contribution & OSS Competency
+### 1. การมีส่วนร่วมในชุมชนและความสามารถด้าน Open Source
 
-- Does the partner contribute modules to the OCA?
-- Can they explain what OCA modules are and why they matter?
-- Do they use community modules where available, or build proprietary replacements?
+- Partner มีการ Contribute โมดูลให้กับ OCA หรือไม่?
+- สามารถอธิบายได้ว่า OCA Modules คืออะไร และมีความสำคัญอย่างไร?
+- ใช้ Community Modules เมื่อมีให้ใช้ หรือสร้าง Proprietary ขึ้นมาแทน?
 
-Partners who avoid the OCA community are often trying to create vendor lock-in through proprietary customizations — the exact opposite of open source's promise.
+Partner ที่หลีกเลี่ยงชุมชน OCA มักพยายามสร้าง Vendor Lock-in ผ่านการปรับแต่งแบบ Proprietary — ตรงข้ามกับสัญญาของ Open Source โดยสิ้นเชิง
 
-### 2. Technical Capability & Quality Assurance
+### 2. ความสามารถทางเทคนิคและการประกันคุณภาพ
 
-- Do they follow OCA coding standards?
-- Do they write automated tests for custom modules?
-- Can they demonstrate code review processes?
-- Are their developers certified or trained in Odoo's framework?
+- ปฏิบัติตามมาตรฐานการเขียนโค้ดของ OCA หรือไม่?
+- เขียน Automated Tests สำหรับโมดูลที่ปรับแต่งเองหรือไม่?
+- สามารถแสดงกระบวนการ Code Review ได้หรือไม่?
+- นักพัฒนาได้รับการรับรองหรือฝึกอบรมใน Framework ของ Odoo หรือไม่?
 
-### 3. Contract & Operational Transparency
+### 3. ความโปร่งใสด้านสัญญาและการปฏิบัติงาน
 
-- Will you receive full source code at project completion?
-- Are pricing and scope clearly defined with change management processes?
-- Do they provide documentation alongside deliverables?
-- What does long-term support look like after go-live?
+- จะได้รับ Source Code ทั้งหมดเมื่อโครงการเสร็จสิ้นหรือไม่?
+- มีการกำหนดราคาและขอบเขตงานอย่างชัดเจนพร้อมกระบวนการบริหารการเปลี่ยนแปลงหรือไม่?
+- มีการจัดทำเอกสารควบคู่กับงานที่ส่งมอบหรือไม่?
+- การสนับสนุนระยะยาวหลัง Go-live มีลักษณะอย่างไร?
 
-## The Question Most Organizations Forget to Ask
+## คำถามที่หลายองค์กรลืมถาม
 
-*"Will you deliver all source code to us when the project ends?"*
+*"คุณจะส่งมอบ Source Code ทั้งหมดให้เราเมื่อโครงการสิ้นสุดหรือไม่?"*
 
-If a partner hesitates or adds conditions to this answer, treat it as a red flag. Genuine open-source partners have nothing to hide — and everything to gain from a customer who can independently manage and extend their system.
+หาก Partner ลังเลหรือเพิ่มเงื่อนไขในคำตอบนี้ ถือเป็นสัญญาณเตือน Partner แบบ Open Source ที่แท้จริงไม่มีอะไรต้องปิดซ่อน — และได้ประโยชน์ทุกอย่างจากลูกค้าที่สามารถบริหารจัดการและขยายระบบของตนเองได้อย่างอิสระ
 
-## Conclusion
+## สรุป
 
-The right Odoo partner is not the cheapest, nor the one with the most impressive slides. It is the one who treats open source as a philosophy, not just a technology — and who will still be a valuable partner five years after go-live.
+Odoo Partner ที่ใช่ไม่ใช่ผู้ที่ราคาถูกที่สุด และไม่ใช่ผู้ที่มี Presentation สวยหรูที่สุด แต่คือผู้ที่ปฏิบัติต่อ Open Source ในฐานะปรัชญา ไม่ใช่แค่เทคโนโลยี — และยังคงเป็น Partner ที่มีคุณค่าห้าปีหลัง Go-live

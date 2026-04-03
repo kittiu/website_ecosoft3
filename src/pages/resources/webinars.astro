@@ -7,7 +7,7 @@ const upcoming = [
     date: "2026-04-10",
     time: "2:00 PM — 3:00 PM ICT",
     format: "Webinar (Zoom)",
-    description: "A practical session covering how ERPNext handles BOM management, production scheduling, lot tracking, and job costing — with a live system demo and Q&A.",
+    description: "เซสชันเชิงปฏิบัติที่ครอบคลุมวิธีที่ ERPNext จัดการ BOM, การจัดตารางการผลิต, การติดตาม Lot และการคิดต้นทุนงาน — พร้อมการสาธิตระบบสดและ Q&A",
     registerUrl: "/contact",
   },
   {
@@ -15,7 +15,7 @@ const upcoming = [
     date: "2026-04-24",
     time: "10:00 AM — 11:00 AM ICT",
     format: "Webinar (Zoom)",
-    description: "How Ecosoft's government ERP modules work — budget encumbrance, government procurement, multi-fund accounting. Includes the NSTDA implementation case study.",
+    description: "วิธีการทำงานของ Government ERP Modules ของ Ecosoft — การควบคุมงบประมาณ การจัดซื้อจัดจ้างภาครัฐ และการบัญชีหลายกองทุน พร้อมกรณีศึกษาการนำไปใช้ที่ สวทช.",
     registerUrl: "/contact",
   },
   {
@@ -23,7 +23,7 @@ const upcoming = [
     date: "2026-05-08",
     time: "2:00 PM — 3:00 PM ICT",
     format: "Webinar (Zoom)",
-    description: "An honest comparison session — we walk through both platforms side by side, covering the key decision criteria for Thai SMEs. No sales pitch.",
+    description: "เซสชันการเปรียบเทียบอย่างตรงไปตรงมา — เราพาเดินทางผ่านทั้งสองแพลตฟอร์มแบบเคียงคู่กัน ครอบคลุมเกณฑ์การตัดสินใจสำคัญสำหรับ SME ไทย ไม่มีการขาย",
     registerUrl: "/contact",
   },
 ];
@@ -31,19 +31,19 @@ const upcoming = [
 const past = [
   {
     title: "From Spreadsheets to ERP — When Is the Right Time?",
-    description: "A practical guide to assessing ERP readiness — covering the signals that your business has outgrown spreadsheets, and what to do before starting an implementation.",
+    description: "คู่มือเชิงปฏิบัติสำหรับการประเมินความพร้อม ERP — ครอบคลุมสัญญาณที่บ่งชี้ว่าธุรกิจของคุณเติบโตเกินกว่าที่สเปรดชีตรองรับได้ และสิ่งที่ต้องทำก่อนเริ่มการติดตั้ง",
   },
   {
     title: "Thai Accounting Compliance in Odoo",
-    description: "How VAT, withholding tax, Thai chart of accounts, and Revenue Department reporting are handled in Odoo Community Edition with OCA modules.",
+    description: "วิธีจัดการ VAT ภาษีหัก ณ ที่จ่าย ผังบัญชีไทย และการรายงานต่อกรมสรรพากรใน Odoo Community Edition ด้วย OCA modules",
   },
   {
     title: "Manufacturing ERP Deep Dive — BOM, Work Orders, and MRP",
-    description: "A technical walkthrough of manufacturing ERP functionality — BOM structures, work order management, MRP planning, and production costing in Odoo.",
+    description: "การอธิบายเชิงเทคนิคเกี่ยวกับฟังก์ชัน ERP สำหรับการผลิต — โครงสร้าง BOM การจัดการ Work Order การวางแผน MRP และการคิดต้นทุนการผลิตใน Odoo",
   },
   {
     title: "ERPNext for Project-Based Businesses",
-    description: "How project management, timesheet billing, resource allocation, and project profitability tracking work in ERPNext — with the EOS Orbit case study.",
+    description: "วิธีการทำงานของการจัดการโครงการ การออกใบแจ้งหนี้จาก Timesheet การจัดสรรทรัพยากร และการติดตามความสามารถในการทำกำไรของโครงการใน ERPNext — พร้อมกรณีศึกษา EOS Orbit",
   },
 ];
 
@@ -53,19 +53,19 @@ function formatDate(ds: string) {
 ---
 
 <BaseLayout
-  title="Webinars & Events | Ecosoft"
-  description="Free webinars on Odoo, ERPNext, Thai accounting compliance, manufacturing ERP, and government ERP from Ecosoft's consultants."
+  title="Webinar และกิจกรรม | Ecosoft"
+  description="Webinar ฟรีเกี่ยวกับ Odoo, ERPNext, การปฏิบัติตามกฎระเบียบบัญชีไทย ERP สำหรับการผลิต และ ERP ภาครัฐ จากที่ปรึกษาของ Ecosoft"
 >
 
 
   <!-- HERO -->
   <section class="hero" style="padding-bottom:2rem;">
     <div class="container">
-      <p class="eyebrow">Resources</p>
+      <p class="eyebrow">ทรัพยากร</p>
       <h1>Free ERP webinars from practitioners</h1>
       <p class="hero-lead">
-        Live and recorded sessions on Odoo, ERPNext, Thai accounting compliance, manufacturing ERP, and government systems —
-        run by consultants who implement these systems daily.
+        เซสชันสดและบันทึกเกี่ยวกับ Odoo, ERPNext, การปฏิบัติตามกฎระเบียบบัญชีไทย ERP สำหรับการผลิต และระบบภาครัฐ —
+        ดำเนินการโดยที่ปรึกษาที่ติดตั้งระบบเหล่านี้ในงานประจำวัน
       </p>
     </div>
   </section>
@@ -73,12 +73,12 @@ function formatDate(ds: string) {
   <!-- UPCOMING -->
   <section class="section">
     <div class="container">
-      <h2>Upcoming webinars</h2>
+      <h2>Webinar ที่กำลังจะมาถึง</h2>
       <div class="webinars-grid" style="margin-top:2rem;">
         {upcoming.map((w) => (
           <div class="webinar-card">
             <div class="webinar-card-meta">
-              <span class="tag">Upcoming</span>
+              <span class="tag">กำลังจะมาถึง</span>
               <span style="font-size:0.875rem; color:var(--text-muted);">{w.format}</span>
             </div>
             <h3>{w.title}</h3>
@@ -86,7 +86,7 @@ function formatDate(ds: string) {
               {formatDate(w.date)} · {w.time}
             </div>
             <p>{w.description}</p>
-            <a href={w.registerUrl} class="btn btn-primary" style="margin-top:1rem;">Register →</a>
+            <a href={w.registerUrl} class="btn btn-primary" style="margin-top:1rem;">ลงทะเบียน →</a>
           </div>
         ))}
       </div>
@@ -96,14 +96,14 @@ function formatDate(ds: string) {
   <!-- PAST -->
   <section class="section" style="background: var(--surface);">
     <div class="container">
-      <h2>Past webinars — recordings available on request</h2>
+      <h2>Webinar ที่ผ่านมา — ขอรับการบันทึกได้ตามต้องการ</h2>
       <div class="cards-grid" style="grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap:1.25rem; margin-top:2rem;">
         {past.map((w) => (
           <div class="info-card" style="padding:1.5rem;">
-            <span class="tag" style="background:var(--surface);color:var(--text-muted); margin-bottom:0.75rem; display:inline-block;">Recorded</span>
+            <span class="tag" style="background:var(--surface);color:var(--text-muted); margin-bottom:0.75rem; display:inline-block;">บันทึกแล้ว</span>
             <h4 style="margin-top:0.5rem;">{w.title}</h4>
             <p style="font-size:0.875rem; color:var(--text-muted);">{w.description}</p>
-            <a href="/contact" style="font-size:0.875rem; color:var(--accent); font-weight:600; display:block; margin-top:1rem;">Request recording →</a>
+            <a href="/contact" style="font-size:0.875rem; color:var(--accent); font-weight:600; display:block; margin-top:1rem;">ขอรับการบันทึก →</a>
           </div>
         ))}
       </div>
@@ -113,9 +113,9 @@ function formatDate(ds: string) {
   <!-- CTA -->
   <section class="cta-strip">
     <div class="container">
-      <h2>Want a private session for your team?</h2>
-      <p>We run private demos and briefings for companies evaluating ERP — covering your specific industry and requirements, not generic content.</p>
-      <a href="/book-demo" class="btn btn-primary">Book a Private Demo</a>
+      <h2>ต้องการเซสชันส่วนตัวสำหรับทีมของคุณหรือไม่?</h2>
+      <p>เราจัด Demo และ Briefing แบบส่วนตัวสำหรับบริษัทที่กำลังประเมิน ERP — ครอบคลุมอุตสาหกรรมและความต้องการเฉพาะของคุณ ไม่ใช่เนื้อหาทั่วไป</p>
+      <a href="/book-demo" class="btn btn-primary">นัด Demo แบบส่วนตัว</a>
     </div>
   </section>
 

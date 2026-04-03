@@ -1,46 +1,46 @@
 ---
 client: "Raja Cycle"
-industry: "Manufacturing"
+industry: "การผลิต"
 solution: "Odoo"
-size: "100–500 employees"
-location: "Bangkok, Thailand"
-outcome: "10+ year partnership through multiple Odoo versions. Multi-company implementation covering Raja Cycle and Raja Engineering with real-time production visibility."
+size: "100–500 พนักงาน"
+location: "กรุงเทพมหานคร, ประเทศไทย"
+outcome: "ความร่วมมือกว่า 10 ปีผ่านหลายเวอร์ชันของ Odoo การติดตั้งแบบ Multi-company ครอบคลุม Raja Cycle และ Raja Engineering พร้อมการมองเห็นการผลิตแบบ Real-time"
 featured: false
-quote: "The system allows management to track production in real time. Since 2013 Ecosoft has been our trusted ERP partner. They understand our business as well as we do."
+quote: "ระบบช่วยให้ฝ่ายบริหารติดตามการผลิตแบบ Real-time ตั้งแต่ปี 2556 Ecosoft เป็น ERP Partner ที่เราไว้วางใจ พวกเขาเข้าใจธุรกิจของเราดีพอๆ กับเราเอง"
 quoteAuthor: "Nantachai Siripronprasarn"
-quoteTitle: "Director, Raja Cycle"
+quoteTitle: "กรรมการผู้จัดการ, Raja Cycle"
 ---
 
-## Client Overview
+## ภาพรวมลูกค้า
 
-Raja Cycle is one of Thailand's leading bicycle manufacturers, with a production operation spanning assembly, component sourcing, and distribution. The company operates both Raja Cycle (bicycle manufacturing) and Raja Engineering (engineering components), managing multi-company operations with shared procurement and accounting processes.
+Raja Cycle คือหนึ่งในผู้ผลิตจักรยานชั้นนำของไทย มีการดำเนินงานการผลิตครอบคลุมการประกอบ การจัดหาชิ้นส่วน และการจัดจำหน่าย บริษัทดำเนินงานทั้ง Raja Cycle (การผลิตจักรยาน) และ Raja Engineering (ชิ้นส่วนวิศวกรรม) โดยบริหารจัดการการดำเนินงาน Multi-company ที่มีกระบวนการจัดซื้อและบัญชีร่วมกัน
 
-## The Challenge
+## ความท้าทาย
 
-Raja Cycle was Ecosoft's first implementation in 2013 — a relationship that has now spanned over a decade and multiple Odoo versions. At the time, the company was managing production, inventory, and financials across disconnected systems with significant manual coordination. Management had limited real-time visibility into production status, inventory levels, or financial performance.
+Raja Cycle คือการติดตั้งครั้งแรกของ Ecosoft ในปี 2556 — ความสัมพันธ์ที่ขยายมาเกินทศวรรษและผ่านหลายเวอร์ชันของ Odoo ในขณะนั้น บริษัทบริหารจัดการการผลิต สินค้าคงคลัง และการเงินผ่านระบบที่ไม่เชื่อมต่อกันพร้อมการประสานงานแบบ Manual อย่างมาก ฝ่ายบริหารมีการมองเห็นแบบ Real-time ที่จำกัดเกี่ยวกับสถานะการผลิต ระดับสินค้าคงคลัง หรือผลการดำเนินงานทางการเงิน
 
-The multi-company structure added complexity: Raja Cycle and Raja Engineering share suppliers, have inter-company transactions, and require consolidated financial reporting — all requirements that most SME accounting software cannot handle cleanly.
+โครงสร้าง Multi-company เพิ่มความซับซ้อน: Raja Cycle และ Raja Engineering ใช้ Supplier ร่วมกัน มีธุรกรรมระหว่างบริษัท และต้องการรายงานการเงินแบบรวม — ข้อกำหนดทั้งหมดที่ซอฟต์แวร์บัญชีสำหรับ SME ส่วนใหญ่ไม่สามารถจัดการได้อย่างสะอาด
 
-## Why Ecosoft
+## เหตุใดจึงเลือก Ecosoft
 
-Raja Cycle chose Ecosoft at a time when open-source ERP was still relatively unfamiliar in the Thai market. The decision was based on a combination of Ecosoft's genuine technical depth in Odoo and their business understanding of Thai manufacturing operations. The relationship has been maintained through three major Odoo version upgrades, which speaks to the quality of the original implementation and the strength of the partnership.
+Raja Cycle เลือก Ecosoft ในช่วงเวลาที่ Open Source ERP ยังค่อนข้างไม่คุ้นเคยในตลาดไทย การตัดสินใจอาศัยความลึกทางเทคนิคอย่างแท้จริงของ Ecosoft ใน Odoo และความเข้าใจธุรกิจด้านการผลิตของไทย ความสัมพันธ์ได้รับการรักษาผ่านการอัปเกรดเวอร์ชัน Odoo หลักสามครั้ง ซึ่งพิสูจน์คุณภาพของการติดตั้งครั้งแรกและความแข็งแกร่งของความร่วมมือ
 
-## What We Implemented
+## สิ่งที่เราดำเนินการติดตั้ง
 
-- **Manufacturing** — production orders, bill of materials, real-time production tracking, capacity planning
-- **Inventory** — multi-warehouse management, lot tracking, reorder rules, landed cost calculation
-- **Purchase & Procurement** — supplier management, PO workflows, 3-way matching
-- **Accounting** — Thai-compliant chart of accounts, VAT, withholding tax, financial reporting
-- **Multi-company** — consolidated accounts, inter-company transactions, shared supplier management
-- **Sales** — quotations, sales orders, delivery management, customer invoicing
+- **การผลิต** — คำสั่งผลิต Bill of Materials การติดตามการผลิตแบบ Real-time การวางแผนกำลังการผลิต
+- **คลังสินค้า** — การจัดการหลายคลัง การติดตาม Lot กฎ Reorder การคำนวณ Landed Cost
+- **การซื้อและการจัดซื้อ** — การจัดการ Supplier กระบวนการ PO การจับคู่สามทาง
+- **บัญชี** — ผังบัญชีที่สอดคล้องกับกฎหมายไทย VAT ภาษีหัก ณ ที่จ่าย รายงานทางการเงิน
+- **Multi-company** — บัญชีรวม ธุรกรรมระหว่างบริษัท การจัดการ Supplier ร่วมกัน
+- **การขาย** — ใบเสนอราคา คำสั่งขาย การบริหารจัดการการส่งมอบ การออกใบแจ้งหนี้ลูกค้า
 
-## The Outcome
+## ผลลัพธ์
 
-Raja Cycle has operated on Odoo for 10+ years — one of the longest continuous open-source ERP partnerships in Thailand. Management has real-time visibility into production status, inventory levels, and financial performance across both companies. The system has been upgraded through multiple Odoo versions without disruption to operations.
+Raja Cycle ดำเนินงานบน Odoo มากกว่า 10 ปี — หนึ่งในความร่วมมือ Open Source ERP ที่ต่อเนื่องยาวนานที่สุดในประเทศไทย ฝ่ายบริหารมองเห็นสถานะการผลิต ระดับสินค้าคงคลัง และผลการดำเนินงานทางการเงินแบบ Real-time ทั้งสองบริษัท ระบบได้รับการอัปเกรดผ่านหลายเวอร์ชันของ Odoo โดยไม่กระทบต่อการดำเนินงาน
 
-The relationship exemplifies Ecosoft's 'lifetime partnership' approach: the same consultants who implemented the original system in 2013 continue to support and evolve it today.
+ความสัมพันธ์นี้เป็นตัวอย่างของแนวทาง 'ความร่วมมือตลอดชีวิต' ของ Ecosoft: ที่ปรึกษาคนเดิมที่ติดตั้งระบบดั้งเดิมในปี 2556 ยังคงให้การสนับสนุนและพัฒนาระบบในปัจจุบัน
 
-## Related Case Studies
+## กรณีศึกษาที่เกี่ยวข้อง
 
-- Lamphun Plastpack — Manufacturing / ERPNext
-- Square Panel Systems — Manufacturing / Odoo
+- Lamphun Plastpack — การผลิต / ERPNext
+- Square Panel Systems — การผลิต / Odoo

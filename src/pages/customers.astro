@@ -11,22 +11,22 @@ const sorted = allCaseStudies.sort((a, b) => {
 ---
 
 <BaseLayout
-  title="Customers | Ecosoft"
-  description="Ecosoft clients across manufacturing, government, and technology — including Raja Cycle, NSTDA, EOS Orbit, Lamphun Plastpack, and Square Panel Systems."
+  title="ลูกค้าของเรา | Ecosoft"
+  description="ลูกค้า Ecosoft ในกลุ่มการผลิต ภาครัฐ และเทคโนโลยี ได้แก่ Raja Cycle, NSTDA, EOS Orbit, Lamphun Plastpack และ Square Panel Systems"
 >
 
   <!-- HERO -->
   <section class="hero" style="padding-bottom:2rem;">
     <div class="container">
-      <p class="eyebrow">Our Clients</p>
+      <p class="eyebrow">ลูกค้าของเรา</p>
       <h1>Businesses that have trusted Ecosoft with their ERP.</h1>
       <p class="hero-lead">
-        From Thailand's first satellite manufacturer to a bicycle factory that has run on Odoo for over a decade —
-        every client here is a production system used daily by real teams, not a pilot installation.
+        จากผู้ผลิตดาวเทียมรายแรกของไทยสู่โรงงานผลิตจักรยานที่ใช้ Odoo มากว่าสิบปี —
+        ทุกรายชื่อที่นี่คือระบบที่ใช้งานจริงในการผลิต ไม่ใช่การทดลองนำร่อง
       </p>
       <div class="hero-actions">
-        <a href="/case-studies" class="btn btn-primary">Browse Case Studies</a>
-        <a href="/case-studies/video-testimonials" class="btn btn-outline">Watch Video Testimonials</a>
+        <a href="/case-studies" class="btn btn-primary">ดู Case Studies</a>
+        <a href="/case-studies/video-testimonials" class="btn btn-outline">ชมวิดีโอรีวิวจากลูกค้า</a>
       </div>
     </div>
   </section>
@@ -37,19 +37,19 @@ const sorted = allCaseStudies.sort((a, b) => {
       <div style="display:flex; gap:3rem; justify-content:center; flex-wrap:wrap; text-align:center;">
         <div>
           <div style="font-size:2.5rem; font-weight:700; color:var(--accent);">10+</div>
-          <div style="font-size:0.875rem; color:var(--text-muted);">Years, longest partnership</div>
+          <div style="font-size:0.875rem; color:var(--text-muted);">ปี ความร่วมมือที่ยาวนานที่สุด</div>
         </div>
         <div>
           <div style="font-size:2.5rem; font-weight:700; color:var(--accent);">50+</div>
-          <div style="font-size:0.875rem; color:var(--text-muted);">Clients implemented</div>
+          <div style="font-size:0.875rem; color:var(--text-muted);">ลูกค้าที่ติดตั้งระบบแล้ว</div>
         </div>
         <div>
           <div style="font-size:2.5rem; font-weight:700; color:var(--accent);">2</div>
-          <div style="font-size:0.875rem; color:var(--text-muted);">Platforms (Odoo + ERPNext)</div>
+          <div style="font-size:0.875rem; color:var(--text-muted);">แพลตฟอร์ม (Odoo + ERPNext)</div>
         </div>
         <div>
           <div style="font-size:2.5rem; font-weight:700; color:var(--accent);">4+</div>
-          <div style="font-size:0.875rem; color:var(--text-muted);">Industries served</div>
+          <div style="font-size:0.875rem; color:var(--text-muted);">อุตสาหกรรมที่ให้บริการ</div>
         </div>
       </div>
     </div>
@@ -58,7 +58,7 @@ const sorted = allCaseStudies.sort((a, b) => {
   <!-- FEATURED CLIENTS -->
   <section class="section">
     <div class="container">
-      <h2>Featured clients</h2>
+      <h2>ลูกค้าเด่น</h2>
       <div class="case-studies-grid" style="margin-top:2rem;">
         {sorted.filter(cs => cs.data.featured).map((cs) => (
           <div class="case-study-card" style="border-top:3px solid var(--accent);">
@@ -72,7 +72,7 @@ const sorted = allCaseStudies.sort((a, b) => {
               "{cs.data.quote.substring(0, 160)}{cs.data.quote.length > 160 ? '…' : ''}"
             </blockquote>
             <p style="font-size:0.8rem; color:var(--text-muted); margin-bottom:1rem;">— {cs.data.quoteAuthor}</p>
-            <a href={`/case-studies/${cs.id}`} class="btn btn-outline">Read case study →</a>
+            <a href={`/case-studies/${cs.id}`} class="btn btn-outline">อ่าน Case Study →</a>
           </div>
         ))}
       </div>
@@ -82,7 +82,7 @@ const sorted = allCaseStudies.sort((a, b) => {
   <!-- ALL CLIENTS -->
   <section class="section" style="background: var(--surface);">
     <div class="container">
-      <h2>All clients</h2>
+      <h2>ลูกค้าทั้งหมด</h2>
       <div class="case-studies-grid" style="margin-top:2rem;">
         {sorted.filter(cs => !cs.data.featured).map((cs) => (
           <div class="case-study-card">
@@ -93,7 +93,7 @@ const sorted = allCaseStudies.sort((a, b) => {
             <h3>{cs.data.client}</h3>
             <p style="font-size:0.875rem; color:var(--text-muted); margin-bottom:0.75rem;">{cs.data.location} · {cs.data.size}</p>
             <p style="font-size:0.9rem;">{cs.data.outcome}</p>
-            <a href={`/case-studies/${cs.id}`} class="btn btn-outline" style="margin-top:1rem;">Read case study →</a>
+            <a href={`/case-studies/${cs.id}`} class="btn btn-outline" style="margin-top:1rem;">อ่าน Case Study →</a>
           </div>
         ))}
       </div>
@@ -103,8 +103,8 @@ const sorted = allCaseStudies.sort((a, b) => {
   <!-- INDUSTRIES -->
   <section class="section">
     <div class="container" style="text-align:center;">
-      <h2>Industries we serve</h2>
-      <p class="section-lead">Open-source ERP across Thailand's key business sectors.</p>
+      <h2>อุตสาหกรรมที่เราให้บริการ</h2>
+      <p class="section-lead">Open Source ERP สำหรับภาคธุรกิจสำคัญทั่วประเทศไทย</p>
       <div class="industry-pills" style="justify-content:center; margin-top:2rem;">
         <a href="/industries/manufacturing" class="industry-pill">Manufacturing</a>
         <a href="/industries/government" class="industry-pill">Government</a>
@@ -119,9 +119,9 @@ const sorted = allCaseStudies.sort((a, b) => {
   <!-- CTA -->
   <section class="cta-strip">
     <div class="container">
-      <h2>Ready to join this list?</h2>
-      <p>Talk to us about your ERP challenge — we'll give you an honest assessment of whether open-source ERP is the right fit.</p>
-      <a href="/contact" class="btn btn-primary">Book a Free Consultation</a>
+      <h2>พร้อมที่จะเป็นส่วนหนึ่งของรายชื่อนี้แล้วหรือยัง?</h2>
+      <p>บอกเราเกี่ยวกับความท้าทาย ERP ของคุณ — เราจะให้ความเห็นตรงๆ ว่า Open Source ERP เหมาะกับธุรกิจของคุณหรือไม่</p>
+      <a href="/contact" class="btn btn-primary">จองการปรึกษาฟรี</a>
     </div>
   </section>
 

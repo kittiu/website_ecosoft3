@@ -1,44 +1,44 @@
 ---
-title: "Thailand's First Satellite Manufacturer Uses ERPNext"
+title: "ผู้ผลิตดาวเทียมรายแรกของไทยเลือกใช้ ERPNext"
 date: 2025-12-12
-author: "Ecosoft Team"
-category: "Case Study"
-description: "How EOS Orbit — the company behind Thailand's first fully functional domestically-built satellite — runs its entire operation on ERPNext implemented by Ecosoft."
+author: "ทีมงาน Ecosoft"
+category: "กรณีศึกษา"
+description: "EOS Orbit บริษัทผู้อยู่เบื้องหลังดาวเทียมที่สร้างในประเทศไทยเป็นลำแรกอย่างสมบูรณ์ บริหารจัดการการดำเนินงานทั้งหมดด้วย ERPNext ที่ Ecosoft เป็นผู้ดำเนินการติดตั้ง"
 image: "/images/blog/eos-orbit.jpg"
 tags: ["erpnext", "manufacturing", "case-study", "iso-9001"]
 ---
 
-## About EOS Orbit Co., Ltd.
+## เกี่ยวกับ EOS Orbit Co., Ltd.
 
-EOS Orbit is a Thai space technology company specializing in designing, developing, and operating Low Earth Orbit (LEO) satellites. Founded by engineers and entrepreneurs, the company launched **LOGSATS** — Thailand's first fully functional domestically-built satellite.
+EOS Orbit คือบริษัทเทคโนโลยีอวกาศของไทย ที่เชี่ยวชาญด้านการออกแบบ พัฒนา และปฏิบัติการดาวเทียมวงโคจรต่ำ (LEO) ก่อตั้งโดยวิศวกรและผู้ประกอบการ บริษัทได้ส่ง **LOGSATS** ขึ้นสู่วงโคจร — ดาวเทียมที่สร้างในประเทศไทยเป็นลำแรกอย่างสมบูรณ์และใช้งานได้จริง
 
-## The Challenge
+## ความท้าทาย
 
-EOS Orbit needed an ERP capable of managing:
+EOS Orbit ต้องการ ERP ที่สามารถรองรับ:
 
-- Complex engineering workflows with multi-stage testing and verification
-- Strict regulatory compliance including ISO 9001 certification
-- Rapid R&D cycles typical of a startup in a capital-intensive industry
-- Supply chain verification across procurement, quality control, HR, and finance
+- กระบวนการทำงานด้านวิศวกรรมที่ซับซ้อน มีการทดสอบและตรวจสอบหลายขั้นตอน
+- การปฏิบัติตามกฎระเบียบอย่างเคร่งครัด รวมถึงการรับรองมาตรฐาน ISO 9001
+- วงจร R&D ที่รวดเร็วตามแบบฉบับของ Startup ในอุตสาหกรรมที่ต้องการเงินทุนสูง
+- การตรวจสอบห่วงโซ่อุปทานครอบคลุมการจัดซื้อ การควบคุมคุณภาพ HR และการเงิน
 
-Traditional ERP solutions lacked sufficient flexibility, and proprietary systems had prohibitive customization costs for satellite manufacturing workflows.
+ระบบ ERP ทั่วไปขาดความยืดหยุ่นเพียงพอ และระบบแบบปิด (Proprietary) มีต้นทุนการปรับแต่งสูงจนไม่คุ้มค่าสำหรับกระบวนการผลิตดาวเทียม
 
-## The Solution
+## โซลูชัน
 
-Leveraging Ecosoft's Thai tax compliance expertise and ERPNext's flexibility, EOS Orbit built end-to-end operational workflows covering:
+โดยอาศัยความเชี่ยวชาญด้านการปฏิบัติตามกฎหมายภาษีไทยของ Ecosoft และความยืดหยุ่นของ ERPNext EOS Orbit ได้สร้างกระบวนการทำงานแบบ End-to-End ครอบคลุม:
 
-- **Satellite component procurement** and full assembly records
-- **Test reports** with traceability across quality checkpoints
-- **Automated financial and HR systems** compliant with Thai regulations
-- **Custom modules** for Thai payroll, project costing, and quality assurance
-- **Standardized data** eliminating manual spreadsheets
-- **Real-time insights** for management decisions
-- **ISO 9001 certification support** through structured document workflows
+- **การจัดซื้อชิ้นส่วนดาวเทียม** และบันทึกการประกอบทั้งหมด
+- **รายงานการทดสอบ** พร้อมการตรวจสอบย้อนกลับผ่านจุดตรวจสอบคุณภาพ
+- **ระบบการเงินและ HR แบบอัตโนมัติ** ที่สอดคล้องกับกฎระเบียบไทย
+- **โมดูลเฉพาะทาง** สำหรับบัญชีเงินเดือนไทย ต้นทุนโครงการ และการประกันคุณภาพ
+- **ข้อมูลที่มีมาตรฐาน** กำจัด Spreadsheet แบบ Manual
+- **ข้อมูลเชิงลึกแบบ Real-time** สำหรับการตัดสินใจของฝ่ายบริหาร
+- **รองรับการรับรอง ISO 9001** ผ่านกระบวนการจัดการเอกสารที่มีโครงสร้าง
 
-## The Impact
+## ผลลัพธ์
 
-> *"Ecosoft transformed our operations... ERPNext has become the core infrastructure that EOS Orbit needed to build Thailand's first operational satellite and expand confidently in the modern space industry."*
+> *"Ecosoft ได้เปลี่ยนแปลงการดำเนินงานของเรา... ERPNext กลายเป็นโครงสร้างพื้นฐานหลักที่ EOS Orbit ต้องการในการสร้างดาวเทียมปฏิบัติการดวงแรกของไทย และขยายธุรกิจด้วยความมั่นใจในอุตสาหกรรมอวกาศยุคใหม่"*
 >
-> — **Supiti Buranawatanachoke**, Chairman, EOS Orbit
+> — **Supiti Buranawatanachoke**, ประธาน, EOS Orbit
 
-By eliminating data silos, automating routine processes, and giving management real-time visibility, EOS Orbit can focus on what matters most: advancing Thailand's space technology capabilities.
+ด้วยการกำจัดไซโลข้อมูล ทำให้กระบวนการประจำวันเป็นระบบอัตโนมัติ และมอบการมองเห็นแบบ Real-time แก่ฝ่ายบริหาร EOS Orbit สามารถมุ่งเน้นไปที่สิ่งที่สำคัญที่สุด: การพัฒนาขีดความสามารถด้านเทคโนโลยีอวกาศของประเทศไทย

@@ -16,7 +16,7 @@ This blueprint provides ready-to-adapt copy, structural guidance, and conversion
 
 **HEADLINE**
 
-| Headline Enterprise ERP. Open Source. Zero Vendor Lock-In.Proven by 10+ years, 40+ projects, and 0 failed implementations. |
+| Headline Enterprise ERP. Open Source. No Vendor Lock-In.Proven by 10+ years, 40+ projects, and 0 failed implementations. |
 | :---- |
 
 **SUB-HEADLINE**

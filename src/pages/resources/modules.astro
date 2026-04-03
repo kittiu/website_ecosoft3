@@ -5,85 +5,85 @@ const modules = [
   {
     name: "Thai Accounting Localisation",
     platform: "Odoo",
-    description: "VAT, withholding tax, Thai chart of accounts, revenue department reporting. OCA-maintained with Ecosoft contributions.",
-    category: "Accounting",
+    description: "VAT, ภาษีหัก ณ ที่จ่าย ผังบัญชีไทย และการรายงานต่อกรมสรรพากร ดูแลโดย OCA ด้วยการมีส่วนร่วมของ Ecosoft",
+    category: "บัญชีและการเงิน",
     oca: true,
   },
   {
     name: "Budget Encumbrance Control",
     platform: "Odoo",
-    description: "Government-standard budget encumbrance, real-time budget monitoring, hard over-spend prevention at PO creation.",
-    category: "Government",
+    description: "การจอง Encumbrance งบประมาณตามมาตรฐานภาครัฐ การติดตามงบประมาณแบบ Real-time และการป้องกันการใช้จ่ายเกินงบประมาณ ณ จุดสร้าง PO",
+    category: "ภาครัฐ",
     oca: false,
   },
   {
     name: "Government Procurement",
     platform: "Odoo",
-    description: "Thai government procurement regulation compliance — quotation thresholds, committee approvals, contract registration.",
-    category: "Government",
+    description: "การปฏิบัติตามระเบียบการจัดซื้อจัดจ้างภาครัฐไทย — เกณฑ์วงเงินใบเสนอราคา การอนุมัติของคณะกรรมการ และการจดทะเบียนสัญญา",
+    category: "ภาครัฐ",
     oca: false,
   },
   {
     name: "Multi-fund Accounting",
     platform: "Odoo",
-    description: "Budget and expense tracking by programme, project, and fund simultaneously. Government-standard financial reporting.",
-    category: "Government",
+    description: "การติดตามงบประมาณและค่าใช้จ่ายตามโครงการ แผนงาน และกองทุนพร้อมกัน รายงานการเงินตามมาตรฐานภาครัฐ",
+    category: "ภาครัฐ",
     oca: false,
   },
   {
     name: "Manufacturing Extended",
     platform: "Odoo",
-    description: "Enhanced manufacturing workflows — custom BOM generation, specification capture, work centre management, production costing.",
-    category: "Manufacturing",
+    description: "เวิร์กโฟลว์การผลิตที่ปรับปรุงแล้ว — การสร้าง BOM แบบกำหนดเอง การบันทึก Specification การจัดการศูนย์งาน และการคิดต้นทุนการผลิต",
+    category: "การผลิต",
     oca: true,
   },
   {
     name: "Landed Cost Extended",
     platform: "Odoo",
-    description: "Advanced landed cost allocation for importers — split by weight, volume, or value across multiple purchase orders.",
-    category: "Inventory",
+    description: "การจัดสรร Landed Cost ขั้นสูงสำหรับผู้นำเข้า — แบ่งตามน้ำหนัก ปริมาตร หรือมูลค่าตาม Purchase Order หลายรายการ",
+    category: "คลังสินค้า",
     oca: true,
   },
   {
     name: "Thai Accounting Localisation",
     platform: "ERPNext",
-    description: "VAT, withholding tax, Thai chart of accounts and tax reports for ERPNext — covering standard Thai Revenue Department requirements.",
-    category: "Accounting",
+    description: "VAT, ภาษีหัก ณ ที่จ่าย ผังบัญชีไทย และรายงานภาษีสำหรับ ERPNext — ครอบคลุมข้อกำหนดมาตรฐานของกรมสรรพากรไทย",
+    category: "บัญชีและการเงิน",
     oca: false,
   },
   {
     name: "Specification-to-BOM",
     platform: "Odoo",
-    description: "Custom module for made-to-order manufacturers — generates production BOMs automatically from sales order specifications.",
-    category: "Manufacturing",
+    description: "โมดูลกำหนดเองสำหรับผู้ผลิตแบบ Made-to-Order — สร้าง BOM การผลิตโดยอัตโนมัติจาก Specification ของ Sales Order",
+    category: "การผลิต",
     oca: false,
   },
   {
     name: "Asset Management Extended",
     platform: "Odoo",
-    description: "Government-standard asset register, physical asset verification workflow, disposal and transfer documentation.",
-    category: "Government",
+    description: "ทะเบียนทรัพย์สินตามมาตรฐานภาครัฐ เวิร์กโฟลว์การตรวจนับทรัพย์สินจริง เอกสารการจำหน่ายและการโอนทรัพย์สิน",
+    category: "ภาครัฐ",
     oca: true,
   },
   {
     name: "HR Payroll Thailand",
     platform: "Odoo",
-    description: "Thai payroll — social security, personal income tax, provident fund, and Revenue Department payroll reporting.",
+    description: "เงินเดือนไทย — ประกันสังคม ภาษีเงินได้บุคคลธรรมดา กองทุนสำรองเลี้ยงชีพ และการรายงานเงินเดือนต่อกรมสรรพากร",
     category: "HR",
     oca: true,
   },
   {
     name: "Quality Control Extended",
     platform: "ERPNext",
-    description: "Enhanced quality inspection workflows — checkpoint configuration, non-conformance management, corrective action tracking.",
-    category: "Manufacturing",
+    description: "เวิร์กโฟลว์การตรวจสอบคุณภาพที่ปรับปรุงแล้ว — การตั้งค่า Checkpoint การจัดการข้อไม่สอดคล้อง และการติดตามมาตรการแก้ไข",
+    category: "การผลิต",
     oca: false,
   },
   {
     name: "Project Billing",
     platform: "ERPNext",
-    description: "Milestone-based billing, retainer management, and timesheet-to-invoice automation for project-based businesses.",
-    category: "Professional Services",
+    description: "การเรียกเก็บเงินตาม Milestone การจัดการ Retainer และการสร้างใบแจ้งหนี้อัตโนมัติจาก Timesheet สำหรับธุรกิจบริการโครงการ",
+    category: "บริการวิชาชีพ",
     oca: false,
   },
 ];
@@ -93,18 +93,18 @@ const categories = [...new Set(modules.map(m => m.category))];
 
 <BaseLayout
   title="Open Source ERP Modules | Ecosoft"
-  description="Odoo and ERPNext modules built and maintained by Ecosoft — including OCA contributions for Thai accounting, government compliance, manufacturing, and HR."
+  description="โมดูล Odoo และ ERPNext ที่สร้างและดูแลโดย Ecosoft — รวมถึงการมีส่วนร่วมกับ OCA สำหรับบัญชีไทย การปฏิบัติตามกฎระเบียบภาครัฐ การผลิต และ HR"
 >
 
 
   <!-- HERO -->
   <section class="hero" style="padding-bottom:2rem;">
     <div class="container">
-      <p class="eyebrow">Resources</p>
+      <p class="eyebrow">ทรัพยากร</p>
       <h1>Modules we build and maintain</h1>
       <p class="hero-lead">
-        Ecosoft contributes to the OCA ecosystem and maintains purpose-built modules for Thai businesses.
-        All modules are open-source — owned by you, not by us.
+        Ecosoft มีส่วนร่วมกับระบบนิเวศ OCA และดูแลโมดูลที่สร้างขึ้นเฉพาะสำหรับธุรกิจไทย
+        โมดูลทั้งหมดเป็น Open Source — เป็นของคุณ ไม่ใช่ของเรา
       </p>
     </div>
   </section>
@@ -114,8 +114,8 @@ const categories = [...new Set(modules.map(m => m.category))];
     <div class="container">
       <div style="display:flex; align-items:center; gap:1rem; flex-wrap:wrap;">
         <span style="font-size:0.875rem; color:var(--text-muted);">
-          <strong style="color:var(--text);">OCA-contributed</strong> modules are maintained in the Odoo Community Association repositories — community-reviewed and upgrade-safe.
-          <strong style="color:var(--text);">Ecosoft-built</strong> modules are maintained in Ecosoft's open-source repositories under compatible licences.
+          โมดูล <strong style="color:var(--text);">OCA-contributed</strong> ดูแลอยู่ใน Repositories ของ Odoo Community Association — ผ่านการตรวจสอบโดยชุมชนและปลอดภัยสำหรับการอัปเกรด
+          โมดูล <strong style="color:var(--text);">Ecosoft-built</strong> ดูแลอยู่ใน Open Source repositories ของ Ecosoft ภายใต้สัญญาอนุญาตที่เข้ากันได้
         </span>
       </div>
     </div>
@@ -149,9 +149,9 @@ const categories = [...new Set(modules.map(m => m.category))];
   <!-- CTA -->
   <section class="cta-strip">
     <div class="container">
-      <h2>Need a module that isn't listed here?</h2>
-      <p>Tell us your requirement. We'll check the OCA and ERPNext community first — often the module already exists. If not, we'll build it.</p>
-      <a href="/contact" class="btn btn-primary">Discuss Your Module Requirement</a>
+      <h2>ต้องการโมดูลที่ไม่มีในรายการนี้หรือไม่?</h2>
+      <p>บอกความต้องการของคุณมา เราจะตรวจสอบชุมชน OCA และ ERPNext ก่อน — บ่อยครั้งโมดูลที่ต้องการมีอยู่แล้ว ถ้าไม่มี เราจะสร้างให้</p>
+      <a href="/contact" class="btn btn-primary">หารือความต้องการโมดูลของคุณ</a>
     </div>
   </section>
 

@@ -11,19 +11,19 @@ function formatDate(d: Date) {
 ---
 
 <BaseLayout
-  title="Blog — Open Source ERP Insights | Ecosoft"
-  description="Articles, guides, and case study writeups from Ecosoft — covering Odoo, ERPNext, open-source ERP implementation, and Thai business operations."
+  title="บล็อก — ข้อมูลเชิงลึก Open Source ERP | Ecosoft"
+  description="บทความ คู่มือ และกรณีศึกษาจาก Ecosoft — ครอบคลุม Odoo, ERPNext, การนำ Open Source ERP ไปใช้งาน และการดำเนินธุรกิจในประเทศไทย"
 >
 
 
   <!-- HERO -->
   <section class="hero" style="padding-bottom:2rem;">
     <div class="container">
-      <p class="eyebrow">Resources</p>
+      <p class="eyebrow">ทรัพยากร</p>
       <h1>ERP insights from the field</h1>
       <p class="hero-lead">
-        Practical articles on Odoo, ERPNext, open-source ERP implementation, and how Thai businesses are
-        using open-source software to manage their operations.
+        บทความเชิงปฏิบัติเกี่ยวกับ Odoo, ERPNext, การนำ Open Source ERP ไปใช้งาน และวิธีที่ธุรกิจไทย
+        ใช้ซอฟต์แวร์ Open Source ในการบริหารจัดการองค์กร
       </p>
     </div>
   </section>
@@ -40,7 +40,7 @@ function formatDate(d: Date) {
               {formatDate(sorted[0].data.date)} · {sorted[0].data.author}
             </p>
             <p>{sorted[0].data.description}</p>
-            <a href={`/resources/blog/${sorted[0].id}`} class="btn btn-primary" style="margin-top:1.5rem;">Read post →</a>
+            <a href={`/resources/blog/${sorted[0].id}`} class="btn btn-primary" style="margin-top:1.5rem;">อ่านบทความ →</a>
           </div>
           <div style="background:var(--border); border-radius:1rem; aspect-ratio:4/3; display:flex; align-items:center; justify-content:center; color:var(--text-muted);">
             {sorted[0].data.image ? (
@@ -57,7 +57,7 @@ function formatDate(d: Date) {
   <!-- POST GRID -->
   <section class="section">
     <div class="container">
-      <h2>All posts</h2>
+      <h2>บทความทั้งหมด</h2>
       <div class="cards-grid" style="grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap:1.5rem; margin-top:2rem;">
         {sorted.slice(1).map((post) => (
           <div class="info-card">
@@ -71,7 +71,7 @@ function formatDate(d: Date) {
               {formatDate(post.data.date)} · {post.data.author}
             </p>
             <p style="font-size:0.9rem;">{post.data.description}</p>
-            <a href={`/resources/blog/${post.id}`} style="font-size:0.875rem; color:var(--accent); font-weight:600; display:block; margin-top:1rem;">Read →</a>
+            <a href={`/resources/blog/${post.id}`} style="font-size:0.875rem; color:var(--accent); font-weight:600; display:block; margin-top:1rem;">อ่านเพิ่มเติม →</a>
           </div>
         ))}
       </div>
@@ -81,9 +81,9 @@ function formatDate(d: Date) {
   <!-- CTA -->
   <section class="cta-strip">
     <div class="container">
-      <h2>Ready to talk about your ERP challenge?</h2>
-      <p>Reading is useful. A conversation is better. Talk to a consultant about your specific situation.</p>
-      <a href="/contact" class="btn btn-primary">Book a Free Consultation</a>
+      <h2>พร้อมพูดคุยเรื่อง ERP ของคุณแล้วหรือยัง?</h2>
+      <p>การอ่านมีประโยชน์ แต่การพูดคุยให้ผลมากกว่า ปรึกษาที่ปรึกษาของเราเกี่ยวกับสถานการณ์เฉพาะของคุณ</p>
+      <a href="/contact" class="btn btn-primary">นัดหมายปรึกษาฟรี</a>
     </div>
   </section>
 

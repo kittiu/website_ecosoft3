@@ -1,48 +1,48 @@
 ---
 client: "NXPO"
-industry: "Government"
+industry: "หน่วยงานราชการ"
 solution: "Odoo"
-size: "100–500 employees"
-location: "Bangkok, Thailand"
-outcome: "Government ERP implementation covering budget planning, government procurement, multi-fund accounting, and contract management for Thailand's national R&D policy body."
+size: "100–500 พนักงาน"
+location: "กรุงเทพมหานคร, ประเทศไทย"
+outcome: "การติดตั้ง ERP สำหรับหน่วยงานราชการครอบคลุมการวางแผนงบประมาณ การจัดซื้อจัดจ้างภาครัฐ การบัญชีหลายกองทุน และการบริหารสัญญาสำหรับหน่วยงานกำหนดนโยบาย R&D แห่งชาติของไทย"
 featured: false
-quote: "Ecosoft's government ERP modules were the deciding factor. They understood the complexity of programme-based budgeting in a way no other vendor could demonstrate. The system gave us real-time visibility into our budget positions that we simply didn't have before."
-quoteAuthor: "NXPO Finance Team"
-quoteTitle: "National Higher Education, Science, Research and Innovation Policy Council"
+quote: "โมดูล ERP ของภาครัฐจาก Ecosoft คือปัจจัยชี้ขาด พวกเขาเข้าใจความซับซ้อนของการจัดทำงบประมาณแบบ Programme-based ในแบบที่ Vendor รายอื่นไม่สามารถสาธิตได้ ระบบให้การมองเห็นสถานะงบประมาณแบบ Real-time ที่เราไม่เคยมีมาก่อน"
+quoteAuthor: "ทีมการเงิน NXPO"
+quoteTitle: "สำนักงานคณะกรรมการส่งเสริมวิทยาศาสตร์ วิจัยและนวัตกรรม"
 ---
 
-## Client Overview
+## ภาพรวมลูกค้า
 
-NXPO (National Higher Education, Science, Research and Innovation Policy Council) is a Thai government body responsible for policy and strategy for higher education, science, research, and innovation in Thailand. The agency manages complex programme-based budgets, oversees funding allocation to research institutions, and coordinates across multiple government ministries.
+NXPO (สำนักงานคณะกรรมการส่งเสริมวิทยาศาสตร์ วิจัยและนวัตกรรม) คือหน่วยงานราชการไทยที่รับผิดชอบด้านนโยบายและยุทธศาสตร์การอุดมศึกษา วิทยาศาสตร์ วิจัย และนวัตกรรมในประเทศไทย หน่วยงานบริหารจัดการงบประมาณแบบ Programme-based ที่ซับซ้อน ดูแลการจัดสรรเงินทุนให้สถาบันวิจัย และประสานงานข้ามกระทรวงต่างๆ ของรัฐบาล
 
-## The Challenge
+## ความท้าทาย
 
-NXPO needed an ERP system capable of handling the complexity of a policy-focused government agency — where budgets are allocated by programme and policy initiative rather than by simple departmental lines. Procurement must comply with Thai government regulations, and financial reporting must meet both internal governance requirements and external public sector audit standards.
+NXPO ต้องการระบบ ERP ที่สามารถจัดการความซับซ้อนของหน่วยงานราชการที่เน้นนโยบาย — ที่ซึ่งงบประมาณถูกจัดสรรตาม Programme และแผนงานนโยบาย ไม่ใช่แค่ตามสายงาน การจัดซื้อต้องปฏิบัติตามกฎระเบียบการจัดซื้อจัดจ้างภาครัฐไทย และรายงานทางการเงินต้องเป็นไปตามทั้งข้อกำหนดกำกับดูแลภายในและมาตรฐานการตรวจสอบบัญชีภาคสาธารณะ
 
-The agency required budget encumbrance controls that would prevent over-commitment at the point of purchase order creation — a standard requirement for Thai government agencies that most commercial ERP systems handle only as a reporting function, not a hard control.
+หน่วยงานต้องการการควบคุมการผูกพันงบประมาณที่จะป้องกันการผูกพันเกินงบประมาณ ณ จุดที่สร้างใบสั่งซื้อ — ข้อกำหนดมาตรฐานสำหรับหน่วยงานราชการไทยที่ระบบ ERP เชิงพาณิชย์ส่วนใหญ่รองรับเป็นเพียงฟังก์ชันรายงาน ไม่ใช่การควบคุมที่เข้มแข็ง
 
-## Why Ecosoft
+## เหตุใดจึงเลือก Ecosoft
 
-NXPO selected Ecosoft based on their demonstrated experience with Thai government ERP — particularly the reference installation at NSTDA, where Ecosoft had replaced SAP in 2018. The existing government ERP modules for budget encumbrance, government procurement compliance, and multi-fund accounting meant NXPO was not starting from scratch with a vendor who had never built for the public sector.
+NXPO เลือก Ecosoft โดยอาศัยประสบการณ์ที่พิสูจน์แล้วด้าน ERP ของราชการไทย — โดยเฉพาะการติดตั้งอ้างอิงที่ NSTDA ที่ Ecosoft ได้เข้ามาแทนที่ SAP ในปี 2561 โมดูล ERP ของราชการที่มีอยู่สำหรับการผูกพันงบประมาณ การปฏิบัติตามกฎระเบียบการจัดซื้อจัดจ้างภาครัฐ และการบัญชีหลายกองทุน หมายความว่า NXPO ไม่ต้องเริ่มต้นใหม่กับ Vendor ที่ไม่เคยสร้างสำหรับภาคสาธารณะ
 
-The open-source nature of the implementation — with all customisation delivered as auditable, open-source modules — was also critical for a government institution with long-term technology governance responsibilities.
+ลักษณะ Open Source ของการติดตั้ง — โดยการปรับแต่งทั้งหมดถูกส่งมอบเป็นโมดูล Open Source ที่ตรวจสอบได้ — ก็มีความสำคัญต่อสถาบันราชการที่มีความรับผิดชอบด้านกำกับดูแลเทคโนโลยีระยะยาวด้วย
 
-## What We Implemented
+## สิ่งที่เราดำเนินการติดตั้ง
 
-- **Budget Planning & Encumbrance Control** — programme-based budget allocation, real-time encumbrance monitoring, hard over-spend prevention
-- **Government Procurement** — compliant purchase workflows aligned with Thai government procurement regulations
-- **Multi-fund Accounting** — income and expenditure tracking by programme, initiative, and funding source
-- **Finance & Accounting** — government-standard financial reporting, Thai chart of accounts, VAT compliance
-- **Contract Management** — contract register, milestone tracking, payment schedule management
-- **Asset Management** — government-standard asset register and depreciation
+- **การวางแผนงบประมาณและการควบคุมการผูกพัน** — การจัดสรรงบประมาณแบบ Programme-based การติดตามการผูกพันแบบ Real-time การป้องกันการใช้เกินงบประมาณอย่างเข้มงวด
+- **การจัดซื้อจัดจ้างภาครัฐ** — กระบวนการจัดซื้อที่สอดคล้องกับกฎระเบียบการจัดซื้อจัดจ้างภาครัฐไทย
+- **การบัญชีหลายกองทุน** — การติดตามรายรับและรายจ่ายตาม Programme แผนงาน และแหล่งเงินทุน
+- **การเงินและบัญชี** — รายงานทางการเงินตามมาตรฐานราชการ ผังบัญชีไทย การปฏิบัติตาม VAT
+- **การบริหารสัญญา** — ทะเบียนสัญญา การติดตาม Milestone การบริหารตารางการชำระเงิน
+- **การบริหารสินทรัพย์** — ทะเบียนสินทรัพย์ตามมาตรฐานราชการและค่าเสื่อมราคา
 
-## The Outcome
+## ผลลัพธ์
 
-NXPO now has real-time visibility into budget positions across all active programmes and policy initiatives. Procurement workflows enforce compliance automatically rather than relying on manual checks. Financial reporting meets both internal governance and external audit requirements.
+NXPO มีการมองเห็นสถานะงบประมาณแบบ Real-time ทั่วทุก Programme และแผนงานนโยบายที่ดำเนินอยู่ กระบวนการจัดซื้อบังคับใช้การปฏิบัติตามข้อกำหนดโดยอัตโนมัติแทนการพึ่งพาการตรวจสอบแบบ Manual รายงานทางการเงินเป็นไปตามทั้งข้อกำหนดกำกับดูแลภายในและการตรวจสอบจากภายนอก
 
-The implementation leveraged the same government ERP module foundation deployed at NSTDA — reducing implementation time and risk by building on proven, production-tested code.
+การติดตั้งใช้ประโยชน์จากฐานโมดูล ERP ของราชการเดียวกับที่ติดตั้งที่ NSTDA — ลดเวลาและความเสี่ยงในการติดตั้งโดยสร้างบนโค้ดที่ผ่านการทดสอบในการใช้งานจริงแล้ว
 
-## Related Case Studies
+## กรณีศึกษาที่เกี่ยวข้อง
 
-- NSTDA — Government / Odoo
-- EOS Orbit — Technology / ERPNext
+- NSTDA — หน่วยงานราชการ / Odoo
+- EOS Orbit — เทคโนโลยี / ERPNext

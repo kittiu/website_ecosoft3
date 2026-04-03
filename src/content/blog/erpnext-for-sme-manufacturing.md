@@ -1,43 +1,43 @@
 ---
-title: "ERPNext for SME Manufacturing"
+title: "ERPNext สำหรับ SME ด้านการผลิต"
 date: 2026-02-09
-author: "Kitti U."
-category: "Case Study"
-description: "Why ERPNext is the ideal choice for small-to-medium manufacturing enterprises in Thailand — with three real-world case studies."
+author: "กิตติ อ."
+category: "กรณีศึกษา"
+description: "เหตุใด ERPNext จึงเป็นทางเลือกที่เหมาะสมที่สุดสำหรับวิสาหกิจขนาดกลางและขนาดย่อมด้านการผลิตในประเทศไทย พร้อมกรณีศึกษาจริงสามรายการ"
 image: "/images/blog/erpnext-for-sme-manufacturing.webp"
 tags: ["erpnext", "manufacturing", "case-study"]
 ---
 
-This article argues that ERPNext is superior to Odoo for small-to-medium manufacturing enterprises (SMEs) in Thailand. ERPNext excels for typical manufacturing operations involving BOMs, raw material requisitions, work-in-progress tracking, workstations, and quality inspections.
+บทความนี้นำเสนอว่า ERPNext มีความเหนือกว่า Odoo สำหรับวิสาหกิจขนาดกลางและขนาดย่อม (SME) ด้านการผลิตในประเทศไทย ERPNext โดดเด่นสำหรับการดำเนินงานผลิตทั่วไปที่เกี่ยวข้องกับ BOM การเบิกวัตถุดิบ การติดตาม Work-in-Progress Workstation และการตรวจสอบคุณภาพ
 
-## Why ERPNext for Manufacturing?
+## ทำไมต้อง ERPNext สำหรับการผลิต?
 
-While highly complex industries (automotive, electronics, oil refineries) might need specialized solutions, ERPNext is positioned as ideal for conventional SME manufacturing.
+แม้ว่าอุตสาหกรรมที่ซับซ้อนสูง (ยานยนต์ อิเล็กทรอนิกส์ โรงกลั่นน้ำมัน) อาจต้องการโซลูชันเฉพาะทาง แต่ ERPNext ถูกวางตำแหน่งเป็นตัวเลือกที่เหมาะสมที่สุดสำหรับ SME ด้านการผลิตทั่วไป
 
-### Key Advantages
+### จุดแข็งหลัก
 
-- **Manufacturing Module** — ERPNext's flagship module with established stability
-- **All-in-One Platform** — Complete functionality without requiring additional modules
-- **Low Code Customization** — Ability to adjust features without complex programming
-- **Unlimited Licensing** — No per-user license costs
-- **Multi-Platform Access** — Full functionality via web and mobile
-- **Scalable Implementation** — Start with core systems, expand gradually
-- **Thai Localization Support** — Compatible with Thai tax regulations and local partnerships
+- **โมดูลการผลิต** — โมดูลหลักของ ERPNext ที่มีความเสถียรพิสูจน์แล้ว
+- **Platform ครบวงจร** — ฟังก์ชันครบถ้วนโดยไม่ต้องการโมดูลเพิ่มเติม
+- **การปรับแต่งแบบ Low Code** — สามารถปรับฟีเจอร์ได้โดยไม่ต้องเขียนโปรแกรมที่ซับซ้อน
+- **Licensing ไม่จำกัด** — ไม่มีค่าใช้จ่าย License รายผู้ใช้
+- **รองรับ Multi-Platform** — ใช้งานได้ครบฟังก์ชันทั้งบน Web และมือถือ
+- **การ Implement ที่ขยายตามการเติบโต** — เริ่มต้นด้วยระบบหลัก แล้วขยายทีละขั้น
+- **รองรับภาษาไทย** — สอดคล้องกับกฎระเบียบภาษีไทยและมีพันธมิตรในประเทศ
 
-## Real-World Case Studies
+## กรณีศึกษาจากการใช้งานจริง
 
-### Case 1: Food Processing
+### กรณีที่ 1: โรงงานแปรรูปอาหาร
 
-Inventory integration reduced waste by nearly **50%** through real-time stock visibility and automated reorder levels. The factory gained full traceability from raw material intake to finished goods dispatch.
+การผสานระบบสินค้าคงคลังช่วยลดของเสียได้เกือบ **50%** ผ่านการมองเห็น Stock แบบ Real-time และ Reorder Level อัตโนมัติ โรงงานได้รับการตรวจสอบย้อนกลับอย่างสมบูรณ์ตั้งแต่การรับวัตถุดิบจนถึงการจัดส่งสินค้าสำเร็จรูป
 
-### Case 2: CNC Machining
+### กรณีที่ 2: โรงงาน CNC
 
-The manufacturing module revealed previously untracked production costs, enabling pricing corrections that restored profitability **within one quarter**. Management could finally see true cost-per-job in real time.
+โมดูลการผลิตเปิดเผยต้นทุนการผลิตที่ไม่เคยถูกติดตามมาก่อน ทำให้สามารถปรับแก้ราคาขายซึ่งช่วยฟื้นฟูความสามารถในการทำกำไร**ภายในไตรมาสเดียว** ฝ่ายบริหารสามารถเห็นต้นทุนที่แท้จริงต่องานในแบบ Real-time ได้ในที่สุด
 
-### Case 3: General SME
+### กรณีที่ 3: SME ทั่วไป
 
-Integrated system streamlined quotation-to-invoice workflows, reducing month-end accounting workload significantly. What previously took a team three days now completes in half a day.
+ระบบที่เชื่อมต่อกันช่วยปรับปรุงกระบวนการตั้งแต่การออกใบเสนอราคาจนถึงการออกใบแจ้งหนี้ ลดภาระงานบัญชีสิ้นเดือนอย่างมีนัยสำคัญ สิ่งที่เคยใช้เวลาทีมงานถึงสามวัน ตอนนี้เสร็จภายในครึ่งวัน
 
-## Conclusion
+## สรุป
 
-SMEs prioritize agility and accurate financial visibility over enterprise-scale complexity. ERPNext's open-source design caters specifically to this market segment's practical needs — giving you the power of enterprise ERP without the enterprise price tag.
+SME ให้ความสำคัญกับความคล่องตัวและการมองเห็นทางการเงินที่ถูกต้องแม่นยำมากกว่าความซับซ้อนระดับองค์กรขนาดใหญ่ การออกแบบ Open Source ของ ERPNext ตอบสนองความต้องการเชิงปฏิบัติของตลาดกลุ่มนี้โดยเฉพาะ — มอบพลังของ ERP ระดับองค์กรในราคาที่ SME เข้าถึงได้

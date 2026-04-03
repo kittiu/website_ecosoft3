@@ -1,44 +1,44 @@
 ---
-title: "First Steps as a Team Lead at Ecosoft"
+title: "ก้าวแรกในฐานะหัวหน้าทีมที่ Ecosoft"
 date: 2025-12-21
-author: "Saran L."
-category: "Experience Sharing"
-description: "The day code stopped being the main problem — a developer's candid reflection on transitioning to Team Lead on a government Odoo 18 ERP project."
+author: "สรัล ล."
+category: "แบ่งปันประสบการณ์"
+description: "วันที่โค้ดไม่ใช่ปัญหาหลักอีกต่อไป — บทสะท้อนตรงไปตรงมาของนักพัฒนาที่ก้าวสู่การเป็นหัวหน้าทีมในโปรเจกต์ Odoo 18 ERP สำหรับหน่วยงานราชการ"
 image: "/images/blog/a-new-team-lead.png"
 tags: ["team-lead", "odoo", "experience"]
 ---
 
-*"The Day Code Stopped Being the Main Problem"*
+*"วันที่โค้ดไม่ใช่ปัญหาหลักอีกต่อไป"*
 
-This is a candid account of my transition from developer to team lead on an Odoo 18 ERP project for a Thai government organization. I learned more in six months than in the previous three years combined.
+นี่คือบันทึกตรงๆ จากการเปลี่ยนบทบาทของผมจากนักพัฒนาสู่หัวหน้าทีมในโปรเจกต์ Odoo 18 ERP สำหรับหน่วยงานราชการแห่งหนึ่งในไทย ผมเรียนรู้ในหกเดือนนี้มากกว่าสามปีที่ผ่านมารวมกัน
 
-## The Seven Challenges
+## เจ็ดความท้าทาย
 
-When I stepped into the team lead role, I quickly discovered the technical problems were the easy part. The real challenges were:
+เมื่อก้าวเข้าสู่บทบาทหัวหน้าทีม ผมค้นพบอย่างรวดเร็วว่าปัญหาด้านเทคนิคนั้นยังเป็นส่วนที่ง่ายกว่า ความท้าทายที่แท้จริงคือ:
 
-1. **Limited team size** — only 3 core members for a complex government implementation
-2. **Communication gaps** between technical and non-technical stakeholders
-3. **Unfamiliarity with Odoo 18's architecture** — a new major version with significant changes
-4. **Working in an unfamiliar industry domain** — government workflows are unlike anything in commercial ERP
-5. **Government document submission requirements** — strict formats, approval chains, and audit trails
-6. **Multiple external system integrations** — connecting to existing government IT infrastructure
-7. **Single system across three departments** — conflicting requirements, shared data, careful change management
+1. **ทีมขนาดเล็ก** — สมาชิกหลักเพียง 3 คนสำหรับการ Implement ที่ซับซ้อนในหน่วยงานราชการ
+2. **ช่องว่างด้านการสื่อสาร** ระหว่างผู้มีส่วนได้ส่วนเสียที่มีและไม่มีความรู้ด้านเทคนิค
+3. **ความไม่คุ้นเคยกับสถาปัตยกรรมของ Odoo 18** — เวอร์ชันใหม่หลักที่มีการเปลี่ยนแปลงอย่างมีนัยสำคัญ
+4. **การทำงานในโดเมนอุตสาหกรรมที่ไม่คุ้นเคย** — กระบวนการทำงานของหน่วยงานราชการต่างจาก ERP เชิงพาณิชย์โดยสิ้นเชิง
+5. **ข้อกำหนดการส่งเอกสารราชการ** — รูปแบบเข้มงวด ลำดับการอนุมัติที่ซับซ้อน และระบบตรวจสอบย้อนกลับ
+6. **การเชื่อมต่อระบบภายนอกหลายระบบ** — เชื่อมต่อกับโครงสร้างพื้นฐาน IT ของหน่วยงานราชการที่มีอยู่เดิม
+7. **ระบบเดียวครอบคลุมสามฝ่าย** — ความต้องการที่ขัดแย้งกัน ข้อมูลที่ใช้ร่วมกัน และการบริหารจัดการการเปลี่ยนแปลงที่ต้องใช้ความละเอียดรอบคอบ
 
-## How We Solved Them
+## วิธีที่เราแก้ปัญหา
 
-Rather than pretending the challenges didn't exist, we built systems to manage them:
+แทนที่จะทำเป็นว่าความท้าทายเหล่านั้นไม่มีอยู่จริง เราสร้างระบบเพื่อจัดการกับมัน:
 
-1. **Reliable test scripts** — automated regression tests gave us confidence when making changes
-2. **Sufficient framework knowledge** to confidently decline unsuitable requests from stakeholders
-3. **DevOps investment** — CI/CD pipelines meant less manual deployment stress
-4. **Code designed for configuration** rather than hardcoding values — made client-side adjustments possible without developer involvement
-5. **Comprehensive project planning** — detailed milestones with buffer time built in
-6. **Detailed documentation alongside test cases** — the next person inheriting the project will thank us
+1. **Test scripts ที่เชื่อถือได้** — การทดสอบ Regression แบบอัตโนมัติให้ความมั่นใจเมื่อต้องทำการเปลี่ยนแปลง
+2. **ความรู้ด้าน Framework ที่เพียงพอ** เพื่อปฏิเสธคำขอที่ไม่เหมาะสมจากผู้มีส่วนได้ส่วนเสียได้อย่างมั่นใจ
+3. **การลงทุนด้าน DevOps** — CI/CD Pipeline ช่วยลดความเครียดจากการ Deploy แบบ Manual
+4. **โค้ดที่ออกแบบเพื่อ Configuration** แทนการ Hardcode — ทำให้ปรับเปลี่ยนฝั่ง Client ได้โดยไม่ต้องให้นักพัฒนาเข้ามาเกี่ยวข้อง
+5. **การวางแผนโปรเจกต์อย่างครอบคลุม** — Milestone ที่ละเอียดพร้อม Buffer time ที่เพียงพอ
+6. **เอกสารครบถ้วนควบคู่ Test Cases** — คนที่จะรับช่วงงานต่อจะต้องขอบคุณเรา
 
-## The Real Lesson
+## บทเรียนที่แท้จริง
 
-The most difficult aspect of being a team lead is **managing expectations from clients, the team, and oneself** — not solving technical problems.
+สิ่งที่ยากที่สุดในการเป็นหัวหน้าทีมคือ **การบริหารความคาดหวังของลูกค้า ทีมงาน และตัวเอง** — ไม่ใช่การแก้ปัญหาทางเทคนิค
 
-When a client asks for something impossible, you need clarity and confidence to explain why. When a team member is struggling, you need patience and perspective. When you're unsure yourself, you need honesty rather than bluffing.
+เมื่อลูกค้าขอสิ่งที่เป็นไปไม่ได้ คุณต้องมีความชัดเจนและความมั่นใจในการอธิบายว่าทำไม เมื่อสมาชิกทีมกำลังดิ้นรน คุณต้องมีความอดทนและมุมมองที่กว้างขึ้น เมื่อคุณเองก็ไม่แน่ใจ คุณต้องมีความซื่อสัตย์แทนการบลั๊ฟ
 
-Code can always be debugged. People require a different kind of thinking.
+โค้ดสามารถ Debug ได้เสมอ แต่คนต้องใช้การคิดในรูปแบบที่แตกต่างออกไป

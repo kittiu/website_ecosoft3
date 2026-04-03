@@ -23,7 +23,7 @@ const { Content } = await render(cs);
   <section style="background: var(--surface); padding: 1rem 0; border-bottom: 1px solid var(--border);">
     <div class="container">
       <nav style="font-size:0.875rem; color:var(--text-muted);">
-        <a href="/" style="color:var(--text-muted);">Home</a>
+        <a href="/" style="color:var(--text-muted);">หน้าหลัก</a>
         <span style="margin:0 0.5rem;">›</span>
         <a href="/case-studies" style="color:var(--text-muted);">Case Studies</a>
         <span style="margin:0 0.5rem;">›</span>
@@ -38,7 +38,7 @@ const { Content } = await render(cs);
       <div style="display:flex; gap:0.75rem; flex-wrap:wrap; margin-bottom:1.5rem;">
         <span class="tag">{cs.data.solution}</span>
         <span class="tag tag--industry">{cs.data.industry}</span>
-        {cs.data.featured && <span class="tag" style="background:var(--accent);color:#fff;">Featured</span>}
+        {cs.data.featured && <span class="tag" style="background:var(--accent);color:#fff;">เด่น</span>}
       </div>
       <h1>{cs.data.client}</h1>
       <div style="display:flex; gap:2rem; flex-wrap:wrap; margin-top:1rem; color:var(--text-muted); font-size:0.875rem;">
@@ -76,11 +76,11 @@ const { Content } = await render(cs);
   <!-- CTA -->
   <section class="cta-strip">
     <div class="container">
-      <h2>Facing similar challenges?</h2>
-      <p>Talk to the team that built this system — we'll give you an honest assessment of whether open-source ERP is the right fit for you.</p>
+      <h2>มีความท้าทายคล้ายกันนี้หรือไม่?</h2>
+      <p>พูดคุยกับทีมงานที่สร้างระบบนี้ — เราจะให้ความเห็นตรงๆ ว่า Open Source ERP เหมาะกับคุณหรือไม่</p>
       <div style="display:flex; gap:1rem; justify-content:center; flex-wrap:wrap;">
-        <a href="/contact" class="btn btn-primary">Book a Free Consultation</a>
-        <a href="/case-studies" class="btn btn-white">More Case Studies</a>
+        <a href="/contact" class="btn btn-primary">จองการปรึกษาฟรี</a>
+        <a href="/case-studies" class="btn btn-white">Case Studies อื่นๆ</a>
       </div>
     </div>
   </section>

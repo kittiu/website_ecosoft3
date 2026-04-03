@@ -1,55 +1,55 @@
 ---
-title: "Deposit Invoicing for ERPNext"
+title: "Deposit Invoicing สำหรับ ERPNext"
 date: 2025-04-14
-author: "Kitti U."
-category: "Accounting"
-description: "How Ecosoft's Deposit Invoicing solution solves the Thai tax compliance problem with advance payments in ERPNext — with a practical worked example."
+author: "กิตติ อ."
+category: "บัญชี"
+description: "โซลูชัน Deposit Invoicing ของ Ecosoft แก้ปัญหาการปฏิบัติตามกฎระเบียบภาษีไทยสำหรับการชำระเงินล่วงหน้าใน ERPNext ได้อย่างไร พร้อมตัวอย่างปฏิบัติจริง"
 image: "/images/blog/erpnext-deposit-invoice.png"
 tags: ["erpnext", "accounting", "thai-tax", "deposit"]
 ---
 
-Thai business practices commonly involve advance deposits (เงินมัดจำ) — a customer pays a percentage upfront before goods are delivered. ERPNext supports advance payments natively, but with a tax compliance gap that matters in Thailand.
+แนวปฏิบัติทางธุรกิจของไทยมักเกี่ยวข้องกับเงินมัดจำล่วงหน้า (เงินมัดจำ) — ลูกค้าชำระเงินบางส่วนล่วงหน้าก่อนส่งมอบสินค้า ERPNext รองรับการชำระเงินล่วงหน้าโดยตรง แต่มีช่องว่างด้านการปฏิบัติตามกฎระเบียบภาษีที่มีความสำคัญในประเทศไทย
 
-## The Problem with Standard Advance Payments
+## ปัญหาของการชำระเงินล่วงหน้ามาตรฐาน
 
-ERPNext's existing advance payment feature allows prepayment without issuing an invoice. In Thailand, this creates a compliance issue: **advance payments must correspond to proper tax invoices**.
+ฟีเจอร์การชำระเงินล่วงหน้าที่มีอยู่ใน ERPNext อนุญาตให้ชำระเงินล่วงหน้าโดยไม่ต้องออกใบแจ้งหนี้ ในประเทศไทย สิ่งนี้ก่อให้เกิดปัญหาด้านการปฏิบัติตามกฎระเบียบ: **การชำระเงินล่วงหน้าต้องสอดคล้องกับใบกำกับภาษีที่ถูกต้อง**
 
-The Revenue Department requires that when a deposit is received, a tax invoice is issued at that moment — not deferred until final delivery. Standard ERPNext does not handle this correctly out of the box.
+กรมสรรพากรกำหนดว่าเมื่อได้รับเงินมัดจำ ต้องออกใบกำกับภาษีทันที — ไม่ใช่เลื่อนออกไปจนถึงการส่งมอบสินค้าขั้นสุดท้าย ERPNext มาตรฐานไม่รองรับสิ่งนี้ได้อย่างถูกต้องในทันที
 
-## The Deposit Invoicing Solution
+## โซลูชัน Deposit Invoicing
 
-Ecosoft's Deposit Invoicing module closes this gap by:
+โมดูล Deposit Invoicing ของ Ecosoft ปิดช่องว่างนี้โดย:
 
-1. **Creating separate deposit invoices** that properly record tax obligations when payments are received
-2. **Applying credits proportionally** to subsequent invoices as goods are delivered in installments
-3. **Supporting both purchase and sales cycles** with the same mechanism
+1. **สร้างใบแจ้งหนี้มัดจำแยกต่างหาก** ที่บันทึกภาระภาษีอย่างถูกต้องเมื่อได้รับการชำระเงิน
+2. **นำ Credit มาหักตามสัดส่วน** ในใบแจ้งหนี้ถัดไปเมื่อมีการส่งมอบสินค้าเป็นงวด
+3. **รองรับทั้งวงจรการซื้อและการขาย** ด้วยกลไกเดียวกัน
 
-## System Setup
+## การตั้งค่าระบบ
 
-Three configuration steps are required:
+ต้องดำเนินการตั้งค่าสามขั้นตอน:
 
-1. **Mark items as deposit items** in the Item master
-2. **Configure default accounting accounts** for deposit transactions (deferred revenue / advance receipts)
-3. **Enable negative rates in sales settings** to handle deposit deductions on subsequent invoices
+1. **กำหนด Item เป็น Deposit Item** ใน Item master
+2. **ตั้งค่าบัญชีเริ่มต้น** สำหรับธุรกรรมมัดจำ (รายได้รอรับรู้ / เงินรับล่วงหน้า)
+3. **เปิดใช้งาน Negative Rates ในการตั้งค่าการขาย** เพื่อจัดการการหักมัดจำในใบแจ้งหนี้ถัดไป
 
-## Practical Example: 10-Computer Purchase
+## ตัวอย่างปฏิบัติจริง: การซื้อคอมพิวเตอร์ 10 เครื่อง
 
-A customer orders 10 computers at 10,000 THB each (100,000 THB + 7% VAT = 107,000 THB total).
+ลูกค้าสั่งซื้อคอมพิวเตอร์ 10 เครื่อง ราคาเครื่องละ 10,000 บาท (100,000 บาท + VAT 7% = รวม 107,000 บาท)
 
-| Step | Amount | Tax Invoice |
+| ขั้นตอน | จำนวนเงิน | ใบกำกับภาษี |
 |---|---|---|
-| 30% deposit received | 30,000 THB + VAT | Issued immediately |
-| Delivery 1 (5 computers) | 50,000 THB − 15,000 deposit credit | Issued on delivery |
-| Delivery 2 (5 computers) | 50,000 THB − 15,000 deposit credit | Issued on delivery |
-| **Total** | **107,000 THB** | Fully reconciled |
+| รับเงินมัดจำ 30% | 30,000 บาท + VAT | ออกทันที |
+| ส่งมอบครั้งที่ 1 (5 เครื่อง) | 50,000 บาท − หักมัดจำ 15,000 | ออกตอนส่งมอบ |
+| ส่งมอบครั้งที่ 2 (5 เครื่อง) | 50,000 บาท − หักมัดจำ 15,000 | ออกตอนส่งมอบ |
+| **รวมทั้งหมด** | **107,000 บาท** | ปิดสมบูรณ์ |
 
-The deposit is correctly deducted across installment invoices, with proper tax allocation at each stage.
+มัดจำถูกหักอย่างถูกต้องตลอดใบแจ้งหนี้ทุกงวด พร้อมการจัดสรรภาษีที่ถูกต้องในแต่ละขั้นตอน
 
-## Key Features
+## ฟีเจอร์หลัก
 
-- Supports included and excluded VAT scenarios
-- Flexible deposit percentage calculations
-- Multi-order invoice consolidation
-- Full audit trail from deposit to final settlement
+- รองรับทั้งสถานการณ์ VAT รวมและ VAT แยก
+- การคำนวณเปอร์เซ็นต์มัดจำที่ยืดหยุ่น
+- การรวมใบแจ้งหนี้หลายคำสั่งซื้อ
+- ตรวจสอบย้อนกลับอย่างสมบูรณ์ตั้งแต่มัดจำจนถึงการชำระขั้นสุดท้าย
 
-The module is available as an open-source contribution — consistent with Ecosoft's commitment to the OCA community and the principle that Thai businesses should own their compliance tools, not pay for them perpetually.
+โมดูลนี้เผยแพร่เป็น Open Source — สอดคล้องกับพันธกิจของ Ecosoft ต่อชุมชน OCA และหลักการที่ว่าธุรกิจไทยควรเป็นเจ้าของเครื่องมือด้านการปฏิบัติตามกฎระเบียบของตนเอง ไม่ใช่จ่ายค่าเช่าตลอดไป
